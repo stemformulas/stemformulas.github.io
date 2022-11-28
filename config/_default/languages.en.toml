@@ -10,10 +10,10 @@ title = "stemformulas"
 description = "One place to find all the formulas"
 
 
-dateFormat = "January 2 2006"
+dateFormat = "Jan 2 2006"
 
 [author]
-  # name = "Your name here"
+  name = "stemformulas"
   # image = "img/author.jpg"
   # headline = "I'm only human"
   # bio = "A little bit about you"
