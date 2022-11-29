@@ -3,8 +3,6 @@ title: "Ohm's Law"
 description: "Ohm's law states that the current through a conductor between two points is directly proportional to the voltage across the two points."
 summary: "Ohm's law states that the current through a conductor between two points is directly proportional to the voltage across the two points."
 tags: ["Physics", "Electrical Engineering"]
-classes: [""]
-showAuthor: False
 date: 2022-11-27
 latex: V = IR
 ---
@@ -25,5 +23,7 @@ Ohm's law states that the current through a conductor between two points is dire
 ## Example
 
 Kevin measures the voltage across a 10 ohm resistor to be 5 volts. What is the current through the resistor?
+
+$$ V = IR \Longrightarrow I = \frac{V}{R} = \frac{5V}{10\Omega} = 0.5 A $$
 
 
