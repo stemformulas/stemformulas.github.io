@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "about"
 description: "About page"
 showTableOfContents: true
 ---

@@ -2,7 +2,7 @@
 title: "The Ideal Gas Law"
 description: "The equation of state of a hypothetical ideal gas."
 summary: "The equation of state of a hypothetical ideal gas."
-tags: ["Chemistry"]
+tags: ["chemistry"]
 date: 2022-11-27
 latex: PV = nRT
 ---

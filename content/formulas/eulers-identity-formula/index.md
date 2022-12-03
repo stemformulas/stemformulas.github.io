@@ -2,7 +2,7 @@
 title: "Euler's Identity/Formula"
 description: "One of the most amazing formulas in mathematics."
 summary: "One of the most amazing formulas in mathematics."
-tags: ["Math", "Complex Analysis", "e", "pi", "trigonometry"]
+tags: ["math", "complex analysis", "e", "pi", "trigonometry"]
 date: 2022-11-28
 latex: e^{i\pi} = -1
 ---

@@ -2,7 +2,7 @@
 title: "Ohm's Law"
 description: "Ohm's law states that the current through a conductor between two points is directly proportional to the voltage across the two points."
 summary: "Ohm's law states that the current through a conductor between two points is directly proportional to the voltage across the two points."
-tags: ["Physics", "Electrical Engineering"]
+tags: ["physics", "electrical engineering"]
 date: 2022-11-27
 latex: V = IR
 ---

@@ -3,7 +3,7 @@
     {{ if .Params.showBreadcrumbs | default (.Site.Params.list.showBreadcrumbs | default false) }}
       {{ partial "breadcrumbs.html" . }}
     {{ end }}
-    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ .Title }}</h1>
+    <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">{{ lower .Title }}</h1>
   </header>
   {{ if .Content }}
     <section class="flex flex-col max-w-full mt-0 prose dark:prose-invert lg:flex-row">
@@ -12,24 +12,19 @@
       </div>
     </section>
   {{ end }}
-  <section class="flex flex-wrap -mx-2 overflow-hidden">
-    {{ range .Data.Terms }}
-    <!-- override some of the default tags stuff -->
-      <article class="w-full px-2 my-3 overflow-hidden sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/5">
-        <h2 class="flex items-start">
-          <a
-            class="text-xl font-medium decoration-primary-500 hover:underline hover:underline-offset-2"
-            href="{{ .Page.RelPermalink }}"
-            >{{ .Page.Title }}</a
-          >
-          {{ if $.Site.Params.taxonomy.showTermCount | default true }}
-            <span class="px-2 text-base text-primary-500">&middot;</span>
-            <span class="text-base text-neutral-400">
-              {{ .Count }}
-            </span>
-          {{ end }}
-        </h2>
-      </article>
+  {{ $max := 0 }}
+  {{ range .Data.Terms }}
+    {{ if gt .Count $max }}
+      {{ $max = .Count }}
     {{ end }}
+  {{ end }}
+  <section class="flex flex-wrap -mx-2 overflow-hidden">
+    <div class="section tags pt-8 ml-4 mr-4">
+      <ul class="image-tags">
+    {{ range .Data.Terms }}
+        <li><a href="{{ .Page.RelPermalink }}" class="tag-opacity-{{ math.Round (div (mul .Count 20) $max) }}" title="View all images tagged with {{ .Page.Title }}">{{.Page.Title}}&nbsp;({{.Count}})</a></li>
+    {{ end }}
+    </ul>
+  </div>
   </section>
 {{ end }}

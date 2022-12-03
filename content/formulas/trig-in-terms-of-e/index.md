@@ -2,7 +2,7 @@
 title: "Trig functions in terms of e"
 description: "Common trig functions in terms of e"
 summary: "Common trig functions in terms of e"
-tags: ["math", "trigonometry", "e", "Complex Analysis"]
+tags: ["math", "trigonometry", "e", "complex analysis"]
 date: 2022-11-28
 latex: sin(x) = \frac{e^{ix} - e^{-ix}}{2i}, cos(x) = \frac{e^{ix} + e^{-ix}}{2}, tan(x) = \frac{e^{ix} - e^{-ix}}{e^{ix} + e^{-ix}}
 ---

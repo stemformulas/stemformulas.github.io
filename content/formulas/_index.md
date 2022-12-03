@@ -1,5 +1,5 @@
 ---
-title: "Formulas"
+title: "formulas"
 description: "All of the formulas"
 ---
 TODO:
