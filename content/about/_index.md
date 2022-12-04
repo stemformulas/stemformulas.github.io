@@ -5,7 +5,7 @@ showTableOfContents: true
 ---
 
 Stemformulas is a website dedicated to providing a single place to look for STEM formulas. I made it
-because I felt frustrated scrolling through website and Google Images looking for formulas that are basically
+because I felt frustrated scrolling through websites and Google Images looking for formulas that are basically
 set in stone. I felt like we could do better than this in the 21st century, and so, I did.
 
 
