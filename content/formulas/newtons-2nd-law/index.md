@@ -3,7 +3,7 @@ title: "Newton's 2nd Law"
 description: "The law that describes the acceleration of an object in Newtonian mechanics."
 summary: "The law that describes the acceleration of an object in Newtonian mechanics."
 tags: ["physics", "mechanics"]
-date: 2022-12-4
+date: 2022-12-04
 latex: F = ma
 ---
 {{< katex >}}
