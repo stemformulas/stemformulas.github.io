@@ -1,0 +1,37 @@
+<header class="py-6 font-semibold text-neutral-900 dark:text-neutral print:hidden sm:py-10">
+  <nav class="flex items-start justify-between sm:items-center">
+    {{/* Site logo/title */}}
+    <div class="flex flex-row items-center">
+      {{ partial "logo.html" . }}
+      {{ partial "translations.html" . }}
+    </div>
+    {{/* Main menu */}}
+    {{ if or .Site.Menus.main (.Site.Params.enableSearch | default false) }}
+      <ul class="flex list-none flex-col ltr:text-right rtl:text-left sm:flex-row">
+        {{ if .Site.Menus.main }}
+          {{ range .Site.Menus.main }}
+            <li class="mb-1 sm:mb-0 ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+              <a
+                class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+                href="{{ .URL }}"
+                title="{{ .Title }}"
+                >{{ .Name | markdownify | emojify }}</a
+              >
+            </li>
+          {{ end }}
+        {{ end }}
+        {{ if .Site.Params.enableSearch | default false }}
+          <li class="ltr:sm:mr-7 ltr:sm:last:mr-0 rtl:sm:ml-7 rtl:sm:last:ml-0">
+            <button
+              id="search-button"
+              class="text-base hover:text-primary-600 dark:hover:text-primary-400"
+              title="{{ i18n "search.open_button_title" }}"
+            >
+              {{ partial "icon.html" "search" }}
+            </button>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </nav>
+</header>
