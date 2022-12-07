@@ -1,9 +1,13 @@
+<!-- I pretty much copy pasted the code from search.html and reformatted it so it would fit my needs.
+The homepage searchbar input and results were conflicting with the searchbar in the header, so I had to change the id's of the elements in this custom.html file. 
+70% of this comment was written by Copilot somehow-->
+
 <div
-  id="search-wrapper"
+  id="search-wrapper-main"
   class="flex h-full w-full cursor-default flex-col align-center justify-center"
 >
   <div
-    id="search-modal"
+    id="search-modal-main"
     class="flex flex-col w-full max-w-3xl min-h-0 mx-auto border rounded-md shadow-lg border-neutral-400 bg-neutral dark:border-neutral-700 dark:bg-neutral-800"
   >
     <header class="relative z-10 flex items-center justify-between flex-none px-2">
@@ -14,14 +18,14 @@
         <input
           type="search"
           autocomplete="off"
-          id="search-query"
+          id="search-query-main"
           class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
           placeholder="{{ i18n "search.input_placeholder" }}"
           tabindex="0"
         />
       </form>
       <button
-        id="close-search-button"
+        id="close-search-button-main"
         class="flex items-center justify-center w-8 h-8 text-neutral-700 hover:text-primary-600 dark:text-neutral dark:hover:text-primary-400"
         title="{{ i18n "search.close_button_title" }}"
       >
@@ -29,7 +33,7 @@
       </button>
     </header>
     <section class="flex-auto px-2 overflow-auto">
-      <ul id="search-results">
+      <ul id="search-results-main">
         </section>
     </div>
 </div>
