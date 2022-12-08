@@ -56,8 +56,6 @@
     {{ $jsFuse := resources.Get "lib/fuse/fuse.min.js" }}
     {{ $jsSearch := resources.Get "js/search.js" }}
     {{ $assets.Add "js" (slice $jsFuse $jsSearch) }}
-    {{ $jsSearchMain := resources.Get "js/searchMain.js" }}
-    {{ $assets.Add "js" (slice $jsFuse $jsSearchMain) }}
   {{ end }}
   {{ if .Site.Params.enableCodeCopy | default false }}
     {{ $jsCode := resources.Get "js/code.js" }}
