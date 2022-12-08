@@ -11,6 +11,13 @@ var searchVisible = false;
 var indexed = false;
 var hasResults = false;
 
+var onMainPage = document.getElementById("search-query-main");
+   if(onMainPage){
+       buildIndex();
+       var main_input = document.getElementById("search-query-main");
+       var main_output = document.getElementById("search-results-main");
+   }
+
 // Listen for events
 showButtons.forEach((button) => {
   button.addEventListener("click", displaySearch);
@@ -66,10 +73,15 @@ document.addEventListener("keydown", function (event) {
 });
 
 // Update search on each keypress
-input.onkeyup = function (event) {
-  executeQuery(this.value);
-};
+  input.onkeyup = function (event) {
+    executeQuery(this.value);
+  };
 
+  if(onMainPage){
+      main_input.onkeyup = function (event) {
+          executeQuery(this.value);
+      };
+  }
 function displaySearch() {
   if (!indexed) {
     buildIndex();
@@ -130,6 +142,7 @@ function buildIndex() {
 
 function executeQuery(term) {
   let results = fuse.search(term);
+  console.log(results);
   let resultsHTML = "";
 
   if (results.length > 0) {
@@ -153,8 +166,11 @@ function executeQuery(term) {
     resultsHTML = "";
     hasResults = false;
   }
-
-  output.innerHTML = resultsHTML;
+  if (onMainPage) {
+    main_output.innerHTML = resultsHTML;
+  } else {
+   output.innerHTML = resultsHTML;
+  }
   if (results.length > 0) {
     first = output.firstChild.firstElementChild;
     last = output.lastChild.firstElementChild;
