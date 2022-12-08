@@ -13,7 +13,7 @@ for the formula, and a maintainer will do step 1 for you
 
 
 ## Top contributors:
-kevinlinxc: 6 formulas
+kevinlinxc: 8 formulas
 
 ## Developing locally:
 
