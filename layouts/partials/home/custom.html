@@ -4,6 +4,7 @@ The homepage searchbar input and results were conflicting with the searchbar in 
 <div
   id="search-wrapper-main"
   class="flex h-full w-full cursor-default flex-col align-center justify-center"
+  data-url="{{ "" | absLangURL }}"
 >
   <div
     id="search-modal-main"
@@ -21,6 +22,8 @@ The homepage searchbar input and results were conflicting with the searchbar in 
           class="flex flex-auto h-12 mx-1 bg-transparent appearance-none focus:outline-dotted focus:outline-2 focus:outline-transparent"
           placeholder="{{ i18n "search.input_placeholder" }}"
           tabindex="0"
+          autofocus
+          onfocus="this.select()"
         />
       </form>
       <button
