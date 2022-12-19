@@ -7,7 +7,7 @@ rtl = false
 
 title = "stemformulas"
 # logo = "img/logo.jpg"
-description = "One place to find all the formulas"
+description = "All of the STEM formulas, eventually"
 
 
 dateFormat = "Jan 2 2006"
