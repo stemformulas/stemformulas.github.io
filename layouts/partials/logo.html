@@ -1,0 +1,34 @@
+{{- if .Site.Params.header.logo }}
+  {{- $logo := resources.Get .Site.Params.header.logo }}
+  {{- if $logo }}
+    <a href="{{ "" | relLangURL }}" class="mr-2">
+      <img
+        src="{{ $logo.RelPermalink }}"
+        width="{{ div $logo.Width 2 }}"
+        height="{{ div $logo.Height 2 }}"
+        class="max-h-[10rem] max-w-[10rem] object-scale-down object-left custom-logo"
+        alt="{{ .Site.Title }}"
+      />
+    </a>
+  {{- end }}
+{{- end }}
+{{- if .Site.Params.header.showTitle | default true }}
+  <a
+    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    rel="me"
+    href="{{ "" | relLangURL }}"
+    >{{ .Site.Title | markdownify | emojify }}</a
+  >
+{{- end }}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script>
+$(".custom-logo").on({
+    mouseenter() {
+       $(this).addClass("animated");
+       console.log("hi");
+    },
+    animationend() {
+       $(this).removeClass("animated");
+    },
+ });
+ </script>
