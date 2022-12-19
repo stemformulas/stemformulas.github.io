@@ -153,3 +153,8 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
       transform: rotate(360deg);
     }
   }
+
+  .focus\:bg-primary-100:focus {
+    --tw-bg-opacity: 1;
+    background-color: rgba(180, 180, 180, var(--tw-bg-opacity));
+  }

@@ -1,22 +1,30 @@
 var fuse;
+var onMainPage = document.getElementById("search-query-main");
 var showButtons = document.querySelectorAll("[id^='search-button']");
-var hideButton = document.getElementById("close-search-button");
-var wrapper = document.getElementById("search-wrapper");
-var modal = document.getElementById("search-modal");
-var input = document.getElementById("search-query");
-var output = document.getElementById("search-results");
+if(onMainPage){
+  var input = document.getElementById("search-query-main");
+  var output = document.getElementById("search-results-main");
+  var modal = document.getElementById("search-modal-main");
+  var wrapper = document.getElementById("search-wrapper-main");
+  var hideButton = document.getElementById("close-search-button-main");
+} else {
+  var input = document.getElementById("search-query");
+  var output = document.getElementById("search-results");
+  var modal = document.getElementById("search-modal");
+  var wrapper = document.getElementById("search-wrapper");
+  var hideButton = document.getElementById("close-search-button");
+}
 var first = output.firstChild;
 var last = output.lastChild;
 var searchVisible = false;
 var indexed = false;
 var hasResults = false;
 
-var onMainPage = document.getElementById("search-query-main");
-   if(onMainPage){
-       buildIndex();
-       var main_input = document.getElementById("search-query-main");
-       var main_output = document.getElementById("search-results-main");
-   }
+if(onMainPage){
+  // need to build index on main page because it's normally triggered by clicking search button
+  buildIndex();
+  searchVisible = true;
+}
 
 // Listen for events
 showButtons.forEach((button) => {
@@ -70,6 +78,20 @@ document.addEventListener("keydown", function (event) {
       }
     }
   }
+
+  if (event.key == "Enter") {
+    if (searchVisible && hasResults) {
+      event.preventDefault();
+      if (document.activeElement == input) {
+        console.log("here");
+        window.location.href = first.href;
+      }
+      else {
+        console.log("here2");
+        window.location.href = document.activeElement.href;
+      }
+    }
+  }
 });
 
 // Update search on each keypress
@@ -77,11 +99,6 @@ document.addEventListener("keydown", function (event) {
     executeQuery(this.value);
   };
 
-  if(onMainPage){
-      main_input.onkeyup = function (event) {
-          executeQuery(this.value);
-      };
-  }
 function displaySearch() {
   if (!indexed) {
     buildIndex();
@@ -142,7 +159,6 @@ function buildIndex() {
 
 function executeQuery(term) {
   let results = fuse.search(term);
-  console.log(results);
   let resultsHTML = "";
 
   if (results.length > 0) {
@@ -166,11 +182,7 @@ function executeQuery(term) {
     resultsHTML = "";
     hasResults = false;
   }
-  if (onMainPage) {
-    main_output.innerHTML = resultsHTML;
-  } else {
-   output.innerHTML = resultsHTML;
-  }
+  output.innerHTML = resultsHTML;
   if (results.length > 0) {
     first = output.firstChild.firstElementChild;
     last = output.lastChild.firstElementChild;
