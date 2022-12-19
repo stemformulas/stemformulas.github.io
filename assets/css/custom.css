@@ -139,3 +139,17 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
 .tag-opacity-20{
     opacity: 1;
 }
+
+.animated {
+    animation: rotating 0.7s ease 0s 1 normal forwards;
+  }
+
+  @keyframes rotating {
+    0% {
+      transform: rotate(0);
+    }
+
+    100% {
+      transform: rotate(360deg);
+    }
+  }
