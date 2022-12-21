@@ -7,6 +7,8 @@ date: 2022-12-06
 latex: x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 ---
 {{< katex >}}
+
+
 $$x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}$$
 
 Where
