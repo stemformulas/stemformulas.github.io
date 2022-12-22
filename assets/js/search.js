@@ -30,13 +30,15 @@ if(onMainPage){
 showButtons.forEach((button) => {
   button.addEventListener("click", displaySearch);
 });
-hideButton.addEventListener("click", hideSearch);
-wrapper.addEventListener("click", hideSearch);
-modal.addEventListener("click", function (event) {
-  event.stopPropagation();
-  event.stopImmediatePropagation();
-  return false;
-});
+if (!(onMainPage)){
+  hideButton.addEventListener("click", hideSearch);
+  wrapper.addEventListener("click", hideSearch);
+  modal.addEventListener("click", function (event) {
+    event.stopPropagation();
+    event.stopImmediatePropagation();
+    return false;
+  });
+}
 document.addEventListener("keydown", function (event) {
   // Forward slash to open search wrapper
   if (event.key == "/") {
