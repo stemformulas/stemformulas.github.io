@@ -158,3 +158,5 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
     --tw-bg-opacity: 1;
     background-color: rgba(180, 180, 180, var(--tw-bg-opacity));
   }
+
+  .katex-html { font-size: 1.2em; }

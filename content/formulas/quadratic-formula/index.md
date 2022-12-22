@@ -1,5 +1,5 @@
 ---
-title: "The Quadratic Formula"
+title: "Quadratic Formula"
 description: "The formula for the zeros of a quadratic equation"
 summary: "The formula for the zeros of a quadratic equation"
 tags: ["math", "algebra"]

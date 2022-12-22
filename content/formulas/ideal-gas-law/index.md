@@ -1,5 +1,5 @@
 ---
-title: "The Ideal Gas Law"
+title: "Ideal Gas Law"
 description: "The equation of state of a hypothetical ideal gas."
 summary: "The equation of state of a hypothetical ideal gas."
 tags: ["chemistry"]
