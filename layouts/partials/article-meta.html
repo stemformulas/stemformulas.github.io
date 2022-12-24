@@ -12,7 +12,7 @@
   {{ $meta := newScratch }}
 
   {{/* Gather partials for this context */}}
-  {{ if .Params.showDate | default (.Site.Params.article.showDate | default true) }}
+  {{ if .Params.showDate | default (.Site.Params.list.showDate | default true) }}
     {{ $meta.Add "partials" (slice (partial "meta/date.html" .Date)) }}
   {{ end }}
   
@@ -27,7 +27,7 @@
           {{ range $context.GetTerms $taxonomy }}
             <a
               href="{{ .RelPermalink }}"
-              class="rounded-md border border-neutral-200 px-2 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              class="rounded-md border border-neutral-200 px-2 py-[1px] hover:border-black hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
               >{{ .LinkTitle }}</a
             >
           {{ end }}
@@ -35,8 +35,7 @@
       {{ end }}
     </div>
   {{ end }}
-
-  {{ if and (.Params.showDateUpdated | default (.Site.Params.article.showDateUpdated | default false)) (ne (partial "functions/date.html" .Date) (partial "functions/date.html" .Lastmod)) }}
+  {{ if and (.Params.showDateUpdated | default (.Site.Params.list.showDateUpdated | default false)) (ne (partial "functions/date.html" .Date) (partial "functions/date.html" .Lastmod)) }}
     {{ $meta.Add "partials" (slice (partial "meta/date-updated.html" .Lastmod)) }}
   {{ end }}
 
@@ -57,7 +56,7 @@
   {{ end }}
   
 
-  <div class="flex flex-row flex-wrap items-center">
+  <div class="ml-1 flex flex-row flex-wrap items-center">
     {{/* Output partials */}}
     {{ with ($meta.Get "partials") }}
       {{ delimit . "<span class=\"px-2 text-primary-500\">&middot;</span>" }}

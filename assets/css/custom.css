@@ -207,4 +207,13 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
     margin-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
+
+.ml-1 {
+    margin-left: 0.15rem;
+}
+
+.hover\:border-black:hover{
+    --tw-border-opacity: 1;
+    border-color: rgba(100, 100, 100, var(--tw-bg-opacity));
+  }
   
