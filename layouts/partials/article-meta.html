@@ -15,6 +15,26 @@
   {{ if .Params.showDate | default (.Site.Params.article.showDate | default true) }}
     {{ $meta.Add "partials" (slice (partial "meta/date.html" .Date)) }}
   {{ end }}
+  
+  {{/* Output taxonomies */}}
+  {{ if or
+    (and (ne $scope "single") (.Params.showTaxonomies | default (.Site.Params.list.showTaxonomies | default (.Site.Params.article.showTaxonomies | default false))))
+    (and (eq $scope "single") (.Params.showTaxonomies | default (.Site.Params.article.showTaxonomies | default false)))
+  }}
+    <div class="my-2 text-xs text-neutral-500 dark:text-neutral-400 ">
+      {{ range $taxonomy, $terms := .Site.Taxonomies }}
+        {{ if (gt (len ($context.GetTerms $taxonomy)) 0) }}
+          {{ range $context.GetTerms $taxonomy }}
+            <a
+              href="{{ .RelPermalink }}"
+              class="rounded-md border border-neutral-200 px-2 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
+              >{{ .LinkTitle }}</a
+            >
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </div>
+  {{ end }}
 
   {{ if and (.Params.showDateUpdated | default (.Site.Params.article.showDateUpdated | default false)) (ne (partial "functions/date.html" .Date) (partial "functions/date.html" .Lastmod)) }}
     {{ $meta.Add "partials" (slice (partial "meta/date-updated.html" .Lastmod)) }}
@@ -49,23 +69,4 @@
     {{ end }}
   </div>
 
-  {{/* Output taxonomies */}}
-  {{ if or
-    (and (ne $scope "single") (.Params.showTaxonomies | default (.Site.Params.list.showTaxonomies | default (.Site.Params.article.showTaxonomies | default false))))
-    (and (eq $scope "single") (.Params.showTaxonomies | default (.Site.Params.article.showTaxonomies | default false)))
-  }}
-    <div class="my-1 text-xs text-neutral-500 dark:text-neutral-400 ">
-      {{ range $taxonomy, $terms := .Site.Taxonomies }}
-        {{ if (gt (len ($context.GetTerms $taxonomy)) 0) }}
-          {{ range $context.GetTerms $taxonomy }}
-            <a
-              href="{{ .RelPermalink }}"
-              class="rounded-md border border-neutral-200 px-1 py-[1px] hover:border-primary-300 hover:text-primary-700 dark:border-neutral-600 dark:hover:border-primary-600 dark:hover:text-primary-400"
-              >{{ .LinkTitle }}</a
-            >
-          {{ end }}
-        {{ end }}
-      {{ end }}
-    </div>
-  {{ end }}
 {{ end }}
