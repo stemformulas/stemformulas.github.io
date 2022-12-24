@@ -16,7 +16,7 @@ It is hosted on [GitHub Pages](https://pages.github.com/), deployed conveniently
 ## Contributing
 If you want to add a formula to this site, there are two ways you can do so. The first way is easier for you and more work for us, and the second way is the opposite:
 
-1. Submit all the relevant information about the formula to our [Google Form](https://forms.gle/zXGeNJ4pRJG2Rh7L6) (also linked in the header)
+1. Submit all the relevant information about the formula to our [Google Form](https://forms.gle/zXGeNJ4pRJG2Rh7L6) (can also be filled out on our [suggest](/suggest) page).
 
 2. Create a pull request on the
 [GitHub repo](https://github.com/kevinlinxc/stemformulas.com). More detailed instructions can be found on the site's README.
