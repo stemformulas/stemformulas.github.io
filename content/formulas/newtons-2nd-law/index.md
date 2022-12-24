@@ -21,7 +21,7 @@ Newton's second law is a statement of Newtonian mechanics that the net force on 
 - [Brittanica](https://www.britannica.com/science/Newtons-laws-of-motion/Newtons-second-law-F-ma)
 
 ## Example
-Kevin pushes a 10 kg box across the floor with a force of 100 N. Friction pushes back against the box statically
-with 10 N of force. What is the acceleration of the box?
+Kevin pushes his 10 kg brain across the floor with a force of 100 N. Friction pushes back against his brain statically
+with 10 N of force. What is the acceleration of the brain?
 
 $$ F = ma \Longrightarrow a = \frac{F}{m} = \frac{100N - 10N}{10kg} = 9.8 m/s^2 $$

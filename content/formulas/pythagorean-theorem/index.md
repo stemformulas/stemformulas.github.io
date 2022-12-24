@@ -24,3 +24,14 @@ Where
 * [Wikipedia](https://en.wikipedia.org/wiki/Pythagorean_theorem)
 * [Brittanica](https://www.britannica.com/science/Pythagorean-theorem)
 
+## Example
+
+After being rejected by another girl, Kevin bends forward to pick up his hurt ego. His legs contact the floor at a right angle and his arms + torso miraculously reach the ground in front of him. 
+
+If his legs are 30 meters long, and his arms + torso
+are 50 meters long, how far away is his ego from his legs?
+
+Using the diagram above, a = 30m and c = 50m. Using the pythagorean theorem:
+
+$$ a^2 + b^2 = c^2 \Longrightarrow b = \sqrt{c^2 - a^2} = \sqrt{1600} = 40m$$
+
