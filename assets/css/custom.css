@@ -142,21 +142,29 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
 
 .animated {
     animation: rotating 0.7s ease 0s 1 normal forwards;
-  }
+}
 
-  @keyframes rotating {
-    0% {
-      transform: rotate(0);
-    }
+@keyframes rotating {
+0% {
+    transform: rotate(0);
+}
 
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+100% {
+    transform: rotate(360deg);
+}
+}
 
-  .focus\:bg-primary-100:focus {
+.focus\:bg-primary-100:focus {
     --tw-bg-opacity: 1;
     background-color: rgba(180, 180, 180, var(--tw-bg-opacity));
-  }
+}
 
-  .katex-html { font-size: 1.2em; }
+.katex-html { 
+    font-size: 1.2em; 
+    color: black;
+}
+
+.katex {
+    padding-left: 0.5em !important; 
+    text-align: left;
+  }

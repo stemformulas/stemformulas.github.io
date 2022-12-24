@@ -20,7 +20,7 @@ https://forms.gle/zXGeNJ4pRJG2Rh7L6
 git clone --recurse-submodules https://github.com/stemformulas/stemformulas.github.io.git
 ```
 
-3. [Install Hugo](https://gohugo.io/installation/). Hugo is the base software that allows this site to function.
+3. Install [Go](https://go.dev/doc/install) and [Hugo (extended)](https://gohugo.io/installation/). Go is a programming language, and Hugo is a static website builder that we use as a scaffolding for our site. Read the hugo installation instructions carefully, they're not easy to skim through.
 
 4. Run the site locally:
 ```
