@@ -159,13 +159,13 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
     background-color: rgba(180, 180, 180, var(--tw-bg-opacity));
 }
 
-.katex-html { 
-    font-size: 1.2em; 
+.katex-html {
+    font-size: 1.2em;
     color: black;
 }
 
 .katex {
-    padding-left: 0.5em !important; 
+    padding-left: 0.5em !important;
     text-align: left;
 }
 
@@ -189,10 +189,18 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
     margin-top: 0;
 }
 
+.mt-16 {
+    margin-top: 4rem;
+}
+
+.mt-20 {
+    margin-top: 5rem;
+}
+
 .border-neutral-200 {
     border-width: 1px;
     border-color: rgba(180, 180, 180, var(--tw-bg-opacity))
-    
+
 }
 
 .mb-8 {
@@ -216,4 +224,3 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
     --tw-border-opacity: 1;
     border-color: rgba(100, 100, 100, var(--tw-bg-opacity));
   }
-  

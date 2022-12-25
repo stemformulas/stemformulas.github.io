@@ -7,8 +7,7 @@ rtl = false
 
 title = "stemformulas"
 # logo = "img/logo.jpg"
-description = "Stemformulas is the eventual home of every STEM formula in the world. Our mission is to make every STEM formula
-accessible within seconds."
+description = "Stemformulas is the eventual home of every STEM formula in the world. Our mission is to make every STEM formula accessible within seconds."
 
 
 dateFormat = "Jan 2 2006"
