@@ -54,7 +54,7 @@ git push origin -u new-formula-name
 
 
 ## Top contributors
-(This will eventually be a nicely presented leaderboard on the site.)
+(This could eventually be a nicely presented leaderboard on the site.)
 
-kevinlinxc: 9 formulas
+kevinlinxc: 12 formulas
 

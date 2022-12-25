@@ -22,8 +22,6 @@ More generally, for any number (even complex) \\(x\\), Euler's Formula says that
 $$e^{ix} = \cos(x) + i\sin(x)$$
 
 
-
 ## Sources
 - [Wikipedia](https://en.wikipedia.org/wiki/Euler%27s_identity)
 - [Wikipedia](https://en.wikipedia.org/wiki/Euler%27s_formula)
-

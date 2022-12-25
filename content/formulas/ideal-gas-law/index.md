@@ -26,7 +26,7 @@ Where
 
 ## Example
 
-Kevin has a 1 liter container of gas at 1 atm and 300 K. What is the pressure of the gas if the volume is doubled?
+Kevin has a 1 liter container of a mysterious (ideal) gas at 1 atm and 300 K. What is the pressure of the gas if the volume is doubled?
 
 There are two ways we could use the Ideal Gas Law to solve this problem:
 

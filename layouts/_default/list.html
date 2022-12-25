@@ -44,8 +44,8 @@
     </section>
     {{ partial "pagination.html" . }}
   {{ else }}
-  <!-- Don't show empty branch message for About page -->
-    {{ if not (in .RelPermalink "/about/") }}
+  <!-- Don't show no articles message for About and Suggest pages -->
+    {{ if (and (not (in .RelPermalink "/about/")) (not (in .RelPermalink "/suggest/"))) }}
         <section class="mt-10 prose dark:prose-invert">
         <p class="py-8 border-t">
             <em>{{ i18n "list.no_articles" | emojify }}</em>
