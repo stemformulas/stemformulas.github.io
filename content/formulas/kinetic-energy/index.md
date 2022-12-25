@@ -20,7 +20,7 @@ Where
 - [Brittanica](https://www.britannica.com/science/kinetic-energy)
 
 ## Example
-Kevin throws a 400,000 kg spaceship off of an infinity tall cliff. After some time, it reaches a terminal velocity of 500 m/s. What is the kinetic energy of the spaceship at this point?
+Kevin throws a 400,000 kg spaceship straight down off of an infinitely tall cliff. After some time, it reaches a terminal velocity of 500 m/s. What is the kinetic energy of the spaceship at this point?
 
 We know that kinetic energy is equal to \\(\frac{1}{2}mv^2\\), so we can plug in the values to get the answer:
 
