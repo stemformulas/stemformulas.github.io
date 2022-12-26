@@ -223,4 +223,8 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
 .hover\:border-black:hover{
     --tw-border-opacity: 1;
     border-color: rgba(100, 100, 100, var(--tw-bg-opacity));
-  }
+}
+
+.lg\:p-\[2vh\] {
+    padding: 2vh;
+}

@@ -85,11 +85,9 @@ document.addEventListener("keydown", function (event) {
     if (searchVisible && hasResults) {
       event.preventDefault();
       if (document.activeElement == input) {
-        console.log("here");
         window.location.href = first.href;
       }
       else {
-        console.log("here2");
         window.location.href = document.activeElement.href;
       }
     }
@@ -155,6 +153,10 @@ function buildIndex() {
       ],
     };
     fuse = new Fuse(data, options);
+    fuse.remove((doc) => {
+      return doc.title === 'formulas' || doc.title === 'Suggest' || doc.title === 'stemformulas' ||
+      doc.title === 'about' || doc.title === 'Tags'
+    })
     indexed = true;
   });
 }
