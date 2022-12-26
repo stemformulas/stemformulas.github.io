@@ -155,7 +155,7 @@ function buildIndex() {
     fuse = new Fuse(data, options);
     fuse.remove((doc) => {
       return doc.title === 'formulas' || doc.title === 'Suggest' || doc.title === 'stemformulas' ||
-      doc.title === 'about' || doc.title === 'Tags'
+      doc.title === 'about' || doc.title === 'Tags' || doc.title === 'Categories'
     })
     indexed = true;
   });
