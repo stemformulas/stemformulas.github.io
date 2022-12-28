@@ -1,8 +1,8 @@
 ---
 title: "Laplace's Equation"
-description: "A common partial differential equation"
-summary: "A common partial differential equation"
-tags: ["math", "partial differential equations", "differential equations", "physics"]
+description: "Laplace's equation is a common partial differential equation"
+summary: "Laplace's equation is a common partial differential equation"
+tags: ["math", "differential equations", "physics"]
 date: 2022-12-24
 latex: \nabla^2 f = \nabla \cdot \nabla f = 0
 ---

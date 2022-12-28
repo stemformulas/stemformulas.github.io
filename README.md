@@ -4,11 +4,12 @@ formulas.
 
 ## How to contribute:
 
-There are three ways contribute formulas, in order of most to least technical (i.e. least to most work for us):
+There are two ways contribute formulas, suggestions and direct contributions:
 
-1. Fill out this Google Form with all the necessary information for the formula:
+1. Suggestions: fill out this Google Form with all the necessary information for the formula:
 https://forms.gle/zXGeNJ4pRJG2Rh7L6
-2. Create a pull request on the GitHub repo, following the detailed instructions below.
+
+2. Direct contributions: create a pull request (on the GitHub repo, following the detailed instructions below.
 
 
 ## Adding a formula by submitting a pull request:
@@ -36,25 +37,36 @@ git checkout -b new-formula-name
 
 where `new-formula-name` is descriptive of the formula you're adding.
 
-6. Add your formula to the `content/formulas` folder. You can copy the format of any of the other formulas in the folder.
+6. Add your formula to the `content/formulas` folder. This should be a folder with a name without weird symbols, an `index.md` file within, and any supporting pictures within as well.
+The easiest way when starting might be to copy another `index.md`'s contents.
 
-7. Visit your formula's page in your browser and proofread it. Make sure you proofread the index.md file you've created too.
+7. Visit your formula's page in your browser (from step 4) and proofread it. Make sure you proofread the `index.md` file you've created too.
 
-8. Add your name/update your number in the contributors list in the README.md file
+8. Add your username to the contributors list in the README.md file
 
-9. Push your changes to GitHub:
+9. Push your changes to GitHub (replace `new-formula-name` with your own branch's name from step 5):
 
 ```
+git status
 git add .
-git commit -m "message explaining what you added"
+git commit -m "write a short message explaining what you added"
 git push origin -u new-formula-name
 ```
 
 10. Create a [pull request](https://github.com/stemformulas/stemformulas.github.io/compare) from your branch to the main branch. We'll review it, give you feedback, and then eventually merge it!
 
+11. In the future, if you want to contribute again, switch to main and pull in changes so that you're up to date:
+
+```
+git checkout main # git stash if there's unsaved work that you don't want to keep
+git pull
+```
+
+Then, repeat everything after step 5.
+
 
 ## Top contributors
 (This could eventually be a nicely presented leaderboard on the site.)
 
-kevinlinxc: 14 formulas
+kevinlinxc: 18 formulas
 

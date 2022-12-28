@@ -228,3 +228,7 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
 .lg\:p-\[2vh\] {
     padding: 2vh;
 }
+
+img[alt=diagram] {
+    width: 400px;
+}
