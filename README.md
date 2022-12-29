@@ -2,6 +2,8 @@
 Welcome to [https://stemformulas.com/](https://stemformulas.com/), the site with the goal of being the best place in the world to look for STEM-related
 formulas.
 
+![banner](banner.png)
+
 ## How to contribute:
 
 There are two ways contribute formulas, suggestions and direct contributions:
@@ -37,8 +39,7 @@ git checkout -b new-formula-name
 
 where `new-formula-name` is descriptive of the formula you're adding.
 
-6. Add your formula to the `content/formulas` folder. This should be a folder with a name without weird symbols, an `index.md` file within, and any supporting pictures within as well.
-The easiest way when starting might be to copy another `index.md`'s contents.
+6. Create a folder in `content/formulas/` with the name of your formula. For example, if you're adding the formula for the area of a circle, you would create a folder called `area-of-a-circle`. Inside this folder, create a file called `index.md` and copy the contents of `content/formulas/pythagorean-theorem/index.md` into it (any other index.md would be fine too, but this one shows how to use pictures). This file will contain the information about your formula. Change all the information until it's correct for your formula.
 
 7. Visit your formula's page in your browser (from step 4) and proofread it. Make sure you proofread the `index.md` file you've created too.
 
@@ -68,5 +69,6 @@ Then, repeat everything after step 5.
 ## Top contributors
 (This could eventually be a nicely presented leaderboard on the site.)
 
-kevinlinxc: 18 formulas
+kevinlinxc: 20 formulas
 
+ 
