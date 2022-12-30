@@ -164,7 +164,7 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
     color: black;
 }
 
-.katex {
+.katex-display katex {
     padding-left: 0.5em !important;
     text-align: left;
 }
