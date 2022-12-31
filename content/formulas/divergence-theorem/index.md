@@ -8,7 +8,7 @@ latex: \iiint_V (\nabla \cdot \vec{F}) dV = \oiint_S (\vec{F} \cdot \hat{n}) dS
 ---
 
 {{< katex >}}
-If \vec{F} is a continuously diffrerentiable vector field in the volume \\(V\\) with closed surface \\(S\\), then the divergence theorem (also known as Gauss's Theorem) states that
+If \\(\small \vec{F}\\) is a continuously diffrerentiable vector field in the volume \\(\small V\\) with closed surface \\(\small S\\), then the divergence theorem (also known as Gauss's Theorem) states that
 
 $$ \iiint_V (\nabla \cdot \vec{F}) dV = \oiint_S (\vec{F} \cdot \hat{n}) dS $$
 
