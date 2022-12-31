@@ -21,3 +21,7 @@ This can be interpreted intuitively. Since the divergence of a vector field can 
 ## Sources
 - [Wikipedia](https://en.wikipedia.org/wiki/Divergence_theorem)
 - [Wolfram Mathworld](https://mathworld.wolfram.com/DivergenceTheorem.html)
+
+## See also
+- [Green's Theorem](formulas/greens-theorem)
+- [Stokes' Theorem](formulas/stokes-theorem)
