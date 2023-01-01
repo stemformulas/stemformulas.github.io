@@ -46,6 +46,10 @@ document.addEventListener("keydown", function (event) {
       event.preventDefault();
       displaySearch();
     }
+    if (onMainPage){
+      event.preventDefault();
+      input.focus();
+    }
   }
 
   // Esc to close search wrapper
