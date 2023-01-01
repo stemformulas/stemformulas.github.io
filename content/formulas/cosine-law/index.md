@@ -2,7 +2,7 @@
 title: Cosine Law
 description: "The formula relating the sides and angles of every triangle."
 summary: "The formula relating the sides and angles of every triangle."
-tags: ["math", "trigonometry"]
+tags: ["math", "trigonometry", "cos"]
 date: 2022-12-26
 latex: c^2 = a^2 + b^2 - 2 \cdot a \cdot b \cdot cos(\theta)
 ---
