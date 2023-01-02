@@ -6,7 +6,6 @@ if(onMainPage){
   var output = document.getElementById("search-results-main");
   var modal = document.getElementById("search-modal-main");
   var wrapper = document.getElementById("search-wrapper-main");
-  var hideButton = document.getElementById("close-search-button-main");
 } else {
   var input = document.getElementById("search-query");
   var output = document.getElementById("search-results");
