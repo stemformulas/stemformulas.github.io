@@ -4,7 +4,7 @@ description: Definitions of the hyperbolic functions
 summary: Definitions of the hyperbolic functions
 tags: ["math", "trigonometry", "e", "imaginary numbers", "complex analysis"]
 date: 2022-12-30
-latex: \small{ sinh(x) = \frac{e^x - e^{-x}}{2}, cosh(x) = \frac{e^x + e^{-x}}{2}}
+latex: \scriptsize{ sinh(x) = \frac{e^x - e^{-x}}{2}, cosh(x) = \frac{e^x + e^{-x}}{2}}
 ---
 
 {{< katex >}}

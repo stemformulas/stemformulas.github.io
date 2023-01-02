@@ -4,7 +4,7 @@ description: "Formulas for the trigonometric functions of the sum and difference
 summary: "Formulas for the trigonometric functions of the sum and difference of angles."
 tags: ["trigonometry", "sin", "cos", "tan", "math", "identity"]
 date: 2023-01-01
-latex: sin(a \pm b) = sin(a) cos(b) \pm cos(a) sin(b) 
+latex: \scriptsize sin(a \pm b) = sin(a) cos(b) \pm cos(a) sin(b) 
 ---
 
 {{< katex >}}

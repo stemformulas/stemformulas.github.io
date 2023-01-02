@@ -26,7 +26,7 @@ Where
 
 ## Example
 
-After being rejected by another girl, Kevin bends forward to pick up his hurt ego. His legs contact the floor at a right angle and his arms + torso miraculously reach the ground in front of him.
+After being rejected by a girl, Kevin bends forward to pick up his hurt ego. His legs contact the floor at a right angle and his arms + torso miraculously reach the ground in front of him.
 
 If his legs are 30 meters long, and his arms + torso
 are 50 meters long, how far away is his ego from his legs?

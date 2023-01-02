@@ -4,7 +4,7 @@ description: "Green's theorem is a formula that describes the relationship betwe
 summary: "Green's theorem is a formula that describes the relationship between certain closed path line integrals and line integrals."
 tags: ["vector calculus", "integration", "multivariable calculus", "calculus"]
 date: 2022-12-30
-latex: \oint_C Pdx + Qdy = \iint_D \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} dA
+latex: \small \oint_C Pdx + Qdy = \iint_D \frac{\partial Q}{\partial x} - \frac{\partial P}{\partial y} dA
 ---
 
 {{< katex >}}
