@@ -6,7 +6,7 @@ baseURL = "https://stemformulas.com"
 defaultContentLanguage = "en"
 
 enableRobotsTXT = true
-paginate = 10
+paginate = 30
 summaryLength = 0
 googleAnalytics= "G-055HWG7Q3V"
 
