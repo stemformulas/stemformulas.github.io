@@ -9,7 +9,7 @@ latex: proj_{\vec{b}}(\vec{a})=\frac{\vec{a}\cdot\vec{b}}{\|\vec{b}\|^2}\vec{b}=
 
 {{< katex >}}
 For any vectors \\(\small \vec{a}\\) and \\(\small \vec{b}\\):
-![diagram-dont-css](projection.webp)
+![diagram-dont-css](projection.png)
 
 The projected (red) and perpendicular (green) vector can be calculated as follows:
 
