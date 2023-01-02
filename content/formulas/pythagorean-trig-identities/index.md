@@ -18,6 +18,5 @@ $$\cot^2(x) + 1 = \csc^2(x)$$
 The above are the Pythagorean trigonometric identities, true for all real x.
 
 ## Sources
-TODO
 - [Wikipedia](https://en.wikipedia.org/wiki/List_of_trigonometric_identities#Pythagorean_identities)
 - [trigidentities.info](https://trigidentities.info/pythagorean-trig-identities/)
