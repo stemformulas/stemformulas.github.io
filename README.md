@@ -2,7 +2,7 @@
 Welcome to [https://stemformulas.com/](https://stemformulas.com/), the site with the goal of being the best place in the world to look for STEM-related
 formulas.
 
-![banner](banner.png)
+<video src='stemformulas_demo.mp4' width=500></video>
 
 ## How to contribute:
 
