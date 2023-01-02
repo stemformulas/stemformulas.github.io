@@ -169,6 +169,10 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
     text-align: left;
 }
 
+.katex {
+    padding-left: 0em !important;
+}
+
 .mt-8 {
     margin-top: 2rem;
 }
@@ -200,7 +204,6 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
 .border-neutral-200 {
     border-width: 1px;
     border-color: rgba(180, 180, 180, var(--tw-bg-opacity))
-
 }
 
 .mb-8 {
@@ -231,4 +234,30 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
 
 img[alt=diagram] {
     width: 400px;
+}
+
+/* formulas page */
+.grid-container article {
+    border-width: 1px;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 15px;
+}
+
+@media (min-width: 640px) {
+    .grid-container {
+        grid-template-columns: auto auto;
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: auto auto auto;
+    }
 }
