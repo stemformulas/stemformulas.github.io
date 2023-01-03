@@ -1,13 +1,13 @@
 {{ with .Params.externalUrl }}
   <a
-    class="flex flex-col max-w-prose items-center justify-between bg-neutral-100 focus:bg-primary-100 dark:bg-neutral-700 hover:bg-primary-100 dark:hover:bg-primary-900 dark:focus:bg-primary-900 focus:outline-transparent"
+    class="flex flex-col max-w-prose items-center justify-between focus:bg-primary-100 hover:bg-primary-100 focus:outline-transparent"
     href="{{ . }}"
     target="_blank"
     rel="external"
     >
 {{ else }}
   <a 
-    class="flex flex-col max-w-prose items-center justify-between bg-neutral-100 focus:bg-primary-100 dark:bg-neutral-700 hover:bg-primary-100 dark:hover:bg-primary-900 dark:focus:bg-primary-900 focus:outline-transparent"
+    class="flex flex-col max-w-prose items-center justify-between focus:bg-primary-100 hover:bg-primary-100 focus:outline-transparent"
     href="{{ .RelPermalink }}"
     >
 {{ end}}

@@ -240,7 +240,7 @@ img[alt=diagram] {
 .grid-container a {
     border-width: 1px;
     border-radius: 20px;
-    border-color: lightgray;
+    border-color: darkgray;
     overflow: hidden;
     padding: 10px;
 }
