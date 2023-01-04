@@ -12,8 +12,10 @@
   {{ $meta := newScratch }}
 
   {{/* Gather partials for this context */}}
-  {{ if .Params.showDate | default (.Site.Params.list.showDate | default true) }}
-    {{ $meta.Add "partials" (slice (partial "meta/date.html" .Date)) }}
+  {{ if .Params.showDate | default (.Site.Params.article.showDate | default true) }}
+    {{ if eq $scope "single"}}
+      {{ $meta.Add "partials" (slice (partial "meta/date.html" .Date)) }}
+    {{end}}
   {{ end }}
   
   {{/* Output taxonomies */}}
