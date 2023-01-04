@@ -1,8 +1,22 @@
-<article class="flex flex-col max-w-prose items-center justify-between">
+{{ with .Params.externalUrl }}
+  <a
+    class="flex flex-col max-w-prose items-center justify-between focus:bg-primary-100 hover:bg-primary-100 focus:outline-transparent"
+    href="{{ . }}"
+    target="_blank"
+    rel="external"
+    >
+{{ else }}
+  <a 
+    class="flex flex-col max-w-prose items-center justify-between focus:bg-primary-100 hover:bg-primary-100 focus:outline-transparent"
+    href="{{ .RelPermalink }}"
+    >
+{{ end}}
   {{- $images := $.Resources.ByType "image" }}
   {{- $thumbnail := $images.GetMatch "*thumb*" }}
   {{- $feature := $images.GetMatch "*feature*" | default $thumbnail }}
   {{- with $feature }}
+  <!-- TODO: I have no idea what this div element is even for lol but it'll screw with the UI if it appears.-->
+  <!-- Doesn't look like it appears anywhere on the site currently but should defs go over it if it's ever used -->
     <div class="flex-none pr-4 sm:pr-6 ">
       <a
         href="{{ with $.Params.externalUrl }}
@@ -24,12 +38,9 @@
     <h3 class="flex items-center text-xl font-semibold">
       {{ with .Params.externalUrl }}
         <div>
-          <a
-            class="text-center text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-            href="{{ . }}"
-            target="_blank"
-            rel="external"
-            >{{ $.Title | emojify }}</a
+          <span
+            class="text-center text-neutral-800 decoration-primary-500 dark:text-neutral"
+            >{{ $.Title | emojify }}</span
           >
           <span
             class="text-xs align-top cursor-default text-neutral-400 dark:text-neutral-500"
@@ -40,10 +51,9 @@
           </span>
         </div>
       {{ else }}
-        <a
-          class="text-center text-neutral-800 decoration-primary-500 hover:underline hover:underline-offset-2 dark:text-neutral"
-          href="{{ .RelPermalink }}"
-          >{{ .Title | emojify }}</a
+        <span
+          class="text-center text-neutral-800 decoration-primary-500 dark:text-neutral"
+          >{{ .Title | emojify }}</span
         >
       {{ end }}
       {{ if and .Draft .Site.Params.article.showDraftLabel }}
@@ -61,4 +71,4 @@
         {{ .Summary | emojify }}
       </div>
     {{ end }}
-</article>
+</a>

@@ -237,9 +237,10 @@ img[alt=diagram] {
 }
 
 /* formulas page */
-.grid-container article {
+.grid-container a {
     border-width: 1px;
     border-radius: 20px;
+    border-color: darkgray;
     overflow: hidden;
     padding: 10px;
 }
