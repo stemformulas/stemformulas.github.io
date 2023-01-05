@@ -2,6 +2,10 @@
     align-items: start;
 }
 
+.gap-3 {
+    gap: 3px
+}
+
 .pt-5 {
     padding-top: 1.25rem;
 }
@@ -159,6 +163,11 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
     background-color: rgba(180, 180, 180, var(--tw-bg-opacity));
 }
 
+.focus\:bg-transparent:focus {
+    --tw-bg-opacity: 0.2;
+    background-color: rgba(0, 0, 0, var(--tw-bg-opacity));
+}
+
 .katex-html {
     font-size: 1.2em;
     color: black;
@@ -237,7 +246,7 @@ img[alt=diagram] {
 }
 
 /* formulas page */
-.grid-container a {
+.grid-container article {
     border-width: 1px;
     border-radius: 20px;
     border-color: darkgray;
