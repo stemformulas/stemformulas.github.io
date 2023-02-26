@@ -13,10 +13,12 @@ For a series of the form \\( \small a, ar, ar^2, ar^3, \ldots\\), the sum of the
 
 $$S_n = \sum_{n=0}^{N} ar^n = \frac{a(1-r^N)}{1-r}$$
 
-where \\(r \neq 1 \\) is the common ratio.
+where \\(\small r \neq 1 \\) is the common ratio. 
+
+If \\(\small r = 1\\), then \\(\small S_n = aN\\).
 
 ## Infinite Geometric Series
-If the magnitude of \\(r\\) is less than \\(1\\), the sum of the infinite series is
+If the magnitude of \\(\small r\\) is less than \\(\small 1\\), the sum of the infinite series is
 
 $$S_{\infty} = \sum_{n=0}^{\infty} ar^n = \frac{a}{1-r}$$
 
