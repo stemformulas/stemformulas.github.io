@@ -64,10 +64,3 @@ git pull
 ```
 
 Then, repeat everything after step 5.
-
-
-## Top contributors
-(This could eventually be a nicely presented leaderboard on the site.)
-
-kevinlinxc: 39 formulas
-
