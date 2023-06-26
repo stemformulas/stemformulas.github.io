@@ -11,7 +11,7 @@ For a sum of money \\(P\\) invested at a compounding interest rate \\(i\\) for \
 
 {{< katex >}}
 
-F = P(1 + i)^n
+$$F = P(1 + i)^n$$
 
 Where
 
