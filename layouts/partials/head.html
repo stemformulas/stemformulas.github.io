@@ -11,15 +11,17 @@
       <title>{{ .Site.Title | emojify }}</title>
       <meta name="title" content="{{ .Site.Title | emojify }}" />
       <meta property="og:title" content='stemformulas'/>
-      <meta property="og:image" content='https://github.com/stemformulas/stemformulas.github.io/raw/main/equalsicon.png'/>
+      <meta property="og:image" content='https://github.com/stemformulas/stemformulas.github.io/raw/main/equalsicon-wide.png'/>
       <meta property="og:description" content='All of the STEM formulas, eventually'/>
       <meta property="og:url" content='https://stemformulas.com'/>
-      <meta property="og:image:width" content='1200' />
+      <meta property="og:image:width" content='800' />
       <meta property="og:image:height" content='1200' /><!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
       <meta property="og:type" content='website'/>
     {{- else -}}
       <title>{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}</title>
       <meta name="title" content="{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}" />
+      <meta property="og:title" content="{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}" />
+
     {{- end }}
     {{/* Metadata */}}
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
