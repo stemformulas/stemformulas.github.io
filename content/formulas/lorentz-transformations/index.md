@@ -4,7 +4,7 @@ description: Lorentz transformations are used to transform between inertial fram
 summary: Lorentz transformations are used to transform between inertial frames of reference.
 tags: ["physics", "relativity"]
 date: 2023-01-02
-latex: x' \frac{x-vt}{\sqrt{1-v^2/c^2}}
+latex: x' = \frac{x-vt}{\sqrt{1-v^2/c^2}}
 ---
 
 {{< katex >}}
