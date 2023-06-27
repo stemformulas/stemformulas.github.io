@@ -10,6 +10,7 @@
     {{ if .IsHome -}}
       <title>{{ .Site.Title | emojify }}</title>
       <meta name="title" content="{{ .Site.Title | emojify }}" />
+      <meta name="og:site_name" content="stemformulas.com" />
       <meta property="og:title" content='stemformulas'/>
       <meta property="og:image" content='https://github.com/stemformulas/stemformulas.github.io/raw/main/equalsicon-wide.png'/>
       <meta property="og:description" content='All of the STEM formulas, eventually'/>
@@ -17,16 +18,30 @@
       <meta property="og:image:width" content='800' />
       <meta property="og:image:height" content='1200' /><!-- TYPE BELOW IS PROBABLY: 'website' or 'article' or look on https://ogp.me/#types -->
       <meta property="og:type" content='website'/>
+      <meta name="twitter:title" content="{{ .Site.Title | emojify }}"/>
+      <meta name="twitter:description" content="All of the STEM formulas, eventually"/>
+      <meta name="twitter:card" content="summary_large_image"/>
+      <meta name="twitter:image:src" content="https://github.com/stemformulas/stemformulas.github.io/raw/main/equalsicon-wide.png"/>
+
     {{- else -}}
       <title>{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}</title>
       <meta name="title" content="{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}" />
+      <meta name="og:site_name" content="stemformulas.com" />
       <meta property="og:title" content="{{  .Title | emojify }} &middot; {{ .Site.Title | emojify }}" />
       <meta property="og:image" content="{{  printf "%s" "preview.png" | printf "%s%s" .RelPermalink | printf "%s%s" "https://github.com/stemformulas/stemformulas.github.io/raw/main/content" | printf "%s"
       | emojify }}" />
       <meta property="og:image:width" content='1500' />
       <meta property="og:image:height" content='1500' />
       <meta property="og:type" content='website'/>
+      <meta property="og:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+      <meta name="twitter:title" content="{{ .Title | emojify }} &middot; {{ .Site.Title | emojify }}" />
+      <meta name="twitter:description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
+      <meta name="twitter:card" content="summary_large_image"/>
+      <meta name="twitter:image:src" content="{{  printf "%s" "preview.png" | printf "%s%s" .RelPermalink | printf "%s%s" "https://github.com/stemformulas/stemformulas.github.io/raw/main/content" | printf "%s"
+      | emojify }}"/>
     {{- end }}
+    <meta name="twitter:site" content="stemformulas.com">
+    <meta name="theme-color" content="#000000">
     {{/* Metadata */}}
     <meta name="description" content="{{ with .Description }}{{ . }}{{ else }}{{ if .IsPage }}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}" />
     {{ with .Site.Params.keywords -}}
