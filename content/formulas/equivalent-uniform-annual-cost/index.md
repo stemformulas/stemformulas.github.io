@@ -4,16 +4,16 @@ description: "Formulas for converting between present worth, annual worth, and f
 summary: "Formulas for converting between present worth, annual worth, and future worth"
 tags: ["math", "finance"]
 date: 2023-06-24
-latex: A = P \frac{i(1 + i)^n}{(1 + i)^n - 1}
+latex: A = P \left[\frac{i(1 + i)^n}{(1 + i)^n - 1}\right]
 ---
 
 ## Present Worth to Annual Worth
 
-For a sum of money \\(\small P\\) invested at a compounding interest rate \\(\small i\\) for \\(\small n\\) years, the equivalent uniform annual cost (a.k.a "ordinary annuity") \\(\small A\\) is given by:
+For a sum of money \\(\small P\\) invested at a compounding interest rate \\(\small i\\) for \\(\small n\\) years, the equivalent uniform annual cost (a.k.a "ordinary annuity, capital recovery cost") \\(\small A\\) is given by:
 
 {{< katex >}}
 
-$$A = P \frac{i(1 + i)^n}{(1 + i)^n - 1} $$
+$$A = P \cdot (A/P, i, n) = P \left[\frac{i(1 + i)^n}{(1 + i)^n - 1}\right] $$
 
 
 Where
@@ -22,19 +22,19 @@ Where
 * \\(\small i\\) is the interest rate, and
 * \\(\small n\\) is the number of periods
 
-This can be rewritten to find P:
+This can be rewritten to find P ("series present worth"):
 
-$$P = A \frac{(1 + i)^n - 1}{i(1 + i)^n}$$
+$$P = A \cdot (P/A, i, n) = A \left[\frac{(1 + i)^n - 1}{i(1 + i)^n}\right]$$
 
 ## Future Worth to Annual Worth
 
 If the future worth is known instead, the formula is
 
-$$A = F \frac{i}{(1 + i)^n - 1}$$
+$$A = F \cdot (A/F, i, n) = F \left[\frac{i}{(1 + i)^n - 1}\right]$$
 
 Rearranging again, F can be found instead if A is known:
 
-$$F = A \frac{(1 + i)^n - 1}{i}$$
+$$F = A \cdot (F/A , i, n) = A \left[\frac{(1 + i)^n - 1}{i}\right]$$
 
 
 
