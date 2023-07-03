@@ -31,7 +31,7 @@ page_count = len(list_items) - 1
 print(f"Found {page_count} pages of formulas")
 
 # increase zoom to 400% for higher quality screenshots
-# zoom_in(4)
+zoom_in(4)
 
 for i in range(1, page_count + 1): # iterate over pages
     print("Visiting page: ", i)
@@ -57,6 +57,7 @@ for i in range(1, page_count + 1): # iterate over pages
 
         div = anchor.find_element(By.XPATH, x_path)
         div.location_once_scrolled_into_view # scroll into view
+        time.sleep(2)
         # http://localhost:1313/formulas/<folder_name>/
         folder_name = href.split('/')[-2]
         output_image_path = os.path.join("content", "formulas", folder_name, "preview.png")

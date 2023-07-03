@@ -2,3 +2,8 @@
 resources/
 public/
 .DS_Store
+
+__pycache__/
+*.py[cod]
+pynecone.db
+.web
