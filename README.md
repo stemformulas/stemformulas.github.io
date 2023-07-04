@@ -9,7 +9,7 @@ formulas.
 There are two ways contribute formulas, suggestions and direct contributions:
 
 1. Suggestions: fill out this Google Form with all the necessary information for the formula:
-https://forms.gle/zXGeNJ4pRJG2Rh7L6
+https://forms.gle/EWjwFmiEQrrjsZEF9
 
 2. Direct contributions: create a pull request (on the GitHub repo, following the detailed instructions below.
 
