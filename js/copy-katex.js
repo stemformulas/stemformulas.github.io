@@ -85,7 +85,7 @@ document.addEventListener('click', function(event) {
                     // Create a temporary element to display the "Copied!" message
                     const tooltipElement = document.createElement('div');
                     tooltipElement.classList.add('katex-tooltip');
-                    tooltipElement.textContent = 'Copied!';
+                    tooltipElement.textContent = 'LaTeX Copied!';
                     document.body.appendChild(tooltipElement);
 
                     // Position the tooltip that says copied at the mouse position
