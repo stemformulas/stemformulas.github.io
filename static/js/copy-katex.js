@@ -64,30 +64,6 @@ function closestKatex(node) {
     return element && element.closest('.katex');
 }
 
-// Global click handler to copy the element to the clipboard.
-// document.addEventListener('click', function(event) {
-//     const target = event.target;
-//     const katexElement = closestKatex(target);
-//     if (katexElement && katexElement.contains(target)) {
-//         const range = document.createRange();
-//         range.selectNode(katexElement);
-//         const selection = window.getSelection();
-//         if (selection) {
-//             selection.removeAllRanges();
-//             selection.addRange(range);
-//             const fragment = range.cloneContents();
-//             if (fragment.querySelector('.katex-mathml')) {
-
-//                 const texContents = katexReplaceWithTex(fragment).textContent;
-//                 navigator.clipboard.writeText(texContents);
-//                 console.log("Copied");
-//                 console.log(fragment);
-//                 // fragment.querySelector('.katex-html').setAttribute('data-tooltip', 'Copied!');
-//             }
-//             selection.removeAllRanges();
-//         }
-//     }
-// });
 
 // Global click handler to copy the element to the clipboard.
 document.addEventListener('click', function(event) {
@@ -112,16 +88,19 @@ document.addEventListener('click', function(event) {
                     tooltipElement.textContent = 'Copied!';
                     document.body.appendChild(tooltipElement);
 
-                    // Position the tooltip below the clicked element
-                    const katexElementRect = katexElement.getBoundingClientRect();
-                    const tooltipElementRect = tooltipElement.getBoundingClientRect();
-                    tooltipElement.style.top = (katexElementRect.bottom + 5) + 'px';
-                    tooltipElement.style.left = ((katexElementRect.left + katexElementRect.right - tooltipElementRect.width) / 2) + 'px';
+                    // Position the tooltip that says copied at the mouse position
+                    tooltipElement.style.position = 'fixed';
+                    tooltipElement.style.left = event.clientX + 'px';
+                    tooltipElement.style.top = event.clientY + 'px';
+                    tooltipElement.style.transform = 'translate(-50%, -50%)';
 
-                    // Remove the tooltip after 2 seconds
+                    // Remove the tooltip after 2 seconds with a fade
                     setTimeout(function() {
-                        document.body.removeChild(tooltipElement);
-                    }, 2000);
+                        tooltipElement.classList.add('hide');
+                        setTimeout(function() {
+                          document.body.removeChild(tooltipElement);
+                        }, 500); // Duration of the fade-out animation
+                      }, 800); 
                 }).catch(function(error) {
                     console.error("Copy failed:", error);
                 });

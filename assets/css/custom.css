@@ -166,7 +166,7 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
 }
 
 .katex-html:hover::before {
-    content: "Click to copy"; /* The text content of the tooltip */
+    content: "(" attr(my-data-tooltip, "Click to copy") ")"; /* The text content of the tooltip */
     position: absolute; /* Position the tooltip absolutely relative to its parent */
     top: 100%; /* Adjust the vertical position of the tooltip */
     left: 45%; /* Adjust the horizontal position of the tooltip */
@@ -179,9 +179,24 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
     white-space: nowrap; /* Prevent the tooltip from wrapping to a new line */
 }
 
-.tooltip.show {
-    opacity: 1;
+  
+.katex-tooltip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 12px;
+    border-radius: 4px;
+    pointer-events: none;
+    transition: opacity 0.5s ease-in-out;
 }
+
+.katex-tooltip.hide {
+    opacity: 0;
+}
+  
 
 .katex-display katex {
     padding-left: 0.5em !important;
