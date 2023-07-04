@@ -61,6 +61,6 @@ with response_tab:
     response_text: str = st.text_area("Enter the prompt response to fix latex formatting")
     if st.button("Submit"):
         # replace all '\(' with '\\( \small' and all '\)' w ith '\))'
-        response_text = response_text.replace(r"\(", r"\\( \small")
-        response_text = response_text.replace(r"\)", r"\\)")
+        response_text = response_text.replace(r"\(", r"\\( \small ")
+        response_text = response_text.replace(r"\)", r" \\)")
         st.text_area("Copy the following", value=response_text)
