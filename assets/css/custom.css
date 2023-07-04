@@ -162,6 +162,25 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
 .katex-html {
     font-size: 1.2em;
     color: black;
+    position: relative; /* Added to create a positioning context for the tooltip */
+}
+
+.katex-html:hover::before {
+    content: "Click to copy"; /* The text content of the tooltip */
+    position: absolute; /* Position the tooltip absolutely relative to its parent */
+    top: 100%; /* Adjust the vertical position of the tooltip */
+    left: 45%; /* Adjust the horizontal position of the tooltip */
+    background-color: rgb(239, 239, 239); /* Tooltip background color */
+    color: rgb(0, 0, 0); /* Tooltip text color */
+    padding: 3px; /* Adjust the padding of the tooltip */
+    font-size: 0.6em; /* Adjust the font size of the tooltip */
+    /* change font */
+    font-family: ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    white-space: nowrap; /* Prevent the tooltip from wrapping to a new line */
+}
+
+.tooltip.show {
+    opacity: 1;
 }
 
 .katex-display katex {
