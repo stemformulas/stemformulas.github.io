@@ -296,3 +296,17 @@ img[alt=diagram] {
         grid-template-columns: auto auto auto;
     }
 }
+
+/* just for main page `suggest` link */
+.text-center > p:nth-child(2) > a:nth-child(1) {
+    color: var(--tw-prose-links);
+    text-decoration: underline;
+    font-weight: 500;
+    text-decoration-color: rgba(var(--color-primary-300), 1);
+}
+.text-center > p:nth-child(2) > a:nth-child(1):hover {
+    color: rgba(var(--color-neutral), 1);
+    text-decoration: none;
+    background-color: rgba(var(--color-primary-600), 1);
+    border-radius: 0.09rem;
+}
