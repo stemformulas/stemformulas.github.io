@@ -60,80 +60,84 @@ ul.image-tags li a:link, ul.image-tags li a:visited, ul.image-tags li form {
 
 /* tag opacity 1- 20, starting form opacity 0.4 to 1 */
 
+.tag-opacity-0 {
+    opacity: 0.60;
+}
+
 .tag-opacity-1 {
-    opacity: 0.43;
-}
-
-.tag-opacity-2 {
-    opacity: 0.46;
-}
-
-.tag-opacity-3 {
-    opacity: 0.49;
-}
-
-.tag-opacity-4 {
-    opacity: 0.42;
-}
-
-.tag-opacity-5 {
-    opacity: 0.55;
-}
-
-.tag-opacity-6 {
-    opacity: 0.58;
-}
-
-.tag-opacity-7 {
-    opacity: 0.61;
-}
-
-.tag-opacity-8 {
-    opacity: 0.64;
-}
-
-.tag-opacity-9 {
-    opacity: 0.67;
-}
-
-.tag-opacity-10 {
     opacity: 0.70;
 }
 
-.tag-opacity-11 {
-    opacity: 0.73;
+.tag-opacity-2 {
+    opacity: 0.75;
 }
 
-.tag-opacity-12 {
-    opacity: 0.76;
+.tag-opacity-3 {
+    opacity: 0.78;
 }
 
-.tag-opacity-13 {
-    opacity: 0.79;
+.tag-opacity-4 {
+    opacity: 0.84;
 }
 
-.tag-opacity-14 {
-    opacity: 0.82;
-}
-
-.tag-opacity-15 {
+.tag-opacity-5 {
     opacity: 0.85;
 }
 
-.tag-opacity-16 {
+.tag-opacity-6 {
+    opacity: 0.86;
+}
+
+.tag-opacity-7 {
+    opacity: 0.87;
+}
+
+.tag-opacity-8 {
     opacity: 0.88;
 }
 
-.tag-opacity-17 {
+.tag-opacity-9 {
+    opacity: 0.89;
+}
+
+.tag-opacity-10 {
+    opacity: 0.90;
+}
+
+.tag-opacity-11 {
     opacity: 0.91;
 }
 
-.tag-opacity-18 {
+.tag-opacity-12 {
+    opacity: 0.92;
+}
+
+.tag-opacity-13 {
+    opacity: 0.93;
+}
+
+.tag-opacity-14 {
     opacity: 0.94;
 }
 
-.tag-opacity-19{
+.tag-opacity-15 {
+    opacity: 0.95;
+}
+
+.tag-opacity-16 {
+    opacity: 0.96;
+}
+
+.tag-opacity-17 {
     opacity: 0.97;
+}
+
+.tag-opacity-18 {
+    opacity: 0.98;
+}
+
+.tag-opacity-19{
+    opacity: 0.99;
 }
 
 .tag-opacity-20{
