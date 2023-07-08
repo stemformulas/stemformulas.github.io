@@ -16,7 +16,7 @@ $$ R = \frac{\rho l}{A} $$
 Where
 
 * \\(\small R \\) is the resistance,
-* \\(\small \rho \\ is the resistivity of the material,
+* \\(\small \rho \\) is the resistivity of the material,
 * \\(\small l \\) is the length of the conductor, and
 * \\(\small A \\) is the cross-sectional area of the conductor.
 
