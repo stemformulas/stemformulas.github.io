@@ -6,9 +6,9 @@ formulas.
 
 ## How to contribute:
 
-There are two ways contribute formulas, suggestions and direct contributions:
+There are two ways contribute formulas: suggestions and direct contributions:
 
-1. Suggestions: fill out this Google Form with all the necessary information for the formula:
+1. Suggestions: fill out this Google Form with a formula that you would like to see added to the site:
 https://forms.gle/EWjwFmiEQrrjsZEF9
 
 2. Direct contributions: create a pull request (on the GitHub repo, following the detailed instructions below.
@@ -43,7 +43,7 @@ where `new-formula-name` is descriptive of the formula you're adding.
 
 7. Visit your formula's page in your browser (from step 4) and proofread it. Make sure you proofread the `index.md` file you've created too.
 
-8. Add your username to the contributors list in the README.md file
+8. On the localhost:1313/formulas page, zoom in and take a screenshot of the formula (with reasonable white padding and no black lines) and save it as `preview.png` in your formula's folder. This will be the preview image when the formula is linked on social media. You can look at any existing formulas folder for an example.
 
 9. Push your changes to GitHub (replace `new-formula-name` with your own branch's name from step 5):
 
@@ -54,13 +54,14 @@ git commit -m "write a short message explaining what you added"
 git push origin -u new-formula-name
 ```
 
-10. Create a [pull request](https://github.com/stemformulas/stemformulas.github.io/compare) from your branch to the main branch. We'll review it, give you feedback, and then eventually merge it!
+10. Create a [pull request](https://github.com/stemformulas/stemformulas.github.io/compare) from your branch to the main branch. We'll review it, give you feedback, and then eventually merge it.
 
 11. In the future, if you want to contribute again, switch to main and pull in changes so that you're up to date:
 
 ```
-git checkout main # git stash if there's unsaved work that you don't want to keep
+git checkout main
 git pull
+git checkout -b new-formula-name
 ```
 
-Then, repeat everything after step 5.
+Then, repeat everything from step 6.
