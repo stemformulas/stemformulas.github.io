@@ -1,7 +1,7 @@
 ---
 title: Fourier + Inverse Fourier Transform
-description: "The Fourier and inverse Fourier transform formula."
-summary: "The Fourier and inverse Fourier transform formula."
+description: "The Fourier and inverse Fourier transform formulas."
+summary: "The Fourier and inverse Fourier transform formulas."
 tags: ["mathematics", "signal processing", "optics"]
 date: 2023-07-03
 latex: X(\omega) = \int_{-\infty}^{\infty}x(t)e^{-j\omega t}\,dt
