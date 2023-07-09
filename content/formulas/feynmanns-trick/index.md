@@ -12,7 +12,7 @@ latex: \int_0^{\infty} x^n e^{-tx} dx = \frac{n!}{t^{n+1}}
 $$\int_0^{\infty} x^n e^{-tx} dx = \frac{n!}{t^{n+1}}$$
 
 Where
-* \\(t\\) is a constant and
+* \\(t\\) is a constant, and
 * \\(n!\\) is the Gamma function (does not require \\(n\\) to be an integer)
 
 Feynmann's trick involves "differentiating under the integral" which is a whole technique on its own, and the above formula is something that can be found using this technique.
