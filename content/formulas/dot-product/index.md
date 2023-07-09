@@ -23,6 +23,7 @@ $$ \vec{a} \cdot \vec{b} = |a| |b| \cos \theta $$
 
 Where \\(\small \theta\\) is the angle between \\(\small \vec{a}\\) and \\(\small \vec{b}\\).
 
+Note that the dot product is a less general version of the inner product.
 
 ## Properties
 
