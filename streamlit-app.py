@@ -1,3 +1,11 @@
+"""
+Simple streamlit app that helps do the grunt work of creating new formula pages.
+On the first tab, input the formula name, latex, and sources, and it will generate a prompt for ChatGPT to generate the rest of the page.
+On the second tab, paste the response from ChatGPT, and it will fix the latex formatting.
+`pip install streamlit`
+`streamlit run streamlit-app.py`
+"""
+
 import streamlit as st
 import datetime
 
