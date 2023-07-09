@@ -2,7 +2,7 @@
 title: Quadric Surfaces
 description: "The equation of quadric surfaces."
 summary: "The equation of quadric surfaces."
-tags: ["mathematics", "geometry", "multivariable calculus"]
+tags: ["math", "geometry", "multivariable calculus"]
 date: 2023-07-08
 latex: \\ {x^2 \over a^2} + {y^2 \over b^2} + {z^2 \over c^2} = 1
 ---

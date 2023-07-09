@@ -2,7 +2,7 @@
 title: Gradient
 description: "The concept of gradient in vector calculus."
 summary: "The concept of gradient in vector calculus."
-tags: ["mathematics", "vector calculus"]
+tags: ["math", "vector calculus"]
 date: 2023-07-08
 latex: \nabla f = \frac{\partial f}{\partial x} \mathbf{i} + \frac{\partial f}{\partial y} \mathbf{j} + \frac{\partial f}{\partial z} \mathbf{k}
 ---

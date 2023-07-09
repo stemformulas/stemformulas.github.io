@@ -2,7 +2,7 @@
 title: Equation of a Sphere
 description: "The equation of a sphere."
 summary: "The equation of a sphere."
-tags: ["geometry", "mathematics"]
+tags: ["geometry", "math"]
 date: 2023-07-04
 latex: \small R^2 = (x-x_0)^2 + (y-y_0)^2 + (z - z_0)^2
 ---

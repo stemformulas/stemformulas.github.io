@@ -2,7 +2,7 @@
 title: Matrix Multiplication
 description: "How to multiply matrices."
 summary: "How to multiply matrices."
-tags: ["mathematics", "linear algebra"]
+tags: ["math", "linear algebra"]
 date: 2023-07-08
 latex: \scriptsize \begin{pmatrix} a & b \\ c & d \end{pmatrix} \begin{pmatrix} w & x \\ y & z \end{pmatrix} = \begin{pmatrix} aw + by & ax + bz \\ cw + dy & cx + dz \end{pmatrix}
 ---

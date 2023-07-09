@@ -2,7 +2,7 @@
 title: Divergence
 description: "The concept of divergence in vector calculus."
 summary: "The concept of divergence in vector calculus."
-tags: ["mathematics", "vector calculus"]
+tags: ["math", "vector calculus"]
 date: 2023-07-08
 latex: \nabla \cdot \mathbf{F} = \frac{\partial F_x}{\partial x} + \frac{\partial F_y}{\partial y} + \frac{\partial F_z}{\partial z}
 ---

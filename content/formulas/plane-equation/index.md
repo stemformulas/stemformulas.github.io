@@ -2,7 +2,7 @@
 title: Equation of a Plane
 description: "The equation of a plane formula."
 summary: "The equation of a plane formula."
-tags: ["geometry", "mathematics"]
+tags: ["geometry", "math"]
 date: 2023-07-04
 latex: ax + by + cz = d
 ---
