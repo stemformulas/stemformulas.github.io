@@ -11,11 +11,11 @@ There are two ways contribute formulas: suggestions and direct contributions:
 1. Suggestions: fill out this Google Form with a formula that you would like to see added to the site:
 https://forms.gle/EWjwFmiEQrrjsZEF9
 
-2. Direct contributions: create a pull request (on the GitHub repo, following the detailed instructions below.
+2. Direct contributions: create a pull request following the detailed instructions below.
 
 
 ## Adding a formula by submitting a pull request:
-Adding a formula is a bit of a process, here are the steps.
+Adding a formula is a bit of a process, here are the steps. I'll work on making this easier in the future.
 
 1. Install [Git](https://git-scm.com/downloads). Git allows you to download this code, modify it, and push it back up to GitHub.
 
@@ -25,13 +25,13 @@ Adding a formula is a bit of a process, here are the steps.
 git clone --recurse-submodules https://github.com/stemformulas/stemformulas.github.io.git
 ```
 
-3. Install [Go](https://go.dev/doc/install) and [Hugo (extended)](https://gohugo.io/installation/). Go is a programming language, and Hugo is a static website builder that we use as a scaffolding for our site. Read the hugo installation instructions carefully, they're not easy to skim through.
+3. Install [Go](https://go.dev/doc/install) and [Hugo (extended)](https://gohugo.io/installation/). Go is a programming language, and Hugo is a static website builder that we use as a scaffolding for our site. Read the Hugo installation instructions carefully, they're not easy to skim through.
 
 4. Run the site locally:
 ```
 hugo server
 ```
-If all goes well, you should be able to see the site at `localhost:1313` in your browser.
+If all goes well, you should be able to see the site at `localhost:1313` in your browser. If not, look up the errors and try to fix them.
 
 5. Create a new branch for your changes:
 
