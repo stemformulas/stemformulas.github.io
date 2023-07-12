@@ -15,6 +15,8 @@ https://forms.gle/EWjwFmiEQrrjsZEF9
 
 
 ## Adding a formula by submitting a pull request:
+Adding a formula is a bit of a process, here are the steps.
+
 1. Install [Git](https://git-scm.com/downloads). Git allows you to download this code, modify it, and push it back up to GitHub.
 
 2. Clone this repository on your command line with the submodules flag:
@@ -43,7 +45,7 @@ where `new-formula-name` is descriptive of the formula you're adding.
 
 7. Visit your formula's page in your browser (from step 4) and proofread it. Make sure you proofread the `index.md` file you've created too.
 
-8. On the localhost:1313/formulas page, zoom in and take a screenshot of the formula (with reasonable white padding and no black lines) and save it as `preview.png` in your formula's folder. This will be the preview image when the formula is linked on social media. You can look at any existing formulas folder for an example.
+8. On the localhost:1313/formulas page, zoom in and take a screenshot of the formula (with reasonable white padding and no black lines) and save it as `preview.png` in your formula's folder. This will be the preview image when the formula is linked on social media. You can look at any existing formulas folder for an example. Optionally, if you have Python installed, run `pip install Pillow` and `python normalize_preview_imgs.py` to make the preview image never get cut off in the social media preview image.
 
 9. Push your changes to GitHub (replace `new-formula-name` with your own branch's name from step 5):
 
@@ -65,3 +67,15 @@ git checkout -b new-formula-name
 ```
 
 Then, repeat everything from step 6.
+
+## ChatGPT workflow
+I use ChatGPT and a custom Python GUI to help me write formula pages. Here's how it works:
+
+1. Run `pip install streamlit` to install Streamlit (only need to do this once).
+2. Run `streamlit run streamlit-app.py` to open up the Python GUI in your browser at localhost:8501.
+3. Fill in the formula name, LaTeX, and two sources. The app will then make a prompt for you to copy and paste into ChatGPT, basically saying "format this new formula information the same way as this blurb". Then, copy the reply from ChatGPT and paste it into the second tab of the Python GUI, which will fix some of the LaTeX formatting. This can usually now be put into an index.md file, with all of the grunt work done. Make sure to fully proofread what ChatGPT gives you, as it is crucial that formulas put on the site are correct.
+
+## Possible future work
+- Formula sheet maker
+- Docker build for easier contributions
+- Better SEO
