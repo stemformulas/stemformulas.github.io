@@ -14,6 +14,11 @@ def normalize_image(img_path, height, width):
     # Open the image
     image = Image.open(img_path)
 
+    # If the image is already the desired size, return
+    if image.height == height and image.width == width:
+        print(f"Image {img_path} is already the desired size, skipping")
+        return
+
     # Calculate the aspect ratio of the original image
     aspect_ratio = image.width / image.height
 
@@ -40,6 +45,7 @@ def normalize_image(img_path, height, width):
 
     # Save the modified image to the same path
     new_image.save(img_path)
+    print(f"Normalized {img_path}")
 
 if __name__ == "__main__":
     img_paths = []
@@ -53,7 +59,7 @@ if __name__ == "__main__":
     
     for img_path in img_paths:
         normalize_image(img_path, desired_height, desired_width)
-        print(f"Normalized {img_path}")
+
 
 
 
