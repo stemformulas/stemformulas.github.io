@@ -16,8 +16,8 @@ def normalize_image(img_path, height, width):
 
     # If the image is already the desired size, return
     if image.height == height and image.width == width:
-        print(f"Image {img_path} is already the desired size, skipping")
-        return
+        # print(f"Image {img_path} is already the desired size, skipping")
+        return 1
 
     # Calculate the aspect ratio of the original image
     aspect_ratio = image.width / image.height
@@ -46,6 +46,7 @@ def normalize_image(img_path, height, width):
     # Save the modified image to the same path
     new_image.save(img_path)
     print(f"Normalized {img_path}")
+    return 0
 
 if __name__ == "__main__":
     img_paths = []
@@ -57,9 +58,8 @@ if __name__ == "__main__":
         else:
             print(f"Warning: {folder_path} is missing a preview.png!")
     
+    skipped_images = 0
     for img_path in img_paths:
-        normalize_image(img_path, desired_height, desired_width)
-
-
-
-
+        skipped_images += normalize_image(img_path, desired_height, desired_width)
+    
+    print(f"Done normalizing images, skipped {skipped_images} images")
