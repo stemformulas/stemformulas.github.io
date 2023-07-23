@@ -4,7 +4,7 @@ description: "The formula for the determinant of a matrix."
 summary: "The formula for the determinant of a matrix."
 tags: ["math", "linear algebra"]
 date: 2023-01-01
-latex: det(A) = |A|
+latex: \det(A)
 ---
 
 {{< katex >}}

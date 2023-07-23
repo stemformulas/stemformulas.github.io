@@ -4,10 +4,10 @@ description: "Common trig functions in terms of e"
 summary: "Common trig functions in terms of e"
 tags: ["math", "trigonometry", "e", "complex analysis", "imaginary numbers"]
 date: 2022-11-28
-latex: \small{sin(x) = \frac{e^{ix} - e^{-ix}}{2i}, cos(x) = \frac{e^{ix} + e^{-ix}}{2}}
+latex: \small{\sin(x) = \frac{e^{ix} - e^{-ix}}{2i}, \cos(x) = \frac{e^{ix} + e^{-ix}}{2}}
 ---
 {{< katex >}}
-$$\small sin(x) = \frac{e^{ix} - e^{-ix}}{2i}, cos(x) = \frac{e^{ix} + e^{-ix}}{2}, tan(x) = \frac{e^{ix} - e^{-ix}}{i(e^{ix} + e^{-ix})}$$
+$$\small \sin(x) = \frac{e^{ix} - e^{-ix}}{2i}, \cos(x) = \frac{e^{ix} + e^{-ix}}{2}, \tan(x) = \frac{e^{ix} - e^{-ix}}{i(e^{ix} + e^{-ix})}$$
 
 Where
 * \\(e\\) is [Euler's number](https://en.wikipedia.org/wiki/E_(mathematical_constant)) ~= 2.71828, and
