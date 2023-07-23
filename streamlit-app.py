@@ -60,6 +60,8 @@ with prompt_tab:
         source2 = st.text_input("Source 2")
         
         if st.form_submit_button("Submit"):
+            st.write("Latex preview:")
+            st.latex(latex)
             gpt_string = ""
             gpt_string += f"Format the following data: {formula_name=}, {date=}, {latex=}, {source1=}, {source2=} like this example\n"
             gpt_string += example_text

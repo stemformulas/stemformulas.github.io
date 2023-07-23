@@ -24,6 +24,7 @@
       {{ .Content | emojify }}
     </div>
   </section>
+  <h4 class="mt-2 text-sm font-normal text-neutral-900 dark:text-neutral">Click on any formula to visit its page for more details.</h4>
   {{ if .Data.Pages }}
     <section class="grid-container mt-6">
       {{ if $.Params.groupByYear | default ($.Site.Params.list.groupByYear | default true) }}
