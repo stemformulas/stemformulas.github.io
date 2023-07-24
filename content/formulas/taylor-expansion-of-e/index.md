@@ -1,7 +1,7 @@
 ---
-title: "Maclaurin Series for e^x"
-description: "The Maclaurin series for e^x"
-summary: "The Maclaurin series for e^x"
+title: "Maclaurin Series for exp(x)"
+description: "The Maclaurin series for exp(x)"
+summary: "The Maclaurin series for exp(x)"
 tags: ["math", "calculus"]
 date: 2022-12-08
 latex: e^x = \sum_{n=0}^\infty \frac{x^n}{n!}
