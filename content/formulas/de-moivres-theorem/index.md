@@ -4,7 +4,7 @@ description: "Formula for a equivalent form of a complex number raised to a powe
 summary: "Formula for a equivalent form of a complex number raised to a power."
 tags: ["mathematics", "complex analysis", "trigonometry"]
 date: 2023-07-23
-latex: \small \cos x+ i \sin x)^n=\cos(nx)+i\sin(nx)
+latex: \small (\cos x+ i \sin x)^n=\cos(nx)+i\sin(nx)
 ---
 
 {{< katex >}}
