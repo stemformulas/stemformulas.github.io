@@ -1,0 +1,22 @@
+version: '3'
+services:
+  hugo:
+    build: .
+    ports:
+      - "1313:1313"
+    x-develop:
+      watch:
+        - action: sync
+          path: ./content
+          target: /src/content
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile-streamlit
+    ports:
+      - "8501:8501"
+    x-develop:
+      watch:
+        - action: sync
+          path: ./streamlit-app.py
+          target: /app/streamlit-app.py

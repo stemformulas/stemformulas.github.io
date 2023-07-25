@@ -9,7 +9,7 @@ On the second tab, paste the response from ChatGPT, and it will fix the latex fo
 import streamlit as st
 import datetime
 
-st.write("# stemformulas.com AI prompt generator")
+st.write("## stemformulas.com AI prompt generator")
 
 # create two tabs, one for formatting the prompt, and one for formatting the response:
 
