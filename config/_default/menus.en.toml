@@ -29,6 +29,13 @@
   name = "suggest"
   pageRef = "suggest"
   weight = 40
+
+[[main]]
+  name = "github"
+  pageRef = "github"
+  url = "https://github.com/stemformulas/stemformulas.github.io/"
+  weight = 50
+
 # -- Footer Menu --
 # The footer menu is displayed at the bottom of the page, just before
 # the copyright notice. Configure as per the main menu above.

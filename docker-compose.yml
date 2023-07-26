@@ -7,8 +7,8 @@ services:
     x-develop:
       watch:
         - action: sync
-          path: ./content
-          target: /src/content
+          path: .
+          target: /src/
   streamlit:
     build:
       context: .
