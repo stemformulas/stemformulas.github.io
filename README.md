@@ -1,8 +1,16 @@
 # stemformulas
-Welcome to [https://stemformulas.com/](https://stemformulas.com/), the site with the goal of being the best place in the world to look for STEM-related
-formulas.
 
-<video src='stemformulas_demo.mp4' width=500></video>
+![stemformulas banner](banner.png)
+
+Welcome to [https://stemformulas.com/](https://stemformulas.com/), the site with the goal of being the best place in the world to look for STEM-related formulas.
+
+## Features:
+- 63 formulas and counting (we gotta pump those numbers up)
+- The search bar is in focus on site load for quick searching
+- The / key can be used to open the search on any page
+- LaTeX can be copied by clicking on it on any formula's page
+- The site has open-graph tags, so a full preview of the formula is shown when its page is shared on social media
+- The site is mobile-friendly
 
 ## How to contribute:
 
@@ -22,7 +30,7 @@ Setting up this repository locally only requires Git and Docker, and it's honest
 git clone --recurse-submodules https://github.com/stemformulas/stemformulas.github.io.git
 ```
 
-2. Install the latest version of [Docker Desktop](https://www.docker.com/products/docker-desktop/) and run it. `docker info` should work on your command line.
+2. Install the latest version of [Docker Desktop](https://www.docker.com/products/docker-desktop/) and run it. `docker info` should work on your command line when Docker is properly set up and running.
 
 3. Run the site and helper site with Docker in a terminal (in the root directory of this repository):
 ```
@@ -31,12 +39,12 @@ docker compose up -d && docker compose alpha watch
 
 The first command runs the site, and the second monitors for file changes to sync them to the Docker container. You should be able to visit the site at `localhost:1313` in your browser, and changes to files in the `content` folder should be reflected on the site (e.g. open the about page and then modify content/about/_index.md).
 
-4. If you ran the docker compose command you should also have a Python applet I wrote up at `localhost:8501` in your browser. This is a GUI that helps you write 70% of formula pages. You can read more about it in the ChatGPT workflow section at the bottom of this README.
+4. If you ran the docker compose command you should also have a Python applet I wrote up at `localhost:8501` in your browser. This is a GUI that helps you write the tedious parts of a formula's page. You can read more about it in the ChatGPT workflow section at the bottom of this README.
 
 
 ## Adding a formula
 With the site running locally, you can now add a formula page to the site and preview how it'll look on the actual site.
-Here are the steps for adding a formula:
+Here are the steps for adding a formula (mostly git instructions):
 
 1. In another terminal, create a new branch for your changes:
 
@@ -81,6 +89,8 @@ I use ChatGPT and a custom Python GUI to help me write formula pages. Here's how
 3. Copy the reply from ChatGPT and paste it into the second tab of the Python GUI, which will fix some of the LaTeX formatting. This can usually now be put into an index.md file, with all of the grunt work done. Make sure to fully proofread what ChatGPT gives you, as it is crucial that formulas put on the site are correct.
 
 ## Possible future work
+- More formulas of course
 - Formula sheet maker
-- Docker build for easier contributions
 - Better SEO
+- Differentiate constants from variables
+- More examples for formula usage
