@@ -15,4 +15,4 @@ EXPOSE 8501
 
 COPY streamlit-app.py streamlit-app.py
 
-ENTRYPOINT [ "streamlit", "run", "streamlit-app.py" "--server.runOnSave=true"]
+ENTRYPOINT [ "streamlit", "run", "streamlit-app.py", "--server.runOnSave=true"]
