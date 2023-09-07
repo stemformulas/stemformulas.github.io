@@ -302,13 +302,13 @@ img[alt=diagram] {
 }
 
 /* just for main page `suggest` link */
-.text-center > p:nth-child(2) > a:nth-child(1) {
+.text-center > p:nth-child(2) > a {
     color: var(--tw-prose-links);
     text-decoration: underline;
     font-weight: 500;
     text-decoration-color: rgba(var(--color-primary-300), 1);
 }
-.text-center > p:nth-child(2) > a:nth-child(1):hover {
+.text-center > p:nth-child(2) > a:hover {
     color: rgba(var(--color-neutral), 1);
     text-decoration: none;
     background-color: rgba(var(--color-primary-600), 1);
