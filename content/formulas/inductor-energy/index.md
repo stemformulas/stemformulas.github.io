@@ -4,7 +4,7 @@ description: "Energy stored in an inductor."
 description: "Energy stored in an inductor."
 tags: ["electronics", "electrical engineering"]
 date: 2023-09-06
-latex: "E_L = \\frac{1}{2} L I^2"
+latex: "E = \\frac{1}{2} L I^2"
 ---
 
 {{< katex >}}
@@ -13,11 +13,11 @@ latex: "E_L = \\frac{1}{2} L I^2"
 ## Energy
 The energy stored in an inductor is given by:
 
-$$ E_L = \frac{1}{2} L I^2 $$
+$$ E = \frac{1}{2} L I^2 $$
 
 Where
 
-- \\( \small E_L \\) represents the energy stored in the inductor in joules (J),
+- \\( \small E \\) represents the energy stored in the inductor in joules (J),
 - \\( \small L \\) is the inductance of the inductor, in henries (H), and
 - \\( \small I \\) is the current through the inductor, in amperes (A).
 
