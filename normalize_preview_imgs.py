@@ -62,5 +62,5 @@ if __name__ == "__main__":
     for img_path in img_paths:
         skipped_images += normalize_image(img_path, desired_height, desired_width)
     
-    print(f"Done normalizing images, skipped {skipped_images} images")
+    print(f"Normalized {len(img_paths) - skipped_images}images, skipped {skipped_images} images")
     print(f"There are currently {len(img_paths)} formulas in this project.")
