@@ -18,7 +18,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: '0.119.0' # Switch to latest after https://github.com/jpanther/congo/issues/689
           # extended: true
 
       - name: Build
