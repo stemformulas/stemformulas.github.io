@@ -5,7 +5,7 @@
 Welcome to [https://stemformulas.com/](https://stemformulas.com/), the site with the goal of being the best place in the world to look for STEM-related formulas.
 
 ## Features:
-- 75 formulas and counting (we gotta pump those numbers up)
+- 76 formulas and counting (we gotta pump those numbers up)
 - The search bar is in focus on site load for quick searching
 - The / key can be used to open the search on any page
 - LaTeX can be copied by clicking on it on any formula's page
@@ -34,7 +34,7 @@ git clone --recurse-submodules https://github.com/stemformulas/stemformulas.gith
 
 3. Run the site and helper site with Docker in a terminal (in the root directory of this repository):
 ```
-docker compose up -d && docker compose alpha watch
+docker compose up -d --build && docker compose alpha watch
 ```
 
 The first command runs the site, and the second monitors for file changes to sync them to the Docker container. You should be able to visit the site at `localhost:1313` in your browser, and changes to files in the `content` folder should be reflected on the site (e.g. open the about page and then modify content/about/_index.md).
