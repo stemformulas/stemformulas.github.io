@@ -9,8 +9,7 @@ latex:  P + \frac{1}{2} \rho v^2 + \rho g h = const
 
 {{< katex >}}
 
-The formula for Bernoulli's Principle (also known as Bernoulli's Equation) states that for incompressible, inviscid, steady-flow fluid, the following is true for two points along a streamline in the flow of the fluid:
-
+The formula for Bernoulli's Principle (also known as Bernoulli's Equation) states that for two points along the streamline of an incompressible, inviscid, steady-flow fluid, the sum of the pressure, kinetic energy per unit volume, and potential energy per unit volume remains constant:
 
 ## Pressure Form
 
