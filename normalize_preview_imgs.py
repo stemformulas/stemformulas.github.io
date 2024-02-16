@@ -56,7 +56,8 @@ if __name__ == "__main__":
         if os.path.exists(preview_png):
             img_paths.append(preview_png)
         else:
-            print(f"Warning: {folder_path} is missing a preview.png!")
+            if folder != ".DS_Store" and folder != "_index.md":
+                print(f"Warning: {folder_path} is missing a preview.png!")
     
     skipped_images = 0
     for img_path in img_paths:
