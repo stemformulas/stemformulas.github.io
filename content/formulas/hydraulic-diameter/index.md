@@ -15,9 +15,9 @@ $$ D_h = \frac{4A_c}{P} $$
 
 Where:
 
-- \\(D_h\\) is the hydraulic diameter,
-- \\(A_c\\) is the cross-sectional area of the flow, and
-- \\(P\\) is the wetted perimeter of the cross-section.
+- \\\( \small D_h\ \\) is the hydraulic diameter,
+- \\\( \small A_c\ \\) is the cross-sectional area of the flow, and
+- \\\( \small P\ \\) is the wetted perimeter of the cross-section.
 
 ## Sources
 

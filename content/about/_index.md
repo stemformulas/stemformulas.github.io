@@ -3,17 +3,15 @@ title: "about"
 description: "About page"
 showTableOfContents: true
 ---
-Stemformulas is a website dedicated to providing a single place to look for STEM formulas. 
+Stemformulas is a website dedicated to providing a single place to look for STEM formulas. It has a long way to go to become that, but the foundation is laid out.
 
-It was made by a few engineering students who were frustrated with the current state of formula searching online:
-[Kevin Lin](https://kevinlinxc.com/) and [Pranjal Biswas](https://www.linkedin.com/in/pranjalbiswas/), both based in Vancouver, Canada.
+It was made by a few engineering students who were frustrated with the current state of formula searching online. This frustration lead to the focus of the features of the site, which include:
 
-## Features
-- The search bar is in focus on site load, so you can search for a formula quickly
-- LaTeX can be copied by just clicking on it on any formula's page
-- The / key can be used to open the search on any page
-- The site has open-graph tags, so when you share a link to a formula on social media, it will show an image of the formula
-- The site is mobile-friendly, so you can use it on your phone or tablet
+- The search bar being in focus on site load, so you can search for a formula quickly
+- LaTeX being copyable by just clicking on it on any formula's page
+- The / key being used to open the search on any page
+- Formula pages having nice preview images when shared on social media, so people don't even need to visit the site to see the formula
+- The mobile-friendliness of the site
 
 
 ## Tech Stack

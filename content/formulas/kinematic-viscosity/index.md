@@ -15,9 +15,9 @@ $$ \nu = \frac{\mu}{\rho} $$
 
 Where:
 
-- \\(\nu\\) is the kinematic viscosity of the fluid,
-- \\(\mu\\) is the dynamic viscosity of the fluid, and
-- \\(\rho\\) is the density of the fluid.
+- \\\( \small \nu\ \\) is the kinematic viscosity of the fluid,
+- \\\( \small \mu\ \\) is the dynamic viscosity of the fluid, and
+- \\\( \small \rho\ \\) is the density of the fluid.
 
 ## Sources
 

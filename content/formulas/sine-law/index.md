@@ -9,13 +9,13 @@ latex: \frac{\sin(\text{A})}{\text{a}} = \frac{\sin(\text{B})}{\text{b}} = \frac
 
 {{< katex >}}
 
-For any triangle:
+For any triangle with angles A, B, C and side lengths a, b, c:
 
 ![diagram](sinelaw-triangle.png)
 
 The ratio of the length of a side to the sine of the angle opposite that side is the same for all three sides:
 
-$$\frac{\sin(\text{A})}{\text{a}} = \frac{\sin(\text{B})}{\text{b}} = \frac{\sin(\text{C})}{\text{c}}$$
+$$\frac{\sin(\small \text{A})}{\text{a}} = \frac{\sin(\small \text{B})}{\text{b}} = \frac{\sin(\small \text{C})}{\text{c}}$$
 
 
 ## Sources
