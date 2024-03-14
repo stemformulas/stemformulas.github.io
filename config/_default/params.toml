@@ -31,7 +31,7 @@ enableCodeCopy = true
   showRecent = false
 
 [article]
-  showDate = true
+  showDate = false # set to true to add "added on" back
   showDateUpdated = false
   showAuthor = false
   showBreadcrumbs = false
