@@ -21,6 +21,11 @@ Where:
 - \\(\small L\\) is a characteristic linear dimension (such as diameter of a circular pipe, hydraulic diameter of a non-circular pipe, or length of a body), and
 - \\(\small \mu\\) is the dynamic viscosity of the fluid.
 
+It can also be written with the [kinematic viscosity](/formulas/kinematic-viscosity) \\(\small \nu\\) instead of dynamic viscosity:
+
+$$ Re = \frac{v L}{\nu} $$
+
+
 ## Sources
 
 - [Wikipedia](https://en.wikipedia.org/wiki/Reynolds_number)
