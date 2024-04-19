@@ -14,7 +14,7 @@ $$ \int_C \vec{F} \cdot d\vec{r} = \iint_S \nabla \times \vec{F} \cdot d\vec{S} 
 
 Definitely read [Paul's Online Notes](https://tutorial.math.lamar.edu/classes/calcIII/stokestheorem.aspx), they're great.
 
-Stokes' theorem can be thought of as a 3D generalization of [Green's theorem](formulas/greens-theorem).
+Stokes' theorem can be thought of as a 3D generalization of [Green's theorem](/formulas/greens-theorem).
 
 ## Sources
 - [Wikipedia](https://en.wikipedia.org/wiki/Stokes%27_theorem)
@@ -22,5 +22,5 @@ Stokes' theorem can be thought of as a 3D generalization of [Green's theorem](fo
 
 ## See also
 - This Khan Academy video provides great intuition: https://www.youtube.com/watch?v=9iaYNaENVH4
-- [Divergence Theorem](formulas/divergence-theorem)
-- [Green's Theorem](formulas/greens-theorem)
+- [Divergence Theorem](/formulas/divergence-theorem)
+- [Green's Theorem](/formulas/greens-theorem)

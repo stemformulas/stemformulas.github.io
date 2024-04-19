@@ -14,12 +14,12 @@ $$ \oint_C Pdx + Qdy = \iint_D \frac{\partial Q}{\partial x} - \frac{\partial P}
 
 Honestly, just read [Paul's Online Notes](https://tutorial.math.lamar.edu/classes/calcIII/GreensTheorem.aspx), they're great.
 
-Green's theorem can be thought of as a 2D version of [Stokes' theorem](formulas/stokes-theorem).
+Green's theorem can be thought of as a 2D version of [Stokes' theorem](/formulas/stokes-theorem).
 
 ## Sources
 - [Wikipedia](https://en.wikipedia.org/wiki/Green%27s_theorem)
 - [Paul's Online Notes](https://tutorial.math.lamar.edu/classes/calcIII/GreensTheorem.aspx)
 
 ## See also
-- [Divergence Theorem](formulas/divergence-theorem)
-- [Stokes' Theorem](formulas/stokes-theorem)
+- [Divergence Theorem](/formulas/divergence-theorem)
+- [Stokes' Theorem](/formulas/stokes-theorem)
