@@ -5,7 +5,7 @@
 Welcome to [https://stemformulas.com/](https://stemformulas.com/), the site with the goal of being the best place in the world to look for STEM-related formulas.
 
 ## Features:
-- 89 formulas and counting (we gotta pump those numbers up)
+- 91 formulas and counting (we gotta pump those numbers up)
 - The search bar is in focus on site load for quick searching
 - The / key can be used to open the search on any page
 - LaTeX can be copied by clicking on it on any formula's page
