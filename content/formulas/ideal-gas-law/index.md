@@ -6,7 +6,9 @@ tags: ["chemistry"]
 date: 2022-11-27
 latex: PV = nRT
 ---
-{{< katex >}}
+{{< katex >}}  
+The ideal gas law is given by:
+
 $$PV = nRT$$
 
 Where

@@ -2,7 +2,7 @@
 title: Gaussian/Normal Distribution
 description: "The formula for the normal distribution."
 summary: "The formula for the normal distribution."
-tags: ["statistics", "probability theory"]
+tags: ["math", "statistics", "probability theory"]
 date: 2023-07-13
 latex: f(x) = \frac{1}{\sigma \sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}
 ---

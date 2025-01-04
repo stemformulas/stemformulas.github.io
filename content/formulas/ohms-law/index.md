@@ -6,7 +6,10 @@ tags: ["physics", "electrical engineering"]
 date: 2022-11-27
 latex: V = IR
 ---
+
 {{< katex >}}
+Ohm's law is given by:
+
 $$V = IR$$
 
 Where
