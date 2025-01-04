@@ -1,7 +1,7 @@
 ---
 title: Capacitor Energy
 description: "The energy stored in a capacitor."
-description: "The energy stored in a capacitor."
+summary: "The energy stored in a capacitor."
 tags: ["electronics", "electrical engineering"]
 date: 2023-09-06
 latex: "E = \\frac{1}{2} C V^2"

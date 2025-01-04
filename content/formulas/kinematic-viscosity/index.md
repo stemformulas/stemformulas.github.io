@@ -1,7 +1,7 @@
 ---
 title: Kinematic Viscosity
 description: "The ratio of the dynamic viscosity to the density of a fluid."
-description: "The ratio of the dynamic viscosity to the density of a fluid."
+summary: "The ratio of the dynamic viscosity to the density of a fluid."
 tags: ["fluid mechanics", "physics"]
 date: 2024-03-13
 latex: "\nu = \\frac{\\mu}{\\rho}"

@@ -1,7 +1,7 @@
 ---
 title: Capacitor Current
 description: "The relationship between the current through a capacitor and the rate of change of voltage across the capacitor."
-description: "The relationship between the current through a capacitor and the rate of change of voltage across the capacitor."
+summary: "The relationship between the current through a capacitor and the rate of change of voltage across the capacitor."
 tags: ["electronics", "electrical engineering"]
 date: 2023-09-06
 latex: "I = C \\frac{dV}{dt}"

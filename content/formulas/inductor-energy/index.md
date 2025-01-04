@@ -1,7 +1,7 @@
 ---
 title: Inductor Energy
 description: "Energy stored in an inductor."
-description: "Energy stored in an inductor."
+summary: "Energy stored in an inductor."
 tags: ["electronics", "electrical engineering"]
 date: 2023-09-06
 latex: "E = \\frac{1}{2} L I^2"

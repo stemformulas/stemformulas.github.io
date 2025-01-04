@@ -1,7 +1,7 @@
 ---
 title: Capacitance
 description: "The capacitance of a parallel plate capacitor"
-description: "The capacitance of a parallel plate capacitor"
+summary: "The capacitance of a parallel plate capacitor"
 tags: ["electronics", "electrical engineering"]
 date: 2023-09-06
 latex: "C = \\frac{\\epsilon A}{d}"

@@ -1,7 +1,7 @@
 ---
 title: Capacitor Charge
 description: "The relationship between the voltage across a capacitor and the charge stored on each conductor."
-description: "The relationship between the voltage across a capacitor and the charge stored on each conductor."
+summary: "The relationship between the voltage across a capacitor and the charge stored on each conductor."
 tags: ["electronics", "electrical engineering"]
 date: 2023-09-06
 latex: "V = \\frac{Q}{C}"

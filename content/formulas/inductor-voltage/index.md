@@ -1,7 +1,7 @@
 ---
 title: Inductor Voltage
 description: "Instantaneous voltage across an inductor."
-description: "Instantaneous voltage across an inductor."
+summary: "Instantaneous voltage across an inductor."
 tags: ["electronics", "electrical engineering"]
 date: 2023-09-06
 latex: "V = L \\frac{dI}{dt}"
