@@ -31,7 +31,7 @@ def normalize_image(img_path, height, width):
         new_width = int(new_height * aspect_ratio)
 
     # Scale down the image while preserving the aspect ratio
-    scaled_image = image.resize((new_width, new_height), Image.ANTIALIAS)
+    scaled_image = image.resize((new_width, new_height), Image.LANCZOS)
 
     # Create a new blank image with the desired dimensions
     new_image = Image.new("RGB", (width, height), "white")

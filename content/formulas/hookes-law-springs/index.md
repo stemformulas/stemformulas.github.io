@@ -2,7 +2,7 @@
 title: Hooke's Law (Spring Constant)
 description: Hooke's Law and the Spring Constant relate the force and displacement of a spring.
 summary: Hooke's Law and the Spring Constant relate the force and displacement of a spring.
-tags: ["physics", "mechanical engineering", "materials engineering"]
+tags: ["physics", "mechanics"]
 date: 2022-12-30
 latex: F = -kx
 ---
