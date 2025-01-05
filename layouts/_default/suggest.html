@@ -17,8 +17,8 @@
         <form id="suggestion-form" class="space-y-6 p-20">
           <div class="space-y-2">
             <label 
-            for="title" 
-            class="block text-lg mb-1 font-medium text-neutral-700 dark:text-neutral-300">
+              for="title" 
+              class="block text-lg mb-1 font-medium text-neutral-700 dark:text-neutral-300">
               Title
             </label>
             <input 
@@ -34,9 +34,9 @@
 
           <div class="space-y-2">
             <label 
-            for="description" 
-            class="block text-lg mb-1 font-medium text-neutral-700 dark:text-neutral-300">
-              Short Description
+              for="description" 
+              class="block text-lg mb-1 font-medium text-neutral-700 dark:text-neutral-300">
+              Short Description (used in search results only)
             </label>
             <input 
               type="text" 
@@ -118,8 +118,16 @@ Where
       <h2 class="mb-6 text-2xl font-bold text-neutral-900 dark:text-neutral">Preview</h2>
       <div id="preview-content" class="bg-white dark:bg-neutral-800 rounded-lg shadow-sm border border-neutral-200 dark:border-neutral-700 p-12">
       </div>
+      <!-- Add a "Submit" button below the preview -->
+      <button 
+        id="submit-button"
+        class="mt-6 px-6 py-2 text-base font-semibold text-white rounded-md border-neutral-200 dark:bg-neutral-700 focus:bg-primary-100 hover:bg-primary-100 dark:hover:bg-primary-600 dark:focus:bg-primary-900 focus:outline-dotted focus:outline-transparent focus:outline-2 hidden"
+      >
+        Submit
+      </button>
     </section>
   </article>
+
   <script>
     // Function to render the preview
     function renderPreview() {
@@ -171,10 +179,83 @@ Where
       }
     }
 
+    // Function to send data to Discord webhook
+    function submitToDiscord() {
+      const title = document.getElementById('title').value;
+      const description = document.getElementById('description').value;
+      const tags = document.getElementById('tags').value;
+      const latex = document.getElementById('latex').value;
+      const body = document.getElementById('body').value;
+
+      const webhookURL = 'https://discord.com/api/webhooks/1059998584889688134/eUqXbInp90bcFdL1A3ly141TAtn9jiPjbYwCzSfjPV2-4kx2UIX3M-soCJxWTrvSNbLP'; // Replace with your Discord webhook URL
+
+      const data = {
+        embeds: [
+          {
+            title: "New stemformulas.com formula suggestion",
+            fields: [
+              {
+                name: "Title",
+                value: title,
+                inline: true,
+              },
+              {
+                name: "Description",
+                value: description,
+                inline: true,
+              },
+              {
+                name: "Tags",
+                value: tags,
+                inline: true,
+              },
+              {
+                name: "LaTeX",
+                value: `\`\`\`latex\n${latex}\n\`\`\``,
+                inline: false,
+              },
+              {
+                name: "Body",
+                value: `\`\`\`markdown\n${body}\n\`\`\``,
+                inline: false,
+              },
+            ],
+            color: 0x00ff00, // Green color for the embed
+          },
+        ],
+      };
+
+      fetch(webhookURL, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+        .then((response) => {
+          if (response.ok) {
+            alert('Submission sent successfully!');
+          } else {
+            alert('Failed to send submission. Please try again.');
+          }
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+          alert('An error occurred. Please try again.');
+        });
+    }
+
     // Attach the form submission handler
     document.getElementById('suggestion-form').addEventListener('submit', function(event) {
       event.preventDefault();
       renderPreview();
+      // Show the "Submit" button once the preview has been rendered once
+      document.getElementById('submit-button').classList.remove('hidden');
+    });
+
+    // Attach the "Submit" button click handler
+    document.getElementById('submit-button').addEventListener('click', function() {
+      submitToDiscord();
     });
 
     // Render the preview when the page loads
