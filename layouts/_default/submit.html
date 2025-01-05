@@ -127,14 +127,17 @@ Where
       </button>
     </section>
   </article>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.3/purify.min.js"></script>
   <script>
+    function sanitizeInput(input) {
+      return DOMPurify.sanitize(input);
+    }
     // Function to render the preview
     function renderPreview() {
-      const title = document.getElementById('title').value;
-      const body = document.getElementById('body').value;
-      const latex = document.getElementById('latex').value;
-      const tags = document.getElementById('tags').value.split(',').map(tag => tag.trim());
+      const title = sanitizeInput(document.getElementById('title').value);
+      const body = sanitizeInput(document.getElementById('body').value);
+      const latex = sanitizeInput(document.getElementById('latex').value);
+      const tags = sanitizeInput(document.getElementById('tags').value).split(',').map(tag => tag.trim());
       const parsedBody = marked.parse(body);
 
       const tagsHTML = tags
@@ -181,11 +184,11 @@ Where
 
     // Function to send data to Discord webhook
     function submitToDiscord() {
-      const title = document.getElementById('title').value;
-      const description = document.getElementById('description').value;
-      const tags = document.getElementById('tags').value;
-      const latex = document.getElementById('latex').value;
-      const body = document.getElementById('body').value;
+      const title = sanitizeInput(document.getElementById('title').value);
+      const description = sanitizeInput(document.getElementById('description').value);
+      const tags = sanitizeInput(document.getElementById('tags').value);
+      const latex = sanitizeInput(document.getElementById('latex').value);
+      const body = sanitizeInput(document.getElementById('body').value);
 
       const webhookURL = 'https://discord.com/api/webhooks/1059998584889688134/eUqXbInp90bcFdL1A3ly141TAtn9jiPjbYwCzSfjPV2-4kx2UIX3M-soCJxWTrvSNbLP'; // Replace with your Discord webhook URL
 
