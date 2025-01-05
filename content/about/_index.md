@@ -5,7 +5,7 @@ showTableOfContents: true
 ---
 Stemformulas is a website dedicated to providing a single place to look for STEM formulas. It has a long way to go to become that, but the foundation is laid out.
 
-It was made by a few engineering students who were frustrated with the current state of formula searching online. This frustration lead to the focus of the features of the site, which include:
+It was made by a few engineering students (lead by [@linguinelabs](https://x.com/linguinelabs)) who were frustrated with the current state of formula searching online. This frustration lead to the focus of the features of the site, which include:
 
 - The search bar being in focus on site load, so you can search for a formula quickly
 - LaTeX being copyable by just clicking on it on any formula's page
@@ -24,7 +24,8 @@ It is hosted on [GitHub Pages](https://pages.github.com/), deployed conveniently
 ## Contributing
 If you want to add a formula to this site, there are two ways you can do so.
 
-1. Submit a suggestion for a formula on our [Google Form](https://forms.gle/EWjwFmiEQrrjsZEF9) (can also be filled out on our [suggest](/suggest) page). This form is also used for general feedback, e.g. if one of our pages has a mistake.
+1. Submit a formula on our [suggest](/suggest) page). This has been revamped to have a preview for ease of use.
 
-2. Create a pull request on the
-[GitHub repo](https://github.com/stemformulas/stemformulas.github.io). More detailed instructions can be found in the [README](https://github.com/stemformulas/stemformulas.github.io#adding-a-formula-by-submitting-a-pull-request).
+2. Create a pull request directly on the
+[GitHub repo](https://github.com/stemformulas/stemformulas.github.io). This is of course easier for us to merge, but requires more effort from you. 
+More detailed contribution instructions can be found in the [README](https://github.com/stemformulas/stemformulas.github.io?tab=readme-ov-file#adding-a-formula).

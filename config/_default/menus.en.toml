@@ -26,8 +26,8 @@
   weight = 30
 
 [[main]]
-  name = "suggest"
-  pageRef = "suggest"
+  name = "submit"
+  pageRef = "submit"
   weight = 40
 
 [[main]]
