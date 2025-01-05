@@ -1,5 +1,6 @@
 var fuse;
 var onMainPage = document.getElementById("search-query-main");
+var onSubmitPage = document.getElementById("formula-suggestion-form")
 var showButtons = document.querySelectorAll("[id^='search-button']");
 if(onMainPage){
   var input = document.getElementById("search-query-main");
@@ -41,6 +42,12 @@ if (!(onMainPage)){
 document.addEventListener("keydown", function (event) {
   // Forward slash to open search wrapper
   if (event.key == "/") {
+    // ignore if we're on the suggest page
+    if (onSubmitPage){
+      event.preventDefault();
+      return;
+    }
+
     if (!searchVisible) {
       event.preventDefault();
       displaySearch();

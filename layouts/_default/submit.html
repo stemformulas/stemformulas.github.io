@@ -14,7 +14,7 @@
     
     <section class="bg-white dark:bg-neutral-800 rounded-md shadow-sm border border-neutral-200 dark:border-neutral-700">
       <div class="p-6">
-        <form id="suggestion-form" class="space-y-6 p-20">
+        <form id="formula-suggestion-form" class="space-y-6 p-20">
           <div class="space-y-2">
             <label 
               for="title" 
@@ -249,7 +249,7 @@ Where
     }
 
     // Attach the form submission handler
-    document.getElementById('suggestion-form').addEventListener('submit', function(event) {
+    document.getElementById('formula-suggestion-form').addEventListener('submit', function(event) {
       event.preventDefault();
       renderPreview();
       // Show the "Submit" button once the preview has been rendered once
