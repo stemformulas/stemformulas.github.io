@@ -16,19 +16,21 @@
   weight = 10
 
 [[main]]
+  name = "submit"
+  pageRef = "submit"
+  weight = 20
+
+[[main]]
   name = "tags"
   pageRef = "tags"
-  weight = 20
+  weight = 30
 
 [[main]]
   name = "about"
   pageRef = "about"
-  weight = 30
-
-[[main]]
-  name = "submit"
-  pageRef = "submit"
   weight = 40
+
+
 
 [[main]]
   name = "github"
