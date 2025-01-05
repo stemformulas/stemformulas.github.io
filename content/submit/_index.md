@@ -1,6 +1,6 @@
 ---
-title: "Suggest"
-description: "Make a suggestion"
+title: "Submit"
+description: "Submit a formula to stemformulas.com!"
 ---
 {{<katex>}} 
 <!-- katex tag is required lol -->
