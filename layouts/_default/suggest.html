@@ -8,7 +8,7 @@
         Suggest a Formula
       </h1>
       <p class="text-lg text-neutral-500 dark:text-neutral-400 mb-6">
-        Replace the example fields below with your own formula, preview your submission, and then submit!
+        Replace the example fields below, preview your submission, and then submit!
       </p>
     </header>
     
@@ -234,7 +234,7 @@ Where
       })
         .then((response) => {
           if (response.ok) {
-            alert('Submission sent successfully!');
+            alert('Submission sent successfully. Thank you!');
           } else {
             alert('Failed to send submission. Please try again.');
           }
@@ -253,9 +253,35 @@ Where
       document.getElementById('submit-button').classList.remove('hidden');
     });
 
+    function handleRateLimit() {
+        // limit submissions so we can't get spammed
+        const submitButton = document.getElementById('submit-button');
+        const lastSubmissionTime = localStorage.getItem('lastSubmissionTime');
+        const currentTime = new Date().getTime();
+
+        // Check if 5 minutes have passed since the last submission
+        const timeLeft = 120000 - (currentTime - lastSubmissionTime);
+        if (lastSubmissionTime && timeLeft > 0) {
+            alert(`Please wait ${Math.ceil(timeLeft / 1000)} seconds before submitting again.`);
+            return;
+        }
+
+        // Disable the button and store the current time
+        submitButton.disabled = true;
+        localStorage.setItem('lastSubmissionTime', currentTime);
+
+        // Submit the data to Discord
+        submitToDiscord();
+
+        // Re-enable the button after the correct time has elapsed
+        setTimeout(() => {
+            submitButton.disabled = false;
+        }, timeLeft);
+    }
+
     // Attach the "Submit" button click handler
     document.getElementById('submit-button').addEventListener('click', function() {
-      submitToDiscord();
+        handleRateLimit();
     });
 
     // Render the preview when the page loads
