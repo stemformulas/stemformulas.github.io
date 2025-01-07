@@ -59,8 +59,6 @@ function sanitizeInput(input) {
     const latex = sanitizeInput(document.getElementById('latex').value);
     const body = sanitizeInput(document.getElementById('body').value);
 
-    const webhookURL = 'https://discord.com/api/webhooks/1059998584889688134/eUqXbInp90bcFdL1A3ly141TAtn9jiPjbYwCzSfjPV2-4kx2UIX3M-soCJxWTrvSNbLP'; // Replace with your Discord webhook URL
-
     const data = {
       embeds: [
         {
@@ -97,7 +95,7 @@ function sanitizeInput(input) {
       ],
     };
 
-    fetch(webhookURL, {
+    fetch(webhook_url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

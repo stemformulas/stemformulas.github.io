@@ -80,7 +80,6 @@ document.addEventListener('click', function(event) {
             if (fragment.querySelector('.katex-mathml')) {
                 const texContents = katexReplaceWithTex(fragment).textContent;
                 navigator.clipboard.writeText(texContents).then(function() {
-                    console.log("Copied");
 
                     // Create a temporary element to display the "Copied!" message
                     const tooltipElement = document.createElement('div');
