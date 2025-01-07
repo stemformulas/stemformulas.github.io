@@ -4,18 +4,21 @@ services:
     build: .
     ports:
       - "1313:1313"
-    x-develop:
+    develop:
       watch:
         - action: sync
           path: .
           target: /src/
+    env_file:
+      - .env
+
   streamlit:
     build:
       context: .
       dockerfile: Dockerfile-streamlit
     ports:
       - "8501:8501"
-    x-develop:
+    develop:
       watch:
         - action: sync
           path: ./streamlit-app.py

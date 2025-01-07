@@ -16,3 +16,9 @@ googleAnalytics= "G-055HWG7Q3V"
 [imaging]
   resampleFilter = "lanczos"
   quality = 100
+
+[security]
+  enableInlineShortcodes = false
+  [security.funcs]
+    getenv = ["DISCORD_WEBHOOK_URL"]
+    

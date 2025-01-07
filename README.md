@@ -41,6 +41,7 @@ The first command runs the site, and the second monitors for file changes to syn
 
 4. If you ran the docker compose command you should also have a Python applet I wrote up at `localhost:8501` in your browser. This is a GUI that helps you write the tedious parts of a formula's page. You can read more about it in the ChatGPT workflow section at the bottom of this README.
 
+5. If you want to test the submitting to Discord feature, crete a `.env` file in the root directory of the repository with DISCORD_WEBHOOK_URL=<your webhook link>
 
 ## Adding a formula
 With the site running locally, you can now add a formula page to the site and preview how it'll look on the actual site.

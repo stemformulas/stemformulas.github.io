@@ -127,7 +127,12 @@ Where
       </button>
     </section>
   </article>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.3/purify.min.js"></script>
+  <!-- get the webhook url from the environment using hugo, don't know how to do it in js.-->
+  <script>
+    const webhook_url = "{{ getenv "DISCORD_WEBHOOK_URL" }}"; // '' doesn't work
+  </script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.2.3/purify.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
   {{ $js := resources.Get "js/formula-suggest.js" | fingerprint }}
   <script src="{{ $js.Permalink }}"></script>
 {{ end }}
