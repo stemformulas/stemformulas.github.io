@@ -1,6 +1,14 @@
+# /// script
+# requires-python = ">=3.12"
+# dependencies = [
+#     "pillow",
+# ]
+# ///
 """
 Script that corrects all of the preview pngs in the content/formulas directory
 so that they fit within the open-graph preview properly.
+
+uv run normalize_preview_imgs.py
 """
 
 import os
