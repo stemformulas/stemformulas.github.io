@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "fuse.js": "^7.5.0",
     "gray-matter": "^4.0.3",
     "next": "16.2.12",
     "next-mdx-remote": "^6.0.0",

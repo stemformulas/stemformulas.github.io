@@ -1,0 +1,124 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  cursor: default;
+  background: rgba(107, 114, 128, 0.5);
+  backdrop-filter: blur(4px);
+  padding: 1rem;
+}
+
+@media (min-width: 640px) {
+  .overlay {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .overlay {
+    padding: 10vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .overlay {
+    padding: 12vh;
+  }
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 48rem;
+  min-height: 0;
+  margin: 5rem auto 0;
+  border: 1px solid var(--color-neutral-200);
+  border-radius: 0.375rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.header {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  flex: none;
+  padding: 0 0.5rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--color-neutral-400);
+}
+
+.input {
+  flex: auto;
+  min-width: 0;
+  height: 3rem;
+  margin: 0 0.25rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  color: var(--color-neutral-900);
+}
+
+.input::placeholder {
+  color: var(--color-neutral-400);
+}
+
+.results {
+  flex: auto;
+  padding: 0 0.5rem;
+  overflow: auto;
+  max-height: 60vh;
+}
+
+.result {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 0.75rem 0.75rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.375rem;
+  border: none;
+  background: var(--color-neutral-100);
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.result:hover,
+.result.active {
+  background: var(--color-primary-100);
+}
+
+.resultText {
+  flex-grow: 1;
+}
+
+.resultTitle {
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: -0.25rem;
+}
+
+.resultSummary {
+  font-size: 0.875rem;
+  font-style: italic;
+}
+
+.arrow {
+  margin-left: 0.5rem;
+  color: var(--color-neutral-500);
+}
