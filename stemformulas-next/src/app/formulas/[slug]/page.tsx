@@ -77,14 +77,16 @@ export default async function FormulaPage({
   return (
     <article>
       <header className={styles.articleHeader}>
-        <h1 className="prose">{formula.frontmatter.title}</h1>
+        <h1 className={styles.title}>{formula.frontmatter.title}</h1>
         {formula.frontmatter.tags && formula.frontmatter.tags.length > 0 && (
           <div className={styles.tags}>
-            {formula.frontmatter.tags.map((tag) => (
-              <Link key={tag} href={`/tags/${tag}`} className="tag">
-                {tag}
-              </Link>
-            ))}
+            <div className={styles.tagsInner}>
+              {formula.frontmatter.tags.map((tag) => (
+                <Link key={tag} href={`/tags/${tag}`} className="tag">
+                  {tag}
+                </Link>
+              ))}
+            </div>
           </div>
         )}
       </header>

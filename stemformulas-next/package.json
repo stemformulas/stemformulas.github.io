@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "gray-matter": "^4.0.3",
     "next": "16.2.12",
     "next-mdx-remote": "^6.0.0",
     "react": "19.2.4",
