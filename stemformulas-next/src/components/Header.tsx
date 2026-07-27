@@ -42,9 +42,6 @@ export default function Header() {
               <Link href="/submit">submit</Link>
             </li>
             <li>
-              <Link href="/tags">tags</Link>
-            </li>
-            <li>
               <Link href="/about">about</Link>
             </li>
             <li>

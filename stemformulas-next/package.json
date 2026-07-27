@@ -9,8 +9,10 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "dompurify": "^3.4.12",
     "fuse.js": "^7.5.0",
     "gray-matter": "^4.0.3",
+    "marked": "^18.0.7",
     "next": "16.2.12",
     "next-mdx-remote": "^6.0.0",
     "react": "19.2.4",
@@ -19,6 +21,7 @@
     "remark-math": "^6.0.0"
   },
   "devDependencies": {
+    "@types/dompurify": "^3.0.5",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
