@@ -60,7 +60,7 @@ export default function FormulasPage() {
               href={`/formulas/${formula.slug}`}
               className={styles.card}
             >
-              <h3 className={styles.cardTitle}>{formula.title}</h3>
+              <span className={styles.cardTitle}>{formula.title}</span>
               {renderedLatex && (
                 <div
                   className={styles.cardLatex}
