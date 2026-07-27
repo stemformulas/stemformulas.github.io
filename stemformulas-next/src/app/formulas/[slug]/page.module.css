@@ -1,0 +1,84 @@
+.articleHeader {
+  max-width: 65ch;
+  margin-bottom: 0;
+}
+
+.articleLayout {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  margin-top: 0;
+}
+
+@media (min-width: 1024px) {
+  .articleLayout {
+    flex-direction: row;
+  }
+}
+
+.tocSidebar {
+  padding: 0;
+}
+
+@media (min-width: 1024px) {
+  .tocSidebar {
+    order: 999;
+    max-width: 20rem;
+    padding-left: 2rem;
+  }
+}
+
+.tocSticky {
+  position: sticky;
+  top: 2.5rem;
+  padding-right: 1.25rem;
+}
+
+.tocDetails {
+  margin-left: -1.25rem;
+  margin-top: 0;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  padding-left: 1.25rem;
+}
+
+.tocSummary {
+  display: block;
+  cursor: pointer;
+  background: var(--color-neutral-100);
+  padding: 0.25rem 1.25rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--color-neutral-800);
+  margin-left: -1.25rem;
+}
+
+@media (min-width: 1024px) {
+  .tocSummary {
+    display: none;
+  }
+}
+
+.tocContent {
+  border-left: 1px dotted var(--color-neutral-300);
+  padding: 0.5rem 1.25rem;
+  margin-left: -1.25rem;
+}
+
+.contentArea {
+  min-width: 0;
+  min-height: 0;
+  max-width: 65ch;
+  flex-grow: 1;
+}
+
+.tags {
+  margin: 0.5rem 0;
+  font-size: 0.75rem;
+  color: var(--color-neutral-500);
+}
+
+.articleFooter {
+  padding-top: 2rem;
+  max-width: 65ch;
+}
