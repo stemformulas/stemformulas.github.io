@@ -51,8 +51,7 @@ export default function AboutPage() {
           .
         </p>
         <p>
-          It is made with the Next.js framework, rendered with MDX and KaTeX,
-          and styled with CSS modules.
+          It is made with the Next.js framework, and pages are rendered with MDX and KaTeX.
         </p>
         <p>
           It is hosted on{" "}
