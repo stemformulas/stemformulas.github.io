@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { marked } from "marked";
 import DOMPurify from "dompurify";
 import styles from "./page.module.css";
@@ -15,6 +15,7 @@ declare global {
 }
 
 export default function SubmitPage() {
+  const [katexReady, setKatexReady] = useState(false);
   const [title, setTitle] = useState("Gaussian/Normal Distribution");
   const [description, setDescription] = useState("The formula for the normal distribution.");
   const [tags, setTags] = useState("math, statistics, probability theory");
@@ -27,6 +28,23 @@ export default function SubmitPage() {
   const [showPreview, setShowPreview] = useState(false);
   const [sending, setSending] = useState(false);
   const previewRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.href = "https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css";
+    document.head.appendChild(link);
+
+    const katexScript = document.createElement("script");
+    katexScript.src = "https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js";
+    katexScript.onload = () => {
+      const autoRender = document.createElement("script");
+      autoRender.src = "https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js";
+      autoRender.onload = () => setKatexReady(true);
+      document.head.appendChild(autoRender);
+    };
+    document.head.appendChild(katexScript);
+  }, []);
 
   const tagList = tags.split(",").map((t) => t.trim()).filter(Boolean);
 
@@ -98,21 +116,7 @@ export default function SubmitPage() {
   }
 
   return (
-    <>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
-      />
-      <script
-        defer
-        src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
-      />
-      <script
-        defer
-        src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
-      />
-
-      <article className={styles.wrapper}>
+    <article className={styles.wrapper}>
         <header className={styles.header}>
           <h1 className={styles.title}>submit a formula</h1>
           <p className={styles.subtitle}>
@@ -207,6 +211,5 @@ export default function SubmitPage() {
           </section>
         )}
       </article>
-    </>
-  );
+    );
 }
