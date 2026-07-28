@@ -1,11 +1,7 @@
-import fs from "fs";
-import path from "path";
 import Link from "next/link";
 import katex from "katex";
-import matter from "gray-matter";
+import formulasData from "@/data/formulas.json";
 import styles from "./page.module.css";
-
-const PER_PAGE = 50;
 
 interface FormulaMeta {
   slug: string;
@@ -14,34 +10,11 @@ interface FormulaMeta {
 }
 
 function getFormulas(): FormulaMeta[] {
-  const dir = path.join(process.cwd(), "src/content/formulas");
-  const files = fs.readdirSync(dir).filter((f) => f.endsWith(".mdx"));
-
-  return files.map((file) => {
-    const slug = file.replace(".mdx", "");
-    const source = fs.readFileSync(path.join(dir, file), "utf-8");
-    const { data } = matter(source);
-    return {
-      slug,
-      title: data.title || slug,
-      latex: data.latex || "",
-    };
-  });
+  return formulasData as FormulaMeta[];
 }
 
-export default async function FormulasPage({
-  searchParams,
-}: {
-  searchParams: Promise<{ page?: string }>;
-}) {
-  const { page: pageParam } = await searchParams;
-  const currentPage = Math.max(1, parseInt(pageParam || "1") || 1);
+export default function FormulasPage() {
   const formulas = getFormulas();
-  const totalPages = Math.ceil(formulas.length / PER_PAGE);
-  const paginated = formulas.slice(
-    (currentPage - 1) * PER_PAGE,
-    currentPage * PER_PAGE
-  );
 
   return (
     <>
@@ -54,7 +27,7 @@ export default async function FormulasPage({
       </p>
 
       <section className={`grid-container ${styles.grid}`}>
-        {paginated.map((formula) => {
+        {formulas.map((formula) => {
           let renderedLatex = "";
           if (formula.latex) {
             try {
@@ -84,20 +57,6 @@ export default async function FormulasPage({
           );
         })}
       </section>
-
-      {totalPages > 1 && (
-        <nav className={styles.pagination}>
-          {Array.from({ length: totalPages }, (_, i) => i + 1).map((p) => (
-            <Link
-              key={p}
-              href={p === 1 ? "/formulas" : `/formulas?page=${p}`}
-              className={`${styles.pageLink} ${p === currentPage ? styles.pageActive : ""}`}
-            >
-              {p}
-            </Link>
-          ))}
-        </nav>
-      )}
     </>
   );
 }

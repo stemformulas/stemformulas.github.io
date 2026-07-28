@@ -1,0 +1,1396 @@
+[
+  {
+    "slug": "amperes-law",
+    "title": "Ampere's Law",
+    "latex": "\\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I",
+    "description": "Ampere's law is a formula that describes the magnetic field produced by a current-carrying wire.",
+    "summary": "Ampere's law is a formula that describes the magnetic field produced by a current-carrying wire.",
+    "tags": [
+      "physics",
+      "electromagnetism",
+      "Maxwell's equations"
+    ],
+    "section": "formulas",
+    "content": "\n$$ \\oint \\vec{B} \\cdot d\\vec{l} = \\mu_0 I $$\n\nWhere\n* The left side is a line integral of the magnetic field $\\vec{B}$ over a closed loop $\\vec{l}$, and\n* $\\mu_0$ is the [permeability of free space](https://en.wikipedia.org/wiki/Vacuum_permeability), and\n* $I$ is the current enclosed by the loop.\n\nAmpere's law is a formula that describes the magnetic field produced by a current-carrying wire. It says that the magneitc field created by an electric current is proportional to the magnitude of the ",
+    "permalink": "/formulas/amperes-law"
+  },
+  {
+    "slug": "arithmetic-gradient",
+    "title": "Arithmetic Gradients",
+    "latex": "\\scriptsize P = A \\left[\\frac{(1+i)^n-1}{i(1+i)^n}\\right] + G \\left[\\frac{(1+i)^n-in-1}{i^2(1+i)^n}\\right]",
+    "description": "Formulas for calculating the worth of an arithmetic gradient of cash",
+    "summary": "Formulas for calculating the worth of an arithmetic gradient of cash",
+    "tags": [
+      "math",
+      "finance"
+    ],
+    "section": "formulas",
+    "content": "\n## Present Worth of an Arithmetic Gradient\n\nFor an arithmetic gradient of costs or benefits where $\\small A$ is received in the first period, $\\small A + G$ in the second period, $\\small A + 2G$ in the third period, and so on, the present worth $\\small P$ is given by:\n\n$$P = A \\left[\\frac{(1+i)^n-1}{i(1+i)^n}\\right] + G \\left[\\frac{(1+i)^n-in-1}{i^2(1+i)^n}\\right]$$\n\nWhere\n\n* $\\small P$ is the present worth,\n* $\\small A$ is the constant amount being added to in the gradient,\n* $\\small G$ is the",
+    "permalink": "/formulas/arithmetic-gradient"
+  },
+  {
+    "slug": "bayes-theorem",
+    "title": "Bayes' Theorem",
+    "latex": "P(A|B) = \\frac{P(B|A)P(A)}{P(B)}",
+    "description": "The formula for Bayes' Theorem.",
+    "summary": "The formula for Bayes' Theorem.",
+    "tags": [
+      "mathematics",
+      "probability",
+      "statistics"
+    ],
+    "section": "formulas",
+    "content": "\nBayes' Theorem is given by the formula:\n\n$$ P(A|B) = \\frac{P(B|A)P(A)}{P(B)} $$\n\nWhere\n\n* $\\small P(A|B)$ is the probability of event $A$ given event $B$,\n* $\\small P(B|A)$ is the probability of event $B$ given event $A$,\n* $\\small P(A)$ is the probability of event $A$, and\n* $\\small P(B)$ is the probability of event $B$.\n\n## Expanded form\n\nThe denominator can also be expanded using the law of total probability to give:\n\n$$ P(A|B) = \\frac{P(B|A)P(A)}{P(B|A)P(A) + P(B|\\neg A)P(\\neg A)} $$\n\nWhere",
+    "permalink": "/formulas/bayes-theorem"
+  },
+  {
+    "slug": "bernoullis-principle",
+    "title": "Bernoulli's Principle",
+    "latex": "P + \\frac{1}{2} \\rho v^2 + \\rho g h = \\text{const}",
+    "description": "The relation between various sources of pressure in a fluid.",
+    "summary": "The relation between various sources of pressure in a fluid.",
+    "tags": [
+      "physics",
+      "fluid mechanics"
+    ],
+    "section": "formulas",
+    "content": "\nThe formula for Bernoulli's Principle (also known as Bernoulli's Equation) states that for two points along the streamline of an incompressible, inviscid, steady-flow fluid, the sum of the pressure, kinetic energy per unit volume, and potential energy per unit volume remains constant. It has the following forms:\n\n## Pressure Form\n\n$$ P_1 + \\frac{1}{2} \\rho v_1^2 + \\rho g h_1 = P_2 + \\frac{1}{2} \\rho v_2^2 + \\rho g h_2 $$\n\nWhere\n\n* $ \\small  \\small P_1  $ and $ \\small  \\small P_2  $ are the pres",
+    "permalink": "/formulas/bernoullis-principle"
+  },
+  {
+    "slug": "binets-formula",
+    "title": "Binet's Formula",
+    "latex": "F_n = \\frac{\\left(\\frac{1+\\sqrt{5}}{2} \\right)^n - \\left(\\frac{1-\\sqrt{5}}{2} \\right)^n}{\\sqrt{5}}",
+    "description": "The closed form formula for calculating the n-th Fibonacci number.",
+    "summary": "The closed form formula for calculating the n-th Fibonacci number.",
+    "tags": [
+      "math"
+    ],
+    "section": "formulas",
+    "content": "\nBinet's formula allows you to calculate the n-th Fibonacci number, $ \\small F_n $, with a closed form solution. It is as follows:\n\n$$ F_n = \\frac{\\left(\\frac{1+\\sqrt{5}}{2} \\right)^n - \\left(\\frac{1-\\sqrt{5}}{2} \\right)^n}{\\sqrt{5}} $$\n\nWhere\n\n* $ \\small n $ is the index of the Fibonacci number you want to calculate. \n\n## Sources\n\n- [Art of Problem Solving](https://artofproblemsolving.com/wiki/index.php/Binet%27s_Formula)\n",
+    "permalink": "/formulas/binets-formula"
+  },
+  {
+    "slug": "biot-savart-law",
+    "title": "Biot-Savart Law",
+    "latex": "B(r) = \\frac{\\mu_0}{4\\pi} \\int \\frac{I d\\ell \\times r'}{|r'|^3}",
+    "description": "The Biot-Savart law describes the magnetic field produced by a steady current.",
+    "summary": "The Biot-Savart law describes the magnetic field produced by a steady current.",
+    "tags": [
+      "physics",
+      "electromagnetism"
+    ],
+    "section": "formulas",
+    "content": "\nThe Biot-Savart Law describes the magnetic field generated by a constant electric current in magneto-statics. It is as follows:\n\n$$ B(r) = \\frac{\\mu_0}{4\\pi} \\int \\frac{I  d\\ell \\times r'}{|r'|^3} $$\n\nWhere\n\n- $ \\small B(r) $ is the magnetic field at point $ \\small r  $,\n- $ \\small  \\mu_0  $ is the permeability of free space,\n- $ \\small  I  $ is the current,\n- $ \\small  d\\ell  $ is an infinitesimal current element,\n- $ \\small  r'  = r - \\ell $ is the displacement vector from the current element",
+    "permalink": "/formulas/biot-savart-law"
+  },
+  {
+    "slug": "boltzmann-entropy",
+    "title": "Boltzmann Entropy",
+    "latex": "S=k_B\\ln\\Omega",
+    "description": "The Boltzmann Entropy formula.",
+    "summary": "The Boltzmann Entropy formula.",
+    "tags": [
+      "physics",
+      "thermodynamics"
+    ],
+    "section": "formulas",
+    "content": "\nThe Boltzmann Entropy formula is:\n\n$$ S = k_B \\ln \\Omega $$\n\nWhere\n\n* $ \\small S $ is the Boltzmann Entropy,\n* $ \\small k_B $ is Boltzmann's constant, and\n* $ \\small \\Omega $ is the number of microstates.\n\n## Sources\n\n- [Wikipedia](https://en.wikipedia.org/wiki/Boltzmann%27s_entropy_formula)\n- [Chem LibreTexts](https://chem.libretexts.org/Courses/Western_Washington_University/Biophysical_Chemistry_(Smirnov_and_McCarty)/01%3A_Biochemical_Thermodynamics/1.05%3A_The_Boltzmann_Distribution_and_the_",
+    "permalink": "/formulas/boltzmann-entropy"
+  },
+  {
+    "slug": "canonical-partition-function",
+    "title": "Canonical Partition Function",
+    "latex": "Z = \\sum_{i} e^{-\\beta E_i}",
+    "description": "The expression describing a canonical ensemble in statistical mechanics.",
+    "summary": "The expression describing a canonical ensemble in statistical mechanics.",
+    "tags": [
+      "physics",
+      "statistical mechanics"
+    ],
+    "section": "formulas",
+    "content": "\nThe canonical partition function, denoted by $ \\small Z $, is a fundamental concept in statistical mechanics. It is a useful tool that can tell us the properties of the system, such as the probability that the system is in a particular state, the average energy of the system, and the heat capacity of the system.\n\nFor a classical, discrete canonical ensemble at a temperature $ \\small T $, the canonical partition function is given by:\n\n## Partition function\n\n$$ Z = \\sum_{i} e^{-\\beta E_i} $$\n\nWhe",
+    "permalink": "/formulas/canonical-partition-function"
+  },
+  {
+    "slug": "capacitance",
+    "title": "Capacitance",
+    "latex": "C = \\frac{\\epsilon A}{d}",
+    "description": "The capacitance of a parallel plate capacitor",
+    "summary": "The capacitance of a parallel plate capacitor",
+    "tags": [
+      "electronics",
+      "electrical engineering"
+    ],
+    "section": "formulas",
+    "content": "\nThe capacitance of a parallel-plate capacitor is given by:\n\n$$ C = \\frac{\\epsilon A}{d} $$\n\nWhere\n\n- $ \\small C $ is the capacitance of the capacitor, measured in farads (F),\n- $ \\small \\epsilon $ is the permittivity of the dielectric between the plates, in farads per meter (F/m),\n- $ \\small A $ is the area of the plates in square meters (m<sup>2</sup>), and\n- $ \\small d $ is the distance between the plates in meters.\n\n\n## Sources\n\n- [Electronics Notes](https://www.electronics-notes.com/article",
+    "permalink": "/formulas/capacitance"
+  },
+  {
+    "slug": "capacitor-charge",
+    "title": "Capacitor Charge",
+    "latex": "V = \\frac{Q}{C}",
+    "description": "The relationship between the voltage across a capacitor and the charge stored on each conductor.",
+    "summary": "The relationship between the voltage across a capacitor and the charge stored on each conductor.",
+    "tags": [
+      "electronics",
+      "electrical engineering"
+    ],
+    "section": "formulas",
+    "content": "\nThe relationship between the voltage across a capacitor and the charge stored on each conductor is given by:\n\n$$ V = \\frac{Q}{C} $$\n\nWhere\n\n- $ \\small V $ represents the voltage across the capacitor,\n- $ \\small Q $ represents the charge stored on the capacitor, and\n- $ \\small C $ is the capacitance of the capacitor, usually measured in farads (F).\n\n\n## Sources\n\n- [Electronics Notes](https://www.electronics-notes.com/articles/basic_concepts/capacitance/capacitor-formulas-equations.php)\n- [Wikipe",
+    "permalink": "/formulas/capacitor-charge"
+  },
+  {
+    "slug": "capacitor-current",
+    "title": "Capacitor Current",
+    "latex": "I = C \\frac{dV}{dt}",
+    "description": "The relationship between the current through a capacitor and the rate of change of voltage across the capacitor.",
+    "summary": "The relationship between the current through a capacitor and the rate of change of voltage across the capacitor.",
+    "tags": [
+      "electronics",
+      "electrical engineering"
+    ],
+    "section": "formulas",
+    "content": "\nThe current through a capacitor is given by:\n\n$$ I = C \\frac{dV}{dt} $$\n\nWhere\n\n- $ \\small I $ is the current through the capacitor in amperes (A),\n- $ \\small C $ is the capacitance of the capacitor in farads (F), and\n- $ \\small \\frac{dV}{dt} $ is the rate of change of voltage across the capacitor with respect to time (V/s).\n\n\n## Sources\n\n- [Electronics Notes](https://www.electronics-notes.com/articles/basic_concepts/capacitance/capacitor-formulas-equations.php)\n- [Wikipedia](https://en.wikiped",
+    "permalink": "/formulas/capacitor-current"
+  },
+  {
+    "slug": "capacitor-energy",
+    "title": "Capacitor Energy",
+    "latex": "E = \\frac{1}{2} C V^2",
+    "description": "The energy stored in a capacitor.",
+    "summary": "The energy stored in a capacitor.",
+    "tags": [
+      "electronics",
+      "electrical engineering"
+    ],
+    "section": "formulas",
+    "content": "\nThe energy stored in a capacitor is given by:\n\n$$ E = \\frac{1}{2} C V^2 $$\n\nWhere\n\n- $ \\small E $ represents the energy stored in the capacitor, measured in joules (J),\n- $ \\small C $ is the capacitance of the capacitor, measured in farads (F), and\n- $ \\small V $ represents the voltage across the capacitor, in volts (V).\n\n## Sources\n\n- [Electronics Notes](https://www.electronics-notes.com/articles/basic_concepts/capacitance/capacitor-formulas-equations.php)\n- [Wikipedia](https://en.wikipedia.or",
+    "permalink": "/formulas/capacitor-energy"
+  },
+  {
+    "slug": "cauchys-integral-theorem",
+    "title": "Cauchy's Integral Theorem",
+    "latex": "\\oint_C f(z)dz = 0",
+    "description": "A theorem used for line integrals of complex functions.",
+    "summary": "A theorem used for line integrals of complex functions.",
+    "tags": [
+      "math",
+      "complex analysis",
+      "integration"
+    ],
+    "section": "formulas",
+    "content": "\n$$ \\oint_C f(z)dz = 0 $$\n\nWhere\n* $f(z)$ is a [holomorphic](https://en.wikipedia.org/wiki/Holomorphic_function) complex function, and\n* $C$ is a [simple closed curve](https://en.wikipedia.org/wiki/Simple_closed_curve) in the complex plane.\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Cauchy%27s_integral_theorem)\n- [Wolfram MathWorld](https://mathworld.wolfram.com/CauchyIntegralTheorem.html)\n\n",
+    "permalink": "/formulas/cauchys-integral-theorem"
+  },
+  {
+    "slug": "conditional-probability",
+    "title": "Conditional Probability",
+    "latex": "P(E|F) = \\frac{P(E \\cap F)}{P(F)}",
+    "description": "The formula for conditional probability.",
+    "summary": "The formula for conditional probability.",
+    "tags": [
+      "probability",
+      "statistics"
+    ],
+    "section": "formulas",
+    "content": "\nThe conditional probability formula is:\n\n$$ P(E|F) = \\frac{P(E \\cap F)}{P(F)} $$\n\nWhere\n\n* $\\small P(E|F)$ is the probability of event $E$ given event $F$,\n* $\\small P(E \\cap F)$ (the intersection of the two events) is the probability of both events $E$ and $F$ occurring, and\n* $\\small P(F)$ is the probability of event $F$.\n\n## Sources\n\n- [Wikipedia](https://en.wikipedia.org/wiki/Conditional_probability)\n- [Yale](http://www.stat.yale.edu/Courses/1997-98/101/condprob.htm)",
+    "permalink": "/formulas/conditional-probability"
+  },
+  {
+    "slug": "convolution",
+    "title": "Convolution",
+    "latex": "(f*g)(t)=\\int_{-\\infty}^{\\infty} f(\\tau)g(t-\\tau)d\\tau",
+    "description": "Formula for the convolution of two functions.",
+    "summary": "Formula for the convolution of two functions.",
+    "tags": [
+      "math",
+      "integration",
+      "calculus"
+    ],
+    "section": "formulas",
+    "content": "\nThe formula for the convolution of two functions $\\small f$ and $\\small g$ is:\n\n$$ (f*g)(t)=\\int_{-\\infty}^{\\infty} f(\\tau)g(t-\\tau)d\\tau$$\n\nWhere\n* $\\tau$ is a dummy variable that is used in the integral only.\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Convolution)\n- [Wolfram Mathworld](https://mathworld.wolfram.com/Convolution.html)\n",
+    "permalink": "/formulas/convolution"
+  },
+  {
+    "slug": "cosine-law",
+    "title": "Cosine Law",
+    "latex": "c^2 = a^2 + b^2 - 2 \\cdot a \\cdot b \\cdot \\cos(\\theta)",
+    "description": "The formula relating the sides and angles of every triangle.",
+    "summary": "The formula relating the sides and angles of every triangle.",
+    "tags": [
+      "math",
+      "trigonometry",
+      "cos"
+    ],
+    "section": "formulas",
+    "content": "\nFor any triangle:\n\n![diagram](cosine-law.png)\n\nThe following is true:\n\n$$ c^2 = a^2 + b^2 - 2 \\cdot a \\cdot b \\cdot \\cos(\\theta) $$\n\nNote that the naming of the sides and angle is arbitrary. The formula is true as long as $\\small \\theta$ is the angle opposite side c.\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Law_of_cosines)\n- [Byju's](https://byjus.com/maths/law-of-cosines/)\n",
+    "permalink": "/formulas/cosine-law"
+  },
+  {
+    "slug": "coulombs-law",
+    "title": "Coulomb's Law",
+    "latex": "F = \\frac{k q_1 q_2}{r^2}",
+    "description": "The Coulomb's Law formula.",
+    "summary": "The Coulomb's Law formula.",
+    "tags": [
+      "physics",
+      "electrostatics"
+    ],
+    "section": "formulas",
+    "content": "\n## Scalar Form\nFor any two point charges, Coulomb's Law says that the electrostatic force between them is given by:\n\n$$ F = \\frac{k q_1 q_2}{r^2} $$\n\nWhere\n\n* $ \\small k $ is the electrostatic constant equal to $ \\frac{1}{4 \\pi \\epsilon_0} $, with $ \\small \\epsilon_0 $ being the permittivity of free space,\n* $ \\small q_1 $ and $ \\small q_2 $ are the magnitudes of the electric charges of the two point charges, and\n* $ \\small r $ is the distance between the two point charges.\n\nIf the two point ch",
+    "permalink": "/formulas/coulombs-law"
+  },
+  {
+    "slug": "cross-product",
+    "title": "Cross Product",
+    "latex": "\\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\ a_1 & a_2 & a_3 \\\\ b_1 & b_2 & b_3 \\end{vmatrix}",
+    "description": "The cross product is a common operation in linear algebra and beyond.",
+    "summary": "The cross product is a common operation in linear algebra and beyond.",
+    "tags": [
+      "math",
+      "linear algebra",
+      "vector calculus"
+    ],
+    "section": "formulas",
+    "content": "For two vectors $\\small \\vec{a}$ and $\\small \\vec{b}$ in $\\small \\mathbb{R}^3$ ([real coordinate spaces](https://en.wikipedia.org/wiki/Real_coordinate_space), the cross product is defined as\n\n$$ \\vec{a} \\times \\vec{b} = \\begin{vmatrix} \\vec{i} & \\vec{j} & \\vec{k} \\\\\\ \na_1 & a_2 & a_3 \\\\\\\nb_1 & b_2 & b_3 \\end{vmatrix}$$\n\nWhere\n* The right hand side is a [determinant](https://en.wikipedia.org/wiki/Determinant) of a 3x3 matrix,\n* $\\small a_i$ and $\\small b_i$ are the $\\small i$-th components of $\\s",
+    "permalink": "/formulas/cross-product"
+  },
+  {
+    "slug": "curl",
+    "title": "Curl",
+    "latex": "\\scriptsize \\nabla \\times \\mathbf{F} = \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\\\\\ \\frac{\\partial}{\\partial x} & \\frac{\\partial}{\\partial y} & \\frac{\\partial}{\\partial z} \\\\\\\\ F_x & F_y & F_z \\end{vmatrix}",
+    "description": "The concept of curl in vector calculus.",
+    "summary": "The concept of curl in vector calculus.",
+    "tags": [
+      "math",
+      "vector calculus"
+    ],
+    "section": "formulas",
+    "content": "\nThe curl measures the rotation or circulation of the vector field $ \\small \\mathbf{F} $ at any given point in space.\n\n## Cartesian Coordinates\nIn cartesian coordinates, the curl of a vector field $ \\small \\mathbf{F} $ is given by the determinant of the matrix:\n\n$$\n\\nabla \\times \\mathbf{F} = \\begin{vmatrix} \\mathbf{i} & \\mathbf{j} & \\mathbf{k} \\\\\\\\ \\frac{\\partial}{\\partial x} & \\frac{\\partial}{\\partial y} & \\frac{\\partial}{\\partial z} \\\\\\\\ F_x & F_y & F_z \\end{vmatrix}\n\n$$\n\nWhere:\n- $ \\small \\na",
+    "permalink": "/formulas/curl"
+  },
+  {
+    "slug": "de-moivres-theorem",
+    "title": "De Moivre's Theorem",
+    "latex": "\\small (\\cos x+ i \\sin x)^n=\\cos(nx)+i\\sin(nx)",
+    "description": "Formula for a equivalent form of a complex number raised to a power.",
+    "summary": "Formula for a equivalent form of a complex number raised to a power.",
+    "tags": [
+      "mathematics",
+      "complex analysis",
+      "trigonometry"
+    ],
+    "section": "formulas",
+    "content": "\nDe Moivre's Theorem, named after the French mathematician Abraham de Moivre, is a fundamental result in complex numbers and trigonometry. It states that:\n\n$$ (\\\\cos x + i \\\\sin x)^n = \\\\cos(nx) + i\\\\sin(nx) $$\n\nWhere:\n* \\$ \\small \\\\small x $ is a real number representing the angle in radians,\n* \\$ \\small \\\\small n $ is an integer exponent,\n* \\$ \\small \\\\small i $ is the imaginary unit, \\$ \\small \\\\small i^2 = -1 $,\n* \\$ \\small \\\\small \\\\cos $ and \\$ \\small \\\\small \\\\sin $ are the trigonometric ",
+    "permalink": "/formulas/de-moivres-theorem"
+  },
+  {
+    "slug": "definition-of-the-derivative",
+    "title": "Definition of the Derivative",
+    "latex": "\\frac{d}{dx}f(x) = \\lim_{h\\to 0}\\frac{f(x+h)-f(x)}{h}",
+    "description": "The definition of the derivative.",
+    "summary": "The definition of the derivative.",
+    "tags": [
+      "math",
+      "calculus",
+      "limits",
+      "differentiation"
+    ],
+    "section": "formulas",
+    "content": "\n$$ \\frac{d}{dx}f(x) = \\lim_{h\\to 0}\\frac{f(x+h)-f(x)}{h} $$\n\nWhere\n* $f(x)$ is a function,\n* $x$ is the independent variable, and\n* $h$ is an increment that we take to 0 in the limit.\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Derivative#Definition)\n- [Wolfram MathWorld](https://mathworld.wolfram.com/Derivative.html)\n\n## Example\nFind the derivative of $f(x) = x^2$ at $x=2$ using the definition of the derivative.\n\nWe can plug in everything into the definition to get the answer:\n\n$$ ",
+    "permalink": "/formulas/definition-of-the-derivative"
+  },
+  {
+    "slug": "determinant",
+    "title": "Determinants of Matrices",
+    "latex": "\\det(A)",
+    "description": "The formula for the determinant of a matrix.",
+    "summary": "The formula for the determinant of a matrix.",
+    "tags": [
+      "math",
+      "linear algebra"
+    ],
+    "section": "formulas",
+    "content": "\nThe determinant of a matrix is a scalar value that can be calculated from the elements of the matrix. It is denoted by $\\small \\det(A)$ or $\\small |A|$.\n\n$$ \\det\\begin{bmatrix}\\\\\n    \t    a & b\\\\\\\\\n    \t    c & d\\\\\\\\\n    \t\\end{bmatrix}=ad-cb $$\n    \n\n$$\\det\\begin{bmatrix}\n    \t    a & b & c\\\\\\\\\n    \t    d & e & f\\\\\\\\\n    \t    g & h & i\n    \t\\end{bmatrix}=a\\begin{vmatrix}\n    \t    e & f\\\\\\\\\n    \t    h & i\n    \t\\end{vmatrix}-b\\begin{vmatrix}\n    \t    d & f\\\\\\\\\n    \t    g & i\n    \t\\end{vmatrix}+c\\",
+    "permalink": "/formulas/determinant"
+  },
+  {
+    "slug": "divergence-theorem",
+    "title": "Divergence Theorem",
+    "latex": "\\iiint_V (\\nabla \\cdot \\vec{F}) dV = \\oiint_S (\\vec{F} \\cdot \\hat{n}) dS",
+    "description": "The divergence theorem is a formula that describes the relationship between the divergence of a vector field and the surface integral of the field over a closed surface.",
+    "summary": "The divergence theorem is a formula that describes the relationship between the divergence of a vector field and the surface integral of the field over a closed surface.",
+    "tags": [
+      "vector calculus",
+      "integration"
+    ],
+    "section": "formulas",
+    "content": "\nIf $\\small \\vec{F}$ is a continuously diffrerentiable vector field in the volume $\\small V$ with closed surface $\\small S$, then the divergence theorem (also known as Gauss's Theorem) states that\n\n$$ \\iiint_V (\\nabla \\cdot \\vec{F}) dV = \\oiint_S (\\vec{F} \\cdot \\hat{n}) dS $$\n\nWhere\n* The left hand side is a volume integral of the divergence of $\\vec{F}$ over the volume $V$, and\n* $\\hat{n}$ is the unit normal vector to the surface S, used in the surface integral on the right hand side.\n\nThis can",
+    "permalink": "/formulas/divergence-theorem"
+  },
+  {
+    "slug": "divergence",
+    "title": "Divergence",
+    "latex": "\\nabla \\cdot \\mathbf{F} = \\frac{\\partial F_x}{\\partial x} + \\frac{\\partial F_y}{\\partial y} + \\frac{\\partial F_z}{\\partial z}",
+    "description": "The concept of divergence in vector calculus.",
+    "summary": "The concept of divergence in vector calculus.",
+    "tags": [
+      "math",
+      "vector calculus"
+    ],
+    "section": "formulas",
+    "content": "\nThe divergence measures the rate at which the vector field $\\small \\mathbf{F}$ spreads out or converges at a given point in space.\n\n## Cartesian Coordinates\nThe divergence of a vector field $\\small \\mathbf{F}$ in cartesian coordinates is given by:\n\n$$ \\nabla \\cdot \\mathbf{F}  = \\frac{\\partial F_x}{\\partial x} + \\frac{\\partial F_y}{\\partial y} + \\frac{\\partial F_z}{\\partial z} $$\n\nWhere:\n- $\\small x, y, z$ are the usual cartesian coordinates,\n- $\\small \\nabla$ is the del operator (also known as ",
+    "permalink": "/formulas/divergence"
+  },
+  {
+    "slug": "dot-product",
+    "title": "Dot Product",
+    "latex": "\\vec{a} \\cdot \\vec{b} = \\sum_{i=1}^n a_i b_i",
+    "description": "The dot product is a common operation in linear algebra and beyond.",
+    "summary": "The dot product is a common operation in linear algebra and beyond.",
+    "tags": [
+      "math",
+      "linear algebra",
+      "vector calculus"
+    ],
+    "section": "formulas",
+    "content": "For two vectors $\\small \\vec{a}$ and $\\small \\vec{b}$ in $\\small \\mathbb{R}^n$ ([real coordinate spaces](https://en.wikipedia.org/wiki/Real_coordinate_space), the dot product is defined as\n\n$$ \\vec{a} \\cdot \\vec{b} = \\sum_{i=1}^n a_i b_i $$\n\nWhere\n* $\\small a_i$ and $\\small b_i$ are the $\\small i$-th components of $\\small \\vec{a}$ and $\\small \\vec{b}$, respectively, and\n* $\\small n$ is the dimension of $\\small \\vec{a}$ and $\\small \\vec{b}$.\n\n## Alternative definition\n\nGiven that $\\small \\vec{a}$",
+    "permalink": "/formulas/dot-product"
+  },
+  {
+    "slug": "double-angle-trig-identities",
+    "title": "Double Angle Trig Identities",
+    "latex": "\\sin(2\\theta) = 2 \\cdot \\sin(\\theta) \\cdot \\cos(\\theta)",
+    "description": "Formulas expanding the trigonometric functions of double angles.",
+    "summary": "Formulas expanding the trigonometric functions of double angles.",
+    "tags": [
+      "trigonometry",
+      "sin",
+      "cos",
+      "tan",
+      "math"
+    ],
+    "section": "formulas",
+    "content": "For any angle $\\small \\theta$, the following are true:\n\n$$ \\sin(2\\theta) = 2 \\sin(\\theta) \\cos(\\theta) $$\n\n$$ \\small \\cos(2\\theta) = \\cos^2(\\theta) - \\sin^2(\\theta) = 2 \\cos^2(\\theta) - 1 = 1 - 2 \\sin^2(\\theta)$$\n\n\n$$ \\tan(2\\theta) = \\frac{2 \\tan(\\theta)}{1 - \\tan^2(\\theta)} $$\n\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/List_of_trigonometric_identities#Double-angle_formulae)\n- [Byju's](https://byjus.com/maths/trigonometric-identities/)",
+    "permalink": "/formulas/double-angle-trig-identities"
+  },
+  {
+    "slug": "energy-of-light",
+    "title": "Photon Energy",
+    "latex": "E = hf",
+    "description": "The energy of a photon.",
+    "summary": "The energy of a photon.",
+    "tags": [
+      "physics",
+      "optics"
+    ],
+    "section": "formulas",
+    "content": "\nThe energy of a photon is:\n\n$$ E = hf = \\frac{hc}{\\lambda}$$\n\nWhere\n\n* $h$ is the [Planck constant](https://en.wikipedia.org/wiki/Planck_constant),\n* $f$ is the frequency of the photon\n* $c$ is the speed of light in a vacuum, and\n* $\\lambda$ is the wavelength of the light.\n\n## Sources\n\n- [Wikipedia](https://en.wikipedia.org/wiki/Photon_energy)\n- [Khan Academy](https://www.khanacademy.org/science/physics/quantum-physics/photons/v/photon-energy)\n\n## See also\n\n- [Light Wavelength and Frequency Rel",
+    "permalink": "/formulas/energy-of-light"
+  },
+  {
+    "slug": "equivalent-uniform-annual-cost",
+    "title": "Equivalent Uniform Annual Cost",
+    "latex": "A = P \\left[\\frac{i(1 + i)^n}{(1 + i)^n - 1}\\right]",
+    "description": "Formulas for converting between present worth, annual worth, and future worth",
+    "summary": "Formulas for converting between present worth, annual worth, and future worth",
+    "tags": [
+      "math",
+      "finance"
+    ],
+    "section": "formulas",
+    "content": "\n## Present Worth to Annual Worth\n\nFor a sum of money $\\small P$ invested at a compounding interest rate $\\small i$ for $\\small n$ years, the equivalent uniform annual cost (a.k.a \"ordinary annuity, capital recovery cost\") $\\small A$ is given by:\n\n$$A = P \\cdot (A/P, i, n) = P \\left[\\frac{i(1 + i)^n}{(1 + i)^n - 1}\\right] $$\n\n\nWhere\n\n* $\\small P$ is the present value,\n* $\\small i$ is the interest rate, and\n* $\\small n$ is the number of periods\n\nThis can be rewritten to find P (\"series present wo",
+    "permalink": "/formulas/equivalent-uniform-annual-cost"
+  },
+  {
+    "slug": "error-function",
+    "title": "Error Function",
+    "latex": "\\text{erf}(z) = \\frac{2}{\\sqrt{\\pi}} \\int_0^z e^{-t^2} dt",
+    "description": "The error function formula.",
+    "summary": "The error function formula.",
+    "tags": [
+      "mathematics",
+      "statistics"
+    ],
+    "section": "formulas",
+    "content": "\nThe error function, often used in statistics and probability, is defined as the integral of the Gaussian function. It is defined as follows:\n\n$$ \\text{erf}(z) = \\frac{2}{\\sqrt{\\pi}} \\int_0^z e^{-t^2} dt $$\n\n\n## Sources\n\n- [Wikipedia](https://en.wikipedia.org/wiki/Error_function)\n",
+    "permalink": "/formulas/error-function"
+  },
+  {
+    "slug": "eulers-identity-formula",
+    "title": "Euler's Identity/Formula",
+    "latex": "e^{i\\pi} = -1",
+    "description": "One of the most amazing formulas in mathematics.",
+    "summary": "One of the most amazing formulas in mathematics.",
+    "tags": [
+      "math",
+      "complex analysis",
+      "e",
+      "pi",
+      "trigonometry"
+    ],
+    "section": "formulas",
+    "content": "## Euler's Identity\n\n$$e^{i\\pi} = -1$$\n\nWhere\n* $e$ is [Euler's number](https://en.wikipedia.org/wiki/E_(mathematical_constant)) ~= 2.71828,\n* $i$ is the imaginary unit, $\\sqrt{-1}$, and\n* $\\pi$ is [pi](https://en.wikipedia.org/wiki/Pi) ~= 3.14159.\n\n## Euler's Formula\nMore generally, for any number (even complex) $x$, Euler's Formula says that\n\n$$e^{ix} = \\cos(x) + i\\sin(x)$$\n\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Euler%27s_identity)\n- [Wikipedia](https://en.wikipedia.org/wiki/",
+    "permalink": "/formulas/eulers-identity-formula"
+  },
+  {
+    "slug": "feynmanns-trick",
+    "title": "Feynmann's Trick For Exponential Integrals",
+    "latex": "\\int_0^{\\infty} x^n e^{-tx} dx = \\frac{n!}{t^{n+1}}",
+    "description": "A niche trick for evaluation exponential integrals of a certain form.",
+    "summary": "A niche trick for evaluation exponential integrals of a certain form.",
+    "tags": [
+      "math",
+      "calculus"
+    ],
+    "section": "formulas",
+    "content": "## Feynmann's Trick For Exponential Integrals\n\n$$\\int_0^{\\infty} x^n e^{-tx} dx = \\frac{n!}{t^{n+1}}$$\n\nWhere\n* $t$ is a constant, and\n* $n!$ is the Gamma function (does not require $n$ to be an integer)\n\nFeynmann's trick involves \"differentiating under the integral\" which is a whole technique on its own, and the above formula is something that can be found using this technique.\nI found that formula particularly hard to find online, so I decided to write it up.\n\n## Sources\n- [William's College (",
+    "permalink": "/formulas/feynmanns-trick"
+  },
+  {
+    "slug": "finite-difference-approximations",
+    "title": "Finite Difference Approximations",
+    "latex": "\\frac{f(x+h) - 2f(x) + f(x-h)}{h^2}",
+    "description": "Finite difference approximations for derivatives.",
+    "summary": "Finite difference approximations for derivatives.",
+    "tags": [
+      "math",
+      "derivatives",
+      "calculus"
+    ],
+    "section": "formulas",
+    "content": "Finite difference approximations are used to approximate derivatives of functions using discretized data, such as data from simulations or sensors. The most common finite difference approximations are for the first and second derivatives, although higher order derivatives can be approximated as well.\n\n## First Derivative\n### First-Order Accurate\nFor a step size of $\\small h$, the forward difference, first-order accurate approximation for the first derivative of a function $\\small f$ at a point $",
+    "permalink": "/formulas/finite-difference-approximations"
+  },
+  {
+    "slug": "finite-infinite-sums",
+    "title": "Finite and Infinite Geometric Sums",
+    "latex": "S_n = \\frac{a(1-r^n)}{1-r}",
+    "description": "The simplified formulas for the sum of finite and infinite geometric series.",
+    "summary": "The simplified formulas for the sum of finite and infinite geometric series.",
+    "tags": [
+      "math"
+    ],
+    "section": "formulas",
+    "content": "## Finite Geometric Series\nFor a series of the form $ \\small a, ar, ar^2, ar^3, \\ldots$, the sum of the first $\\small n$ terms is\n\n$$S_n = \\sum_{i=0}^{n-1} ar^i = \\frac{a(1-r^n)}{1-r}$$\n\nwhere $\\small r >0, \\neq 1 $ is the common ratio. Note that this expression can be used for $\\small r > 1$  unlike the infinite series formula below.\n\nIf $\\small r = 1$, then $\\small S_n = an$.\n\n## Infinite Geometric Series\nIf $\\small r$ satisfies $\\small  0 < r < 1$, the sum of the infinite series is\n\n$$S_{\\inf",
+    "permalink": "/formulas/finite-infinite-sums"
+  },
+  {
+    "slug": "fourier-transform",
+    "title": "Fourier + Inverse Fourier Transform",
+    "latex": "X(\\omega) = \\int_{-\\infty}^{\\infty}x(t)e^{-j\\omega t}\\,dt",
+    "description": "The Fourier and inverse Fourier transform formulas.",
+    "summary": "The Fourier and inverse Fourier transform formulas.",
+    "tags": [
+      "math",
+      "signal processing",
+      "optics"
+    ],
+    "section": "formulas",
+    "content": "\n## Fourier Transform\nThe Fourier transform is used to transform a signal from the time domain to the frequency domain.\n\nThe Fourier transform formula is:\n\n$$ X(\\omega) = \\int_{-\\infty}^{\\infty}x(t)e^{-j\\omega t}dt $$\n\nWhere\n\n* $ \\small X(\\omega) $ is the Fourier transform of the function $ \\small x(t) $,\n* $ \\small x(t) $ is the input signal in the time domain,\n* $ \\small j $ is the imaginary unit,\n* $ \\small e $ is Euler's number,\n* $ \\small \\omega $ is the angular frequency.\n\n\n## Inverse Four",
+    "permalink": "/formulas/fourier-transform"
+  },
+  {
+    "slug": "fundmantal-theorem-of-calculus",
+    "title": "Fundamental Theorem of Calculus",
+    "latex": "\\int_a^b f(x) dx = F(b) - F(a)",
+    "description": "Fundamental Theorem of Calculus",
+    "summary": "Fundamental Theorem of Calculus",
+    "tags": [
+      "math",
+      "calculus"
+    ],
+    "section": "formulas",
+    "content": "\n$$\\int_a^b f(x) dx = F(b) - F(a)$$\n\nWhere\n* $f$ is a continuous function on $[a, b]$,\n* $F$ is an antiderivative of $f$,\n* $a$ is the lower bound of the integral, and\n* $b$ is the upper bound of the integral.\n\nThis theorem, also known as the second fundamental theorem of calculus says that the definite integral of a continuous function on a closed interval is equal to the difference between the value of the antiderivative at the upper bound and the value of the antiderivative at the lower bound",
+    "permalink": "/formulas/fundmantal-theorem-of-calculus"
+  },
+  {
+    "slug": "future-to-net-present-worth",
+    "title": "Present and Future Value",
+    "latex": "F = P(1 + i)^n",
+    "description": "Formulas for converting between future worth and net present worth",
+    "summary": "Formulas for converting between future worth and net present worth",
+    "tags": [
+      "math",
+      "finance"
+    ],
+    "section": "formulas",
+    "content": "\nFor a sum of money $P$ invested at a compounding interest rate $i$ for $n$ periods, the future value $F$ is given by:\n\n$$F = P(1 + i)^n$$\n\nWhere\n\n* $P$ is the present value,\n* $i$ is the interest rate, and\n* $n$ is the number of periods\n\n## Sources\n- [Investopedia](https://www.investopedia.com/terms/f/futurevalue.asp)\n- [Wikipedia](https://en.wikipedia.org/wiki/Future_value#Compound_interest)",
+    "permalink": "/formulas/future-to-net-present-worth"
+  },
+  {
+    "slug": "gauss-law",
+    "title": "Gauss's Law",
+    "latex": "\\oiint \\vec{E} \\cdot d\\vec{A} = \\frac{Q_{enc}}{\\epsilon_0}",
+    "description": "Gauss's law is a formula that describes the electric field produced by a charge distribution.",
+    "summary": "Gauss's law is a formula that describes the electric field produced by a charge distribution.",
+    "tags": [
+      "physics",
+      "electromagnetism",
+      "Maxwell's equations"
+    ],
+    "section": "formulas",
+    "content": "\n$$ \\oiint \\vec{E} \\cdot d\\vec{A} = \\frac{Q_{enc}}{\\epsilon_0} $$\n\nWhere\n\n* The left side is a surface integral of the electric field $\\vec{E}$ over a closed surface $\\vec{A}$, and\n* $Q_{enc}$ is the charge enclosed by the surface, and\n* $\\epsilon_0$ is the [permittivity of free space](https://en.wikipedia.org/wiki/Vacuum_permittivity).\n\n## Differential form\n\nGauss's law can also be written in differential form:\n\n$$ \\nabla \\cdot \\vec{E} = \\frac{\\rho}{\\epsilon_0} $$\n\nWhere\n\n* The left side is the",
+    "permalink": "/formulas/gauss-law"
+  },
+  {
+    "slug": "gaussian",
+    "title": "Gaussian/Normal Distribution",
+    "latex": "f(x) = \\frac{1}{\\sigma \\sqrt{2\\pi}} e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2}",
+    "description": "The formula for the normal distribution.",
+    "summary": "The formula for the normal distribution.",
+    "tags": [
+      "math",
+      "statistics",
+      "probability theory"
+    ],
+    "section": "formulas",
+    "content": "\nThe formula for the normal distribution as a function of the variable x is:\n\n$$ \\frac{1}{\\sigma \\sqrt{2\\pi}} e^{-\\frac{1}{2}\\left(\\frac{x-\\mu}{\\sigma}\\right)^2} $$\n\nWhere\n\n* $ \\small e $ is Euler's number, \n* $ \\small  \\mu $ is the mean of the distribution, and\n* \\$ \\small  \\sigma $ is the standard deviation of the distribution.\n\n## Sources\n\n- [Wikipedia](https://en.wikipedia.org/wiki/Normal_distribution)\n- [Britannica](https://www.britannica.com/topic/uniform-distribution-statistics)",
+    "permalink": "/formulas/gaussian"
+  },
+  {
+    "slug": "gradient",
+    "title": "Gradient",
+    "latex": "\\nabla f = \\frac{\\partial f}{\\partial x} \\mathbf{i} + \\frac{\\partial f}{\\partial y} \\mathbf{j} + \\frac{\\partial f}{\\partial z} \\mathbf{k}",
+    "description": "The concept of gradient in vector calculus.",
+    "summary": "The concept of gradient in vector calculus.",
+    "tags": [
+      "math",
+      "vector calculus"
+    ],
+    "section": "formulas",
+    "content": "\nThe gradient represents the direction and magnitude of the steepest ascent of the function \\$ \\small f $ at any given point.\n\n## Cartesian Coordinates\n\nThe gradient of a scalar function \\$ \\small f $ in cartesian coordinates is given by:\n\n$$ \\nabla f = \\frac{\\partial f}{\\partial x} \\mathbf{i} + \\frac{\\partial f}{\\partial y} \\mathbf{j} + \\frac{\\partial f}{\\partial z} \\mathbf{k} $$\n\n\nWhere:\n- \\$ \\small \\\\nabla $ represents the del operator (also known as the gradient operator),\n- \\$ \\small \\mathb",
+    "permalink": "/formulas/gradient"
+  },
+  {
+    "slug": "grand-canonical-partition-function",
+    "title": "Grand Canonical Partition Function",
+    "latex": "\\Xi = \\sum_{i} e^{\\beta ( \\mu N_i - E_i)}",
+    "description": "The expression describing a grand canonical ensemble in statistical mechanics.",
+    "summary": "The expression describing a grand canonical ensemble in statistical mechanics.",
+    "tags": [
+      "physics",
+      "statistical mechanics"
+    ],
+    "section": "formulas",
+    "content": "\nThe grand canonical partition function, denoted by $ \\small \\Xi $, is a fundamental concept in statistical mechanics, particularly in the grand canonical ensemble. It represents the sum of the canonical partition functions weighted by the Boltzmann factors over all possible microstates with different numbers of particles.\n\n$$ \\Xi = \\sum_{i} e^{\\beta ( \\mu N_i - E_i)} $$\n\nWhere:\n\n- $ \\small \\Xi $ is the grand canonical partition function,\n- $ \\small \\beta = \\frac{1}{k_B T} $ is the thermodynamic",
+    "permalink": "/formulas/grand-canonical-partition-function"
+  },
+  {
+    "slug": "gravitational-potential-energy",
+    "title": "Gravitational Potential Energy",
+    "latex": "U = mgh",
+    "description": "The potential energy of an object in a gravitation field.",
+    "summary": "The potential energy of an object in a gravitation field.",
+    "tags": [
+      "physics"
+    ],
+    "section": "formulas",
+    "content": "\n$$ U = mgh $$\n\nWhere\n* $U$ is the gravitational potential energy of the object,\n* $m$ is the mass of the object,\n* $g$ is the acceleration due to gravity, and\n* $h$ is the height of the object above the ground.\n\nThis is an approximation that can be made when the object is small compared to the distance between the object and the ground, and g is fairly constant in the domain of observation.\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Potential_energy#Local_approximation)\n- [HyperPhy",
+    "permalink": "/formulas/gravitational-potential-energy"
+  },
+  {
+    "slug": "greek-letters",
+    "title": "Greek Letters",
+    "latex": "\\Delta \\Omega \\lambda",
+    "description": "A table of Greek letters and their common uses.",
+    "summary": "A table of Greek letters and their common uses.",
+    "tags": [
+      "misc"
+    ],
+    "section": "formulas",
+    "content": "\nWhile not technically formulas, Greek letters are used in many formulas and this reference can be useful for identifying their names/their LaTeX commands.\n\n| Name      | Uppercase   | Lowercase   | Commonly used for...                         |\n|-----------|-------------|-------------|----------------------------------------------|\n| Alpha     | $ \\Alpha $ | $ \\alpha $ | linear expansion, nuclear physics            |\n| Beta      | $ \\Beta $  | $ \\beta $  | nuclear physics                       ",
+    "permalink": "/formulas/greek-letters"
+  },
+  {
+    "slug": "greens-theorem",
+    "title": "Green's Theorem",
+    "latex": "\\small \\oint_C Pdx + Qdy = \\iint_D \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} dA",
+    "description": "Green's theorem is a formula that describes the relationship between certain closed path line integrals and line integrals.",
+    "summary": "Green's theorem is a formula that describes the relationship between certain closed path line integrals and line integrals.",
+    "tags": [
+      "vector calculus",
+      "integration",
+      "multivariable calculus",
+      "calculus"
+    ],
+    "section": "formulas",
+    "content": "\nIf $\\small P$ and $\\small Q$ are continuous functions of $\\small x$ and $\\small y$ over the region $\\small D$ with a closed path $\\small C$ that bounds $\\small D$, then Green's theorem states that\n\n$$ \\oint_C Pdx + Qdy = \\iint_D \\frac{\\partial Q}{\\partial x} - \\frac{\\partial P}{\\partial y} dA $$\n\nHonestly, just read [Paul's Online Notes](https://tutorial.math.lamar.edu/classes/calcIII/GreensTheorem.aspx), they're great.\n\nGreen's theorem can be thought of as a 2D version of [Stokes' theorem](/fo",
+    "permalink": "/formulas/greens-theorem"
+  },
+  {
+    "slug": "hookes-law-springs",
+    "title": "Hooke's Law (Spring Constant)",
+    "latex": "F = -kx",
+    "description": "Hooke's Law and the Spring Constant relate the force and displacement of a spring.",
+    "summary": "Hooke's Law and the Spring Constant relate the force and displacement of a spring.",
+    "tags": [
+      "physics",
+      "mechanics"
+    ],
+    "section": "formulas",
+    "content": "\n$$ F = -kx $$\n\nWhere\n* $F$ is the force applied to stretch or compress the spring,\n* $k$ is the spring constant of the spring, and\n* $x$ is the displacement of the spring.\n\nThe negative sign is used when the force being considered is the \"restoring force\". \nIf the force is the \"applied force\", then the negative sign is omitted.\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Hooke's_law#Tensional_stress_of_a_uniform_bar)\n- [Byju's](https://byjus.com/physics/stress-and-strain/)\n\n",
+    "permalink": "/formulas/hookes-law-springs"
+  },
+  {
+    "slug": "hookes-law-stress-strain",
+    "title": "Hooke's Law (Modulus of Elasticity)",
+    "latex": "\\frac{F}{A} = E\\frac{\\Delta L}{L}",
+    "description": "Hooke's Law and Modulus of Elasticity relate the stress and strain of a material.",
+    "summary": "Hooke's Law and Modulus of Elasticity relate the stress and strain of a material.",
+    "tags": [
+      "physics",
+      "mechanical engineering",
+      "materials engineering"
+    ],
+    "section": "formulas",
+    "content": "\n$$ \\frac{F}{A} = E\\frac{\\Delta L}{L} $$\n\nWhere\n* $F$ is the force applied to the material,\n* $A$ is the area of the material where force is applied,\n* $E$ is the modulus of elasticity (a.ka. Young's modulus) of the material,\n* $\\Delta L$ is the change in length of the material, and\n* $L$ is the original length of the material.\n\nThis version of Hooke's Law is generalized from the [original version](/formulas/hookes-law-springs) used to describe the force of springs.\n\n## Sources\n- [Wikipedia](htt",
+    "permalink": "/formulas/hookes-law-stress-strain"
+  },
+  {
+    "slug": "hydraulic-diameter",
+    "title": "Hydraulic Diameter",
+    "latex": "D_h = \\frac{4A_c}{P}",
+    "description": "The generalized characteristic length scale for flow in pipes.",
+    "summary": "The generalized characteristic length scale for flow in pipes.",
+    "tags": [
+      "physics",
+      "fluid dynamics"
+    ],
+    "section": "formulas",
+    "content": "\nThe hydraulic diameter is a characteristic length scale for fluid flow in non-circular pipes. It replaces the diameter of a circular pipe with an equivalent diameter based on the cross-sectional area and wetted perimeter of the non-circular pipe. It is defined as:\n\n$$ D_h = \\frac{4A_c}{P} $$\n\nWhere:\n\n- \\$ \\small D_h $ is the hydraulic diameter,\n- \\$ \\small A_c $ is the cross-sectional area of the flow, and\n- \\$ \\small P $ is the wetted perimeter of the cross-section.\n\n## Sources\n\n- [Wikipedia](",
+    "permalink": "/formulas/hydraulic-diameter"
+  },
+  {
+    "slug": "hydrostatic-equation",
+    "title": "Hydrostatic Equation",
+    "latex": "\\frac{dP}{dz} = - \\rho g",
+    "description": "The formula for hydrostatic pressure force.",
+    "summary": "The formula for hydrostatic pressure force.",
+    "tags": [
+      "physics",
+      "fluid mechanics"
+    ],
+    "section": "formulas",
+    "content": "\nThe hydrostatic pressure in a system is the pressure exerted by a fluid at equilibrium due to the force of gravity. The following equations are used to describe the hydrostatic pressure force:\n\n$$ \\frac{dP}{dz} = - \\rho g $$\n\n$$ P = P_0 - \\rho g z $$\n\n$$ \\Delta P = \\rho g \\Delta z $$\n\nWhere\n\n* $ \\small P $ is the pressure,\n* $ \\small P_0 $ is the pressure at some reference point,\n* $ \\small z $ is the height above the reference point,\n* $ \\small  \\small \\rho  $ is the density of the fluid, and\n",
+    "permalink": "/formulas/hydrostatic-equation"
+  },
+  {
+    "slug": "hyperbolic-trig-functions",
+    "title": "Hyperbolic Functions",
+    "latex": "\\sinh(x) = \\frac{e^x - e^{-x}}{2}",
+    "description": "Definitions of the hyperbolic functions",
+    "summary": "Definitions of the hyperbolic functions",
+    "tags": [
+      "math",
+      "trigonometry",
+      "e",
+      "imaginary numbers",
+      "complex analysis"
+    ],
+    "section": "formulas",
+    "content": "\n$$\\small \\sinh(x) = \\frac{e^x - e^{-x}}{2}, \\cosh(x) = \\frac{e^x + e^{-x}}{2}, \\tanh(x) = \\frac{e^x - e^{-x}}{e^x + e^{-x}}$$\n\nWhere\n* $e$ is [Euler's number](https://en.wikipedia.org/wiki/E_(mathematical_constant)) ~= 2.71828, and\n* $i$ is the imaginary unit, $\\sqrt{-1}$\n\n## Complex trig definitions\n\nThe hyperbolic functions can be defined in terms of the trig functions with complex arguments:\n* $\\sinh(x) = -i \\sin(ix)$\n* $\\cosh(x) = \\cos(ix)$\n* $\\tanh(x) = -i \\tan(ix)$\n\n\n## Sources\n- [Wikiped",
+    "permalink": "/formulas/hyperbolic-trig-functions"
+  },
+  {
+    "slug": "ideal-gas-law",
+    "title": "Ideal Gas Law",
+    "latex": "PV = nRT",
+    "description": "The equation of state of a hypothetical ideal gas.",
+    "summary": "The equation of state of a hypothetical ideal gas.",
+    "tags": [
+      "chemistry"
+    ],
+    "section": "formulas",
+    "content": "The ideal gas law is given by:\n\n$$PV = nRT$$\n\nWhere\n- $P$ is the pressure of the gas,\n- $V$ is the volume of the gas,\n- $n$ is the number of moles of gas,\n- $R$ is the gas constant (see [here](https://en.wikipedia.org/wiki/Gas_constant) for a table of R with various units), and\n- $T$ is the temperature of the gas.\n\n\"The ideal gas law, also called the general gas equation, is the equation of state of a hypothetical ideal gas. It is a good approximation of the behavior of many gases under many con",
+    "permalink": "/formulas/ideal-gas-law"
+  },
+  {
+    "slug": "impulse-momentum-theorem",
+    "title": "Impulse-Momentum Theorem",
+    "latex": "J = \\Delta p = F \\Delta t",
+    "description": "The Impulse-Momentum Theorem formula.",
+    "summary": "The Impulse-Momentum Theorem formula.",
+    "tags": [
+      "physics",
+      "mechanics"
+    ],
+    "section": "formulas",
+    "content": "\nThe Impulse-Momentum Theorem denotes the relationship between the change in momentum and a force that is applied over a time interval. It is given by:\n\n$$ J = \\Delta p = F \\Delta t $$\n\nWhere\n\n* $ \\small \\small J $ is the impulse,\n* $ \\small \\small \\Delta p $ is the change in momentum (which is how impulse is defined),\n* $ \\small \\small F $ is the net applied force, and\n* $ \\small \\small \\Delta t $ is the time interval over which the force is applied.\n\n## Sources\n\n- [Wikipedia](https://en.wikipe",
+    "permalink": "/formulas/impulse-momentum-theorem"
+  },
+  {
+    "slug": "incompressible-navier-stokes",
+    "title": "Incompressible Navier-Stokes Eqns.",
+    "latex": "\\frac{\\partial u}{\\partial x} + \\frac{\\partial v}{\\partial y} + \\frac{\\partial w}{\\partial z} = 0",
+    "description": "The incompressible Navier-Stokes equations describe the motion of incompressible fluid substances.",
+    "summary": "The incompressible Navier-Stokes equations describe the motion of incompressible fluid substances.",
+    "tags": [
+      "fluid mechanics",
+      "physics"
+    ],
+    "section": "formulas",
+    "content": "\nThe incompressible Navier-Stokes  equations are a simpler form of the [Navier-Stokes equations](https://en.wikipedia.org/wiki/Navier%E2%80%93Stokes_equations) that describe the motion of incompressible ($ \\small \\rho $ = constant) fluid substances. This page focuses on the 3-dimensional equations.\n\n## Cartesian Coordinates\nFor cartesian coordinates $ \\small x, y, z $ and time $ \\small t $, the incompressible Navier-Stokes equations are:\n\n### Continuity Equation\n\n$$ \\frac{\\partial u}{\\partial x}",
+    "permalink": "/formulas/incompressible-navier-stokes"
+  },
+  {
+    "slug": "inductor-energy",
+    "title": "Inductor Energy",
+    "latex": "E = \\frac{1}{2} L I^2",
+    "description": "Energy stored in an inductor.",
+    "summary": "Energy stored in an inductor.",
+    "tags": [
+      "electronics",
+      "electrical engineering"
+    ],
+    "section": "formulas",
+    "content": "\n## Energy\nThe energy stored in an inductor is given by:\n\n$$ E = \\frac{1}{2} L I^2 $$\n\nWhere\n\n- $ \\small E $ represents the energy stored in the inductor in joules (J),\n- $ \\small L $ is the inductance of the inductor, in henries (H), and\n- $ \\small I $ is the current through the inductor, in amperes (A).\n\n\n## Sources\n\n- [Wikipedia](https://en.wikipedia.org/wiki/Inductor)\n- [Electrical Technology](https://www.electricaltechnology.org/2020/10/inductor-inductance-formula-equations.html)\n\n## See al",
+    "permalink": "/formulas/inductor-energy"
+  },
+  {
+    "slug": "inductor-voltage",
+    "title": "Inductor Voltage",
+    "latex": "V = L \\frac{dI}{dt}",
+    "description": "Instantaneous voltage across an inductor.",
+    "summary": "Instantaneous voltage across an inductor.",
+    "tags": [
+      "electronics",
+      "electrical engineering"
+    ],
+    "section": "formulas",
+    "content": "\nThe instantaneous voltage across an inductor is given by:\n\n$$ V = L \\frac{dI}{dt} $$\n\nWhere\n\n- $ \\small V $ represents the voltage across the inductor.\n- $ \\small L $ is the inductance of the inductor, usually measured in henries (H).\n- $ \\small \\frac{dI}{dt} $ is the rate of change of current through the inductor with respect to time.\n\n\n## Sources\n\n- [Wikipedia](https://en.wikipedia.org/wiki/Inductor)\n- [Electrical Technology](https://www.electricaltechnology.org/2020/10/inductor-inductance-fo",
+    "permalink": "/formulas/inductor-voltage"
+  },
+  {
+    "slug": "kinematic-viscosity",
+    "title": "Kinematic Viscosity",
+    "latex": "\nu = \\frac{\\mu}{\\rho}",
+    "description": "The ratio of the dynamic viscosity to the density of a fluid.",
+    "summary": "The ratio of the dynamic viscosity to the density of a fluid.",
+    "tags": [
+      "fluid mechanics",
+      "physics"
+    ],
+    "section": "formulas",
+    "content": "\nKinematic viscosity is the ratio of the viscosity (dynamic viscosity) to the density of a fluid:\n\n$$ \\nu = \\frac{\\mu}{\\rho} $$\n\nWhere:\n\n- \\$ \\small \\nu $ is the kinematic viscosity of the fluid,\n- \\$ \\small \\mu $ is the dynamic viscosity of the fluid, and\n- \\$ \\small \\rho $ is the density of the fluid.\n\n## Sources\n\n- [Wikipedia](https://en.wikipedia.org/wiki/Viscosity#Kinematic_viscosity)\n",
+    "permalink": "/formulas/kinematic-viscosity"
+  },
+  {
+    "slug": "kinetic-energy",
+    "title": "Kinetic Energy",
+    "latex": "E_k = \\frac{1}{2}mv^2",
+    "description": "The energy of motion.",
+    "summary": "The energy of motion.",
+    "tags": [
+      "physics"
+    ],
+    "section": "formulas",
+    "content": "\n$$ E_k = \\frac{1}{2}mv^2 $$\n\nWhere\n* $E_k$ is the kinetic energy of the object,\n* $m$ is the mass of the object, and\n* $v$ is the velocity of the object.\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Kinetic_energy)\n- [Brittanica](https://www.britannica.com/science/kinetic-energy)\n\n## Example\nKevin throws a 400,000 kg spaceship straight down off of an infinitely tall cliff. After some time, it reaches a terminal velocity of 500 m/s. What is the kinetic energy of the spaceship at this ",
+    "permalink": "/formulas/kinetic-energy"
+  },
+  {
+    "slug": "laplaces-equation",
+    "title": "Laplace's Equation",
+    "latex": "\\nabla^2 f = \\nabla \\cdot \\nabla f = 0",
+    "description": "Laplace's equation is a common partial differential equation",
+    "summary": "Laplace's equation is a common partial differential equation",
+    "tags": [
+      "math",
+      "differential equations",
+      "physics"
+    ],
+    "section": "formulas",
+    "content": "\n$$ \\nabla^2 f = \\nabla \\cdot \\nabla f = 0 $$\n\nWhere\n* $f$ is a twice-differentiable function,\n* $\\nabla$ is the [gradient operator](https://en.wikipedia.org/wiki/Gradient),\n* $\\nabla^2$ is the [Laplace operator](https://en.wikipedia.org/wiki/Laplace_operator), and\n* $\\nabla \\cdot $ is the [divergence operator](https://en.wikipedia.org/wiki/Divergence).\n\n## In Different Coordinate Systems\n\n#### In rectangular coordinates:\n\n$$ \\scriptsize \\nabla^2 f = \\frac{\\partial^2 f}{\\partial x^2} + \\frac{\\pa",
+    "permalink": "/formulas/laplaces-equation"
+  },
+  {
+    "slug": "lhopitals-rule",
+    "title": "L'Hopital's Rule",
+    "latex": "\\lim_{x \\to c} \\frac{f(x)}{g(x)} = \\lim_{x \\to c} \\frac{f'(x)}{g'(x)}",
+    "description": "L'Hopital's rule is a method for evaluating limits of indeterminate forms.",
+    "summary": "L'Hopital's rule is a method for evaluating limits of indeterminate forms.",
+    "tags": [
+      "math",
+      "calculus",
+      "limits"
+    ],
+    "section": "formulas",
+    "content": "\nL'hopital's rule is a method for evaluating limits of [indeterminate form](https://en.wikipedia.org/wiki/Indeterminate_form).\n\n$$\\lim_{x \\to c} \\frac{f(x)}{g(x)} = \\lim_{x \\to c} \\frac{f'(x)}{g'(x)}$$\n\nWhere\n- $ \\small f(x) $ and $ \\small g(x) $ are functions,\n- $\\small '$ denotes the derivative of a function, and\n- $ \\small c $ is the point at which the limit is being evaluated\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/L%27H%C3%B4pital%27s_rule)\n- [Paul's Online Notes](https://tu",
+    "permalink": "/formulas/lhopitals-rule"
+  },
+  {
+    "slug": "light-wavelength-frequency",
+    "title": "Light Wavelength and Frequency Relationship",
+    "latex": "c = \\lambda f",
+    "description": "The relationship between the wavelength and frequency of light.",
+    "summary": "The relationship between the wavelength and frequency of light.",
+    "tags": [
+      "physics",
+      "optics"
+    ],
+    "section": "formulas",
+    "content": "\nThe relationship between the wavelength and frequency of light in a vacuum is:\n\n$$ c_0 = \\lambda f $$\n\nWhere\n\n* $\\scriptsize \\lambda$ is the wavelength of the light,\n* $\\scriptsize  c_0$ is the speed of light in a vacuum, and\n* $\\scriptsize  f$ is the frequency of the light.\n\nFor a medium with a refractive index of $\\scriptsize n$, the relationship is:\n\n$$ \\frac{c_0}{n} = \\frac{\\lambda}{n} f $$\n\nThat is to say, the speed of light and wavelength change in a medium, but the frequency remains the ",
+    "permalink": "/formulas/light-wavelength-frequency"
+  },
+  {
+    "slug": "linear-thermal-expansion",
+    "title": "Thermal expansion",
+    "latex": "\\Delta L = L_0 \\alpha \\Delta T",
+    "description": "The thermal expansion formula.",
+    "summary": "The thermal expansion formula.",
+    "tags": [
+      "physics",
+      "material engineering"
+    ],
+    "section": "formulas",
+    "content": "\nThe thermal expansion formula is:\n\n$$ \\Delta L = L_0 \\alpha \\Delta T $$\n\nWhere\n\n* $\\small \\Delta L$ is the change in length,\n* $\\small L_0$ is the initial length,\n* $\\small \\alpha$ is the coefficient of linear expansion, and\n* $\\small \\Delta T$ is the change in temperature in Kelvin.\n\n## Sources\n\n- [Wikipedia](https://en.wikipedia.org/wiki/Thermal_expansion)\n- [Engineering Toolbox](https://www.engineeringtoolbox.com/linear-thermal-expansion-d_1379.html)",
+    "permalink": "/formulas/linear-thermal-expansion"
+  },
+  {
+    "slug": "log-laws",
+    "title": "Log Laws",
+    "latex": "\\log_b(a) = \\frac{\\log_c(a)}{\\log_c(b)}",
+    "description": "Properties of logarithms.",
+    "summary": "Properties of logarithms.",
+    "tags": [
+      "mathematics"
+    ],
+    "section": "formulas",
+    "content": "\nLogarithms are the inverse of exponentials. They are useful for solving equations with exponents, and they are used in many other areas of mathematics. Here are some commonly used logarithm properties.\n\n\nFor any positive real number $ \\small b \\neq 1 $, and positive real numbers $ \\small a $, and $ \\small c $, the following properties hold:\n\n$$ \\log_b(1) = 0 $$\n\n$$ \\log_b(b) = 1 $$\n\n$$ \\log_b(a \\cdot c) = \\log_b(a) + \\log_b(c) $$\n\n$$ \\log_b \\left(\\frac{a}{c} \\right) = \\log_b(a) - \\log_b(c) $$\n\n",
+    "permalink": "/formulas/log-laws"
+  },
+  {
+    "slug": "lorentz-transformations",
+    "title": "Lorentz Transformations",
+    "latex": "x' = \\frac{x-vt}{\\sqrt{1-v^2/c^2}}",
+    "description": "Lorentz transformations are used to transform between inertial frames of reference.",
+    "summary": "Lorentz transformations are used to transform between inertial frames of reference.",
+    "tags": [
+      "physics",
+      "relativity"
+    ],
+    "section": "formulas",
+    "content": "\nFor a fixed frame of reference $\\small x, y, z, t$, the following transformations can be used to transform to a frame of reference moving with velocity $\\small v$ with respect to the fixed frame:\n\n$$\\small x' = \\frac{x-vt}{\\sqrt{1-v^2/c^2}}$$\n\n$$ \\small y' = y$$\n\n$$ \\small z' = z$$\n\n$$ \\small t' = \\frac{t-vx/c^2}{\\sqrt{1-v^2/c^2}}$$\n\nWhere \n* $c$ is the speed of light\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Lorentz_transformation)\n- [HyperPhysics](http://hyperphysics.phy-astr.gs",
+    "permalink": "/formulas/lorentz-transformations"
+  },
+  {
+    "slug": "matrix-multiplication",
+    "title": "Matrix Multiplication",
+    "latex": "\\scriptsize \\begin{pmatrix} a & b \\\\ c & d \\end{pmatrix} \\begin{pmatrix} w & x \\\\ y & z \\end{pmatrix} = \\begin{pmatrix} aw + by & ax + bz \\\\ cw + dy & cx + dz \\end{pmatrix}",
+    "description": "How to multiply matrices.",
+    "summary": "How to multiply matrices.",
+    "tags": [
+      "math",
+      "linear algebra"
+    ],
+    "section": "formulas",
+    "content": "\nIn general for, any matrix multiplication, the ith row and jth column of the product matrix is the [dot product](/formulas/dot-product) of the ith row of the first matrix and the jth column of the second matrix.\n\nFor example, for two 2x2 matrices, the product matrix is:\n\n$$ \\begin{pmatrix} a & b \\\\\\\\ c & d \\end{pmatrix} \\begin{pmatrix} w & x \\\\\\\\ y & z \\end{pmatrix} = \\begin{pmatrix} aw + by & ax + bz \\\\\\\\ cw + dy & cx + dz \\end{pmatrix}$$\n\n\n## Sources\n\n- [Math is Fun](https://www.mathsisfun.co",
+    "permalink": "/formulas/matrix-multiplication"
+  },
+  {
+    "slug": "maxwells-equations",
+    "title": "Maxwell's Equations",
+    "latex": "\\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\varepsilon_0},\\  \\nabla \\cdot \\mathbf{B} = 0,...",
+    "description": "The four Maxwell's equations describing electromagnetism.",
+    "summary": "The four Maxwell's equations describing electromagnetism.",
+    "tags": [
+      "physics",
+      "electromagnetism"
+    ],
+    "section": "formulas",
+    "content": "\nMaxwell's Equations represent the fundamental laws of electromagnetism. \n\nThere are two common forms of Maxwell's Equations: the differential form and the integral form.\n## Differential form\n\nIn differential form, Maxwell's equations are given by:\n\n$$ \\nabla \\cdot \\mathbf{E} = \\frac{\\rho}{\\varepsilon\\_0} $$\n\n$$ \\nabla \\cdot \\mathbf{B} = 0 $$\n\n$$ \\nabla \\times \\mathbf{E} = - \\frac{\\partial \\mathbf{B}}{\\partial t}$$\n\n$$ \\nabla \\times \\mathbf{B} = \\mu\\_0 \\mathbf{J} + \\mu\\_0 \\varepsilon\\_0 \\frac{\\p",
+    "permalink": "/formulas/maxwells-equations"
+  },
+  {
+    "slug": "modulus-of-resilience",
+    "title": "Modulus of Resilience",
+    "latex": "U_r = \\int_{0}^{\\epsilon_Y}\\sigma\\mathop{d\\epsilon} \\approx \\frac{\\sigma_{YS}^2}{2E}",
+    "description": "The formula for the modulus of resilience.",
+    "summary": "The formula for the modulus of resilience.",
+    "tags": [
+      "physics",
+      "material engineering"
+    ],
+    "section": "formulas",
+    "content": "\nThe modulus of resilience is given by:\n\n$$ U_r = \\int_{0}^{\\epsilon_Y}\\sigma\\mathop{d\\epsilon} \\approx \\frac{\\sigma_{YS}^2}{2E} $$\n\nWhere\n\n* $ \\small U_r $ is the modulus of resilience,\n* $ \\small \\sigma $ is the stress,\n* $ \\small \\epsilon $ is the strain,\n* $ \\small \\epsilon_Y $ is the yield strain,\n* $ \\small \\sigma_{YS} $ is the yield strength, and\n* $ \\small E $ is the elastic modulus (Young's modulus).\n\nNote that the first formula is th exact formula, equal to the area under the stress-st",
+    "permalink": "/formulas/modulus-of-resilience"
+  },
+  {
+    "slug": "modulus-of-toughness",
+    "title": "Modulus of Toughness",
+    "latex": "U_t = \\int_{0}^{\\epsilon_f}\\sigma\\mathop{d\\epsilon}",
+    "description": "The formula for the modulus of toughness.",
+    "summary": "The formula for the modulus of toughness.",
+    "tags": [
+      "physics",
+      "material engineering"
+    ],
+    "section": "formulas",
+    "content": "\nThe modulus of toughness is given by:\n\n$$ U_t = \\int_{0}^{\\epsilon_f}\\sigma\\mathop{d\\epsilon} $$\n\nWhere\n\n* $ \\small U_t $ is the modulus of toughness,\n* $ \\small \\sigma $ is the stress,\n* $ \\small \\epsilon $ is the strain, and\n* $ \\small \\epsilon_f $ is the strain at fracture.\n\nNote that this is the area under the stress-strain curve up to the failure/fracture strain. See the sources for some geometric approximations for the modulus of toughness.\n\n## Sources\n\n- [Mechanicalc](https://mechanicalc",
+    "permalink": "/formulas/modulus-of-toughness"
+  },
+  {
+    "slug": "newtonian-momentum",
+    "title": "Momentum (Newtonian)",
+    "latex": "p = mv",
+    "description": "The momentum of a body in Newtonian mechanics",
+    "summary": "The momentum of a body in Newtonian mechanics",
+    "tags": [
+      "physics",
+      "mass",
+      "velocity"
+    ],
+    "section": "formulas",
+    "content": "\n$$p = mv$$\n\nWhere\n* $p$ is the momentum of the body,\n* $m$ is the mass of the body, and\n* $v$ is the velocity of the body\n\nThis formula relates the momentum of a body to its mass and velocity.\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Momentum)\n- [Hyperphysics](http://hyperphysics.phy-astr.gsu.edu/hbase/mom.html)\n\n## Example\nKevin throws a baseball with a mass of 0.5 kg at a speed of 5000000 m/s. What is the momentum of the baseball?\n\nWe know that momentum is equal to mass times v",
+    "permalink": "/formulas/newtonian-momentum"
+  },
+  {
+    "slug": "newtons-2nd-law",
+    "title": "Newton's 2nd Law",
+    "latex": "F = ma",
+    "description": "The law that describes the acceleration of an object in Newtonian mechanics.",
+    "summary": "The law that describes the acceleration of an object in Newtonian mechanics.",
+    "tags": [
+      "physics",
+      "mechanics"
+    ],
+    "section": "formulas",
+    "content": "\n$$F = ma$$\n\nWhere\n$F$ is the net force being applied to the object,\n$m$ is the mass of the object, and\n$a$ is the acceleration of the object.\n\nNewton's second law is a statement of Newtonian mechanics that the net force on a body is equal to the body's mass times its acceleration.\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Newton%27s_laws_of_motion)\n- [Brittanica](https://www.britannica.com/science/Newtons-laws-of-motion/Newtons-second-law-F-ma)\n\n## Example\nKevin pushes his 10 kg b",
+    "permalink": "/formulas/newtons-2nd-law"
+  },
+  {
+    "slug": "newtons-law-of-cooling",
+    "title": "Newton's Law of Cooling",
+    "latex": "\\frac{dT}{dt} = -k(T - T_{\\text{env}})",
+    "description": "The formula describing Newton's Law of Cooling.",
+    "summary": "Newton's Law of Cooling.",
+    "tags": [
+      "physics",
+      "thermodynamics"
+    ],
+    "section": "formulas",
+    "content": "\nNewton's law of Cooling says that the rate of change of temperature of an object is proportional to the difference between the object's temperature and the ambient temperature.\n\nIt is given by:\n\n$$ \\frac{dT}{dt} = -k(T - T_{\\text{env}}) $$\n\nWhere\n\n* $ \\frac{dT}{dt} $ is the rate of change of temperature with respect to time,\n* $ T $ is the temperature of the object at time $ t $,\n* $ T_{\\text{env}} $ is the ambient (surrounding) temperature, and\n* $ k $ is the cooling rate constant.\n\n## Sources",
+    "permalink": "/formulas/newtons-law-of-cooling"
+  },
+  {
+    "slug": "ohms-law",
+    "title": "Ohm's Law",
+    "latex": "V = IR",
+    "description": "Ohm's law states that the current through a conductor between two points is directly proportional to the voltage across the two points.",
+    "summary": "Ohm's law states that the current through a conductor between two points is directly proportional to the voltage across the two points.",
+    "tags": [
+      "physics",
+      "electrical engineering"
+    ],
+    "section": "formulas",
+    "content": "\nOhm's law is given by:\n\n$$V = IR$$\n\nWhere\n$V$ is the voltage across the conductor (e.g. a wire),\n$I$ is the current through the conductor, and\n$R$ is the resistance of the conductor.\n\nOhm's law states that the current through a conductor between two points is directly proportional to the voltage across the two points. - Wikipedia\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Ohm%27s_law)\n- [HyperPhysics](http://hyperphysics.phy-astr.gsu.edu/hbase/electric/ohmlaw.html)\n\n## Example\n\nKev",
+    "permalink": "/formulas/ohms-law"
+  },
+  {
+    "slug": "pendulum-frequency-period",
+    "title": "Pendulum Period/Frequency",
+    "latex": "T_p = 2 \\pi \\sqrt{\\frac{\\ell}{g}}",
+    "description": "The formula for the period and frequency of a simple pendulum.",
+    "summary": "The formula for the period of a simple pendulum.",
+    "tags": [
+      "physics",
+      "mechanics"
+    ],
+    "section": "formulas",
+    "content": "\nThe formula for the period of a simple pendulum is:\n\n$$ T_p = 2 \\pi \\sqrt{\\frac{\\ell}{g}} $$\n\nWhere\n\n* $\\small T_p$ is the period of oscillation,\n* $\\small \\ell$ is the length of the pendulum, and\n* $\\small g$ is the acceleration due to gravity.\n\nThe frequency of oscillation is the reciprocal of the period:\n\n$$ f_p = \\frac{1}{2 \\pi} \\sqrt{\\frac{g}{\\ell}} $$\n\nWhere\n\n* $\\small f_p$ is the frequency of oscillation.\n\n**Note:** These formulas use an approximation that assume small oscillations (smal",
+    "permalink": "/formulas/pendulum-frequency-period"
+  },
+  {
+    "slug": "plane-equation",
+    "title": "Equation of a Plane",
+    "latex": "ax + by + cz = d",
+    "description": "The equation of a plane formula.",
+    "summary": "The equation of a plane formula.",
+    "tags": [
+      "geometry",
+      "math"
+    ],
+    "section": "formulas",
+    "content": "\n## Scalar Equation\n\nThe scalar equation of a plane is:\n\n$$ ax + by + cz = d $$\n\nWhere\n\n* $ \\small a, b, c $ are the components of the normal vector to the plane, and\n* $ \\small \\small d $ is the smallest distance from the origin to the plane.\n\n\n## Vector Equation\n\nThe vector equation of a plane is:\n\n$$ (r - r_0 )\\cdot n = 0 $$\n\nWhere\n\n* $ \\small r $ represents a point on the plane,\n* $ \\small r_0 $ is a specific point on the plane (the position vector of a known point),\n* $ \\small n $ is the no",
+    "permalink": "/formulas/plane-equation"
+  },
+  {
+    "slug": "poissons-ratio",
+    "title": "Poisson's Ratio",
+    "latex": "\\nu = - \\frac{\\epsilon_x}{\\epsilon_z} = -\\frac{\\epsilon_y}{\\epsilon_z}",
+    "description": "The Poisson's Ratio formula.",
+    "summary": "The Poisson's Ratio formula.",
+    "tags": [
+      "physics",
+      "material engineering"
+    ],
+    "section": "formulas",
+    "content": "\nPoisson's Ratio is given by:\n\n$$ \\nu = - \\frac{\\epsilon_x}{\\epsilon_z} = -\\frac{\\epsilon_y}{\\epsilon_z} $$\n\nWhere\n\n* $\\small \\nu $ is Poisson's Ratio,\n* $\\small \\epsilon_x $ is the strain in the x-direction,\n* $\\small \\epsilon_y $ is the strain in the y-direction, and\n* $\\small \\epsilon_z $ is the strain in the z-direction.\n\n## Sources\n\n- [Wikipedia](https://en.wikipedia.org/wiki/Poisson%27s_ratio)\n- [BYJU'S](https://byjus.com/physics/poissons-ratio/)",
+    "permalink": "/formulas/poissons-ratio"
+  },
+  {
+    "slug": "projection-and-perpendicular",
+    "title": "Vector Projection",
+    "latex": "proj_{\\vec{b}}(\\vec{a})=\\frac{\\vec{a}\\cdot\\vec{b}}{\\|\\vec{b}\\|^2}\\vec{b}=(\\vec{a}\\cdot\\hat{b})\\hat{b}",
+    "description": "Formulas for the projection of a vector onto another vector and the perpendicular vector left over.",
+    "summary": "Formulas for the projection of a vector onto another vector and the perpendicular vector left over.",
+    "tags": [
+      "linear algebra",
+      "vector",
+      "math"
+    ],
+    "section": "formulas",
+    "content": "\nFor any vectors $\\small \\vec{a}$ and $\\small \\vec{b}$:\n![diagram-dont-css](projection.png)\n\nThe projected (red) and perpendicular (green) vector can be calculated as follows:\n\n$$ proj_{\\vec{b}}(\\vec{a})=\\frac{\\vec{a}\\cdot\\vec{b}}{\\|\\vec{b}\\|^2}\\vec{b}=(\\vec{a}\\cdot\\hat{b})\\hat{b} $$\n\n$$ perp_{\\vec{b}}(\\vec{a})=\\vec{a}-proj_{\\vec{b}}(\\vec{a}) $$\n\nWhere\n* $\\small \\vec{a}$ is the vector to be projected\n* $\\small \\vec{b}$ is the vector to be projected onto\n* $\\cdot$ is the [dot product](/formulas/d",
+    "permalink": "/formulas/projection-and-perpendicular"
+  },
+  {
+    "slug": "pythagorean-theorem",
+    "title": "Pythagorean Theorem",
+    "latex": "a^2 + b^2 = c^2",
+    "description": "Formula relating the lengths of the sides of a right triangle",
+    "summary": "Formula relating the lengths of the sides of a right triangle",
+    "tags": [
+      "math",
+      "geometry",
+      "trigonometry"
+    ],
+    "section": "formulas",
+    "content": "For any right triangle *abc* (see diagram below):\n\nThe lengths of the sides are related by the Pythagorean Theorem:\n\n$$a^2 + b^2 = c^2$$\n\n![diagram](triangle.png)\n\nWhere\n\n* $a$ and $b$ are the lengths of the legs of the triangle, and\n* $c$ is the length of the hypotenuse\n\n## Sources:\n* [Wikipedia](https://en.wikipedia.org/wiki/Pythagorean_theorem)\n* [Brittanica](https://www.britannica.com/science/Pythagorean-theorem)\n\n## Example\n\nAfter being rejected by a girl, Kevin bends forward to pick up his",
+    "permalink": "/formulas/pythagorean-theorem"
+  },
+  {
+    "slug": "pythagorean-trig-identities",
+    "title": "Pythagorean Trig Identities",
+    "latex": "\\sin^2(x) + \\cos^2(x) = 1",
+    "description": "A few identities involving sin, cos, and tan.",
+    "summary": "A few identities involving sine, cosine, and tangent.",
+    "tags": [
+      "math",
+      "trigonometry"
+    ],
+    "section": "formulas",
+    "content": "\n$$\\sin^2(x) + \\cos^2(x) = 1$$\n\n$$\\tan^2(x) + 1 = \\sec^2(x)$$\n\n$$\\cot^2(x) + 1 = \\csc^2(x)$$\n\nThe above are the Pythagorean trigonometric identities, true for all real x.\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/List_of_trigonometric_identities#Pythagorean_identities)\n- [trigidentities.info](https://trigidentities.info/pythagorean-trig-identities/)\n",
+    "permalink": "/formulas/pythagorean-trig-identities"
+  },
+  {
+    "slug": "quadratic-formula",
+    "title": "Quadratic Formula",
+    "latex": "x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}",
+    "description": "The formula for the zeros of a quadratic equation",
+    "summary": "The formula for the zeros of a quadratic equation",
+    "tags": [
+      "math",
+      "algebra"
+    ],
+    "section": "formulas",
+    "content": "\n$$x = \\frac{-b \\pm \\sqrt{b^2 - 4ac}}{2a}$$\n\nWhere\n* $x$ is the solution to the quadratic equation $ax^2 + bx + c = 0$,\n* $a$ is the coefficient of the $x^2$ term,\n* $b$ is the coefficient of the $x$ term, and\n* $c$ is the constant term\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Quadratic_equation)\n- [Khan Academy](https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:quadratic-functions-equations/x2f8bb11595b61c86:quadratic-formula-a1/v/using-the-quadratic-formula)\n\n## Example",
+    "permalink": "/formulas/quadratic-formula"
+  },
+  {
+    "slug": "quadric-surfaces",
+    "title": "Quadric Surfaces",
+    "latex": "\\\\ {x^2 \\over a^2} + {y^2 \\over b^2} + {z^2 \\over c^2} = 1",
+    "description": "The equation of quadric surfaces.",
+    "summary": "The equation of quadric surfaces.",
+    "tags": [
+      "math",
+      "geometry",
+      "multivariable calculus"
+    ],
+    "section": "formulas",
+    "content": "\n## Ellipsoid:\nThe equation of an ellipsoid is:\n\n\n$$ { x^2 \\over a^2 } + { y^2 \\over b^2 } + { z^2 \\over c^2 } = 1 $$\n\n## Elliptic paraboloid:\n\nThe equation of an elliptic paraboloid is:\n\n$$ {x^2 \\over a^2} + {y^2 \\over b^2} =z $$\n\n## Hyperbolic paraboloid:\n\nThe equation of a hyperbolic paraboloid is:\n\n$$ {x^2 \\over a^2} - {y^2 \\over b^2} = z $$\n\n## Hyperboloid of one sheet:\n\nThe equation of a hyperboloid of one sheet is:\n \n\n$$ {x^2 \\over a^2} + {y^2 \\over b^2} - {z^2 \\over c^2} = 1 $$\n\n## Hyper",
+    "permalink": "/formulas/quadric-surfaces"
+  },
+  {
+    "slug": "relativistic-velocity-addition",
+    "title": "Relativistic Addition of Velocities",
+    "latex": "u = \\frac{v + u'}{1 + \\frac{v \\cdot u'}{c^2}}",
+    "description": "The formula for relativistic addition of velocities.",
+    "summary": "The formula for relativistic addition of velocities.",
+    "tags": [
+      "physics",
+      "special relativity"
+    ],
+    "section": "formulas",
+    "content": "\nConsider two references frames. The second reference frame is moving at a velocity $ \\small v $ relative to the first frame. The speed of an object is measured as $ \\small u' $ in the second reference frame. The speed of that same object as measured in the first reference frame, $ \\small u $, is given by the relativistic velocity addition formula:\n\n$$ u = \\\\frac{v + u'}{1 + \\\\frac{v \\\\cdot u'}{c^2}} $$\n\nWhere\n\n- $ \\small u $ is the speed of the object as measured in the first reference frame,\n-",
+    "permalink": "/formulas/relativistic-velocity-addition"
+  },
+  {
+    "slug": "resistance",
+    "title": "Resistance in a straight conductor",
+    "latex": "R = \\frac{\\rho l}{A}",
+    "description": "The formula for resistance in a straight conductor.",
+    "summary": "The formula for resistance in a straight conductor.",
+    "tags": [
+      "physics",
+      "electrical engineering"
+    ],
+    "section": "formulas",
+    "content": "\nThe formula for resistance in a straight conductor (e.g. a wire) is:\n\n$$ R = \\frac{\\rho l}{A} $$\n\nWhere\n\n* $\\small R $ is the resistance,\n* $\\small \\rho $ is the resistivity of the material,\n* $\\small l $ is the length of the conductor, and\n* $\\small A $ is the cross-sectional area of the conductor.\n\n## Sources\n\n- [Khan Academy](https://www.khanacademy.org/science/high-school-physics/dc-circuits/electric-current-resistivity-and-ohms-law/a/resistance-and-resistivity-ap1)\n- [Wikipedia](https://en",
+    "permalink": "/formulas/resistance"
+  },
+  {
+    "slug": "reynolds-number",
+    "title": "Reynolds Number",
+    "latex": "Re = \\frac{\\rho v L}{\\mu}",
+    "description": "The dimensionless number representing the ratio of inertial and viscous forces.",
+    "summary": "The dimensionless number representing the ratio of inertial and viscous forces.",
+    "tags": [
+      "physics",
+      "fluid dynamics"
+    ],
+    "section": "formulas",
+    "content": "\nReynolds number is a dimensionless quantity that is used to help predict flow patterns in different fluid flow situations. It is defined as the ratio of inertial forces to viscous forces and consequently quantifies the relative importance of these two types of forces for given flow conditions.\n\n$$ Re = \\frac{\\rho v L}{\\mu} $$\n\nWhere:\n\n- $\\small Re$ is the Reynolds Number,\n- $\\small \\rho$ is the density of the fluid,\n- $\\small v$ is the velocity of the fluid relative to the object,\n- $\\small L$ ",
+    "permalink": "/formulas/reynolds-number"
+  },
+  {
+    "slug": "schrodingers-equation",
+    "title": "Schrodinger's Equation",
+    "latex": "\\scriptsize i\\hbar\\frac{\\partial}{\\partial t}\\Psi(x,t) = \\left[-\\frac{\\hbar^2}{2m}\\frac{\\partial^2}{\\partial x^2} + V(x,t)\\right]\\Psi(x,t)",
+    "description": "The Schrodinger equation is a partial differential equation that describes the behavior of a quantum system.",
+    "summary": "The Schrodinger equation is a partial differential equation that describes the behavior of a quantum system.",
+    "tags": [
+      "quantum mechanics",
+      "physics"
+    ],
+    "section": "formulas",
+    "content": "\n## Time-dependent\n\nThe time-dependent Schrodinger equation is a partial differential equation that describes the behavior of a quantum system evolving with time. In one spacial dimension it is given by:\n\n$$ \\scriptsize i\\hbar\\frac{\\partial}{\\partial t}\\Psi(x,t) = \\left[-\\frac{\\hbar^2}{2m}\\frac{\\partial^2}{\\partial x^2} + V(x, t)\\right]\\Psi(x,t) $$\n\nWhere\n* $\\small \\Psi(x,t)$ is the wave function of the particle,\n* $\\small V $ is the potential energy function,\n* $\\small m $ is the mass of the pa",
+    "permalink": "/formulas/schrodingers-equation"
+  },
+  {
+    "slug": "shear-modulus",
+    "title": "Modulus of Rigidity/Shear Modulus",
+    "latex": "G = \\frac{\\tau}{\\gamma}",
+    "description": "The modulus of rigidity or shear modulus formula.",
+    "summary": "The modulus of rigidity or shear modulus formula.",
+    "tags": [
+      "physics",
+      "material engineering"
+    ],
+    "section": "formulas",
+    "content": "\nThe modulus of rigidity or shear modulus formula is:\n\n$$ G = \\frac{\\tau}{\\gamma} $$\n\nWhere\n\n* $ \\small G $ is the modulus of rigidity or shear modulus,\n* $ \\small\\tau $ is the shear stress, and\n* $ \\small\\gamma $ is the shear strain.\n\n## Sources\n\n- [Wikipedia](https://en.wikipedia.org/wiki/Shear_modulus)\n",
+    "permalink": "/formulas/shear-modulus"
+  },
+  {
+    "slug": "shockley-diode-model",
+    "title": "Shockley Diode Model",
+    "latex": "I = I_S \\cdot (e^{\\frac{V_D}{nV_T}} - 1)",
+    "description": "The Shockley diode model is a simplified model of a diode's Voltage-Current relationship.",
+    "summary": "The Shockley diode model is a simplified model of a diode's Voltage-Current relationship.",
+    "tags": [
+      "electronics",
+      "electrical engineering"
+    ],
+    "section": "formulas",
+    "content": "\nThe Shockley diode equation is an approximation that relates the diode's current to its voltage.\n\n$$ I = I_S \\cdot (e^{\\frac{V_D}{nV_T}} - 1)$$\n\nWhere\n* $\\small I$ is the current through the diode\n* $\\small I_S$ is the diode's saturation current\n* $\\small V_D$ is the diode's voltage\n* $\\small n$ is the diode's ideality factor, usually between 1 and 2\n* $\\small V_T$ is the thermal voltage, which is equal to $\\small kT/q$ where $\\small k$ is Boltzmann's constant, $\\small T$ is the temperature in ",
+    "permalink": "/formulas/shockley-diode-model"
+  },
+  {
+    "slug": "sine-law",
+    "title": "Sine Law",
+    "latex": "\\frac{\\sin(\\text{A})}{\\text{a}} = \\frac{\\sin(\\text{B})}{\\text{b}} = \\frac{\\sin(\\text{C})}{\\text{c}}",
+    "description": "A formula relating the sides and angles of every triangle.",
+    "summary": "A formula relating the sides and angles of every triangle.",
+    "tags": [
+      "math",
+      "trigonometry",
+      "sin"
+    ],
+    "section": "formulas",
+    "content": "\nFor any triangle with angles A, B, C and side lengths a, b, c:\n\n![diagram](sinelaw-triangle.png)\n\nThe ratio of the length of a side to the sine of the angle opposite that side is the same for all three sides:\n\n$$\\frac{\\sin(\\small \\text{A})}{\\text{a}} = \\frac{\\sin(\\small \\text{B})}{\\text{b}} = \\frac{\\sin(\\small \\text{C})}{\\text{c}}$$\n\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Law_of_sines)\n",
+    "permalink": "/formulas/sine-law"
+  },
+  {
+    "slug": "snells-law",
+    "title": "Snell's Law",
+    "latex": "n_1 \\sin(\\theta_1) = n_2 \\sin(\\theta_2)",
+    "description": "The formula relating the angles of incidence and refraction to the refractive indices of the two media.",
+    "summary": "The formula relating the angles of incidence and refraction to the refractive indices of the two media.",
+    "tags": [
+      "physics",
+      "trigonometry",
+      "optics"
+    ],
+    "section": "formulas",
+    "content": "\n![diagram](snells-law.png)\n\nFor light passing from one medium to another, the following is true:\n\n$$n_1 \\sin(\\theta_1) = n_2 \\sin(\\theta_2)$$\n\nWhere:\n- $n_1$ is the refractive index of the first medium\n- $n_2$ is the refractive index of the second medium\n- $\\theta_1$ is the angle of incidence, and\n- $\\theta_2$ is the angle of refraction.\n\nNotice that the angles are taken with respect to the normal to the surface of the media.\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Snell%27s_law",
+    "permalink": "/formulas/snells-law"
+  },
+  {
+    "slug": "specific-gravity",
+    "title": "Specific Gravity",
+    "latex": "SG = \\frac{\\rho}{\\rho_{H_2O}}",
+    "description": "The formula for specific gravity.",
+    "summary": "The formula for specific gravity.",
+    "tags": [
+      "physics",
+      "fluid mechanics"
+    ],
+    "section": "formulas",
+    "content": "\nThe specific gravity of a substance is the dimensionless ratio of its density to the density of water:\n\n$$ SG = \\frac{\\rho}{\\rho_{H_2O}} $$\n\nWhere\n\n* \\( \\small SG \\) is the specific gravity,\n* \\( \\small \\rho \\) is the density of the substance, and\n* \\( \\small \\rho_{H_2O} \\) is the density of water.\n\n## Sources\n\n- [Wikipedia](https://en.wikipedia.org/wiki/Relative_density)\n",
+    "permalink": "/formulas/specific-gravity"
+  },
+  {
+    "slug": "specific-weight",
+    "title": "Specific Weight",
+    "latex": "\\gamma = \\rho g",
+    "description": "The formula for specific weight.",
+    "summary": "The formula for specific weight.",
+    "tags": [
+      "physics",
+      "fluid mechanics"
+    ],
+    "section": "formulas",
+    "content": "\nThe formula for specific weight is:\n\n$$ \\gamma = \\rho g $$\n\nWhere\n\n* $ \\small  \\small \\gamma  $ is the specific weight,\n* $ \\small  \\small \\rho  $ is the density of the fluid, and\n* $ \\small  \\small g  $ is the acceleration due to gravity.\n\n## Sources\n\n- [Wikipedia](https://en.wikipedia.org/wiki/Specific_weight)\n",
+    "permalink": "/formulas/specific-weight"
+  },
+  {
+    "slug": "sphere-equation",
+    "title": "Equation of a Sphere",
+    "latex": "\\small R^2 = (x-x_0)^2 + (y-y_0)^2 + (z - z_0)^2",
+    "description": "The equation of a sphere.",
+    "summary": "The equation of a sphere.",
+    "tags": [
+      "geometry",
+      "math"
+    ],
+    "section": "formulas",
+    "content": "\nThe equation of a sphere is:\n\n$$ R^2 = (x-x_0)^2 + (y-y_0)^2 + (z - z_0)^2 $$\n\nWhere\n\n* $ \\small R $ is the radius of the sphere,\n* $ \\small (x_0, y_0, z_0) $ is the center of the sphere, and\n* $ \\small (x, y, z) $ is a point on the sphere.\n\n\n## Sources\n\n- [Wikipedia](https://en.wikipedia.org/wiki/Sphere#Equations)\n- [BYJU'S](https://byjus.com/maths/equation-of-sphere/)",
+    "permalink": "/formulas/sphere-equation"
+  },
+  {
+    "slug": "spring-frequency-period",
+    "title": "Spring Period/Frequency",
+    "latex": "T_s = 2 \\pi \\sqrt{\\frac{m}{k}}",
+    "description": "The formula for the period and frequency of a spring in simple harmonic motion.",
+    "summary": "The formula for the period and frequency of a spring in simple harmonic motion.",
+    "tags": [
+      "physics",
+      "mechanics"
+    ],
+    "section": "formulas",
+    "content": "\nThe formula for the period of a spring in simple harmonic motion is:\n\n$$ T_s = 2 \\pi \\sqrt{\\frac{m}{k}} $$\n\nWhere\n\n* $\\small T_s$ is the period of oscillation,\n* $\\small m$ is the mass attached to the spring, and\n* $\\small k$ is the spring constant of the spring.\n\nThe frequency of oscillation is the reciprocal of the period:\n\n$$ f_s = \\frac{1}{2 \\pi} \\sqrt{\\frac{k}{m}} $$\n\nWhere\n\n* $\\small f_s$ is the frequency of oscillation.\n\n## Sources\n\n- [HyperPhysics](http://hyperphysics.phy-astr.gsu.edu/h",
+    "permalink": "/formulas/spring-frequency-period"
+  },
+  {
+    "slug": "stokes-theorem",
+    "title": "Stokes' Theorem",
+    "latex": "\\int_C \\vec{F} \\cdot d\\vec{r} = \\iint_S \\nabla \\times \\vec{F} \\cdot d\\vec{S}",
+    "description": "Stokes' theorem describes the relationship between the integral of the curl of a vector field over a surface to the line integral of the same field around the boundary of the surface.",
+    "summary": "Stokes' theorem describes the relationship between the integral of the curl of a vector field over a surface to the line integral of the same field around the boundary of the surface.",
+    "tags": [
+      "vector calculus",
+      "integration",
+      "multivariable calculus",
+      "calculus"
+    ],
+    "section": "formulas",
+    "content": "\nIf S is an oriented smooth surface that is bounded by a simple, closed, smooth boundary curve C with positive orientation. and F is a vector field then, Stokes' theorem says that\n\n$$ \\int_C \\vec{F} \\cdot d\\vec{r} = \\iint_S \\nabla \\times \\vec{F} \\cdot d\\vec{S} $$\n\nDefinitely read [Paul's Online Notes](https://tutorial.math.lamar.edu/classes/calcIII/stokestheorem.aspx), they're great.\n\nStokes' theorem can be thought of as a 3D generalization of [Green's theorem](/formulas/greens-theorem).\n\n## Sou",
+    "permalink": "/formulas/stokes-theorem"
+  },
+  {
+    "slug": "taylor-expansion-of-e",
+    "title": "Maclaurin Series for exp(x)",
+    "latex": "e^x = \\sum_{n=0}^\\infty \\frac{x^n}{n!}",
+    "description": "The Maclaurin series for exp(x)",
+    "summary": "The Maclaurin series for exp(x)",
+    "tags": [
+      "math",
+      "calculus"
+    ],
+    "section": "formulas",
+    "content": "\n$$e^x = \\sum_{n=0}^\\infty \\frac{x^n}{n!}$$\n\nWhere\n* $e$ is the base of the natural logarithm, and\n* $x$ is the exponent\n\n## Sources\n- [Wikipedia](https://en.wikipedia.org/wiki/Taylor_series#Exponential_function)\n- [Khan Academy](https://www.khanacademy.org/math/ap-calculus-bc/bc-series-new/bc-10-14/v/taylor-series-at-0-maclaurin-for-e-to-the-x)\n",
+    "permalink": "/formulas/taylor-expansion-of-e"
+  },
+  {
+    "slug": "taylor-maclaurin-series",
+    "title": "Taylor & Maclaurin Series",
+    "latex": "f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!} \\cdot (x - a)^n",
+    "description": "Power series representations of functions.",
+    "summary": "Power series representations of functions.",
+    "tags": [
+      "mathematics",
+      "calculus"
+    ],
+    "section": "formulas",
+    "content": "\n## Taylor Series\n\nThe Taylor series is a power series representation of a function. It is a way to approximate a function as an infinite sum of terms. The Taylor series is centered around a point $ \\small a $ and is given by the summation:\n\n$$ f(x) = \\sum_{n=0}^{\\infty} \\frac{f^{(n)}(a)}{n!} \\cdot (x - a)^n $$\n\nWhere\n\n* $ \\small  f(x)  $ is the function being approximated,\n* $ \\small  f^{(n)}(a)  $ denotes the $ \\small  n  $th derivative of the function evaluated at $ \\small  x = a  $,\n* $ \\sma",
+    "permalink": "/formulas/taylor-maclaurin-series"
+  },
+  {
+    "slug": "thin-lens-equation",
+    "title": "Thin Lens Equation",
+    "latex": "\\frac{1}{f} = \\frac{1}{d_o} + \\frac{1}{d_i}",
+    "description": "The equation for thin lenses relating focal length, object distance and image distance.",
+    "summary": "The equation for thin lenses relating focal length, object distance and image distance.",
+    "tags": [
+      "physics",
+      "optics"
+    ],
+    "section": "formulas",
+    "content": "\nFor light passing near the optical axis of a thin lens, the lens equation relates the focal length of the lens, the object distance, and the image distance. The equation is given by:\n\n$$ \\frac{1}{f} = \\frac{1}{d_o} + \\frac{1}{d_i} $$\n\nWhere\n\n* \\(\\small f\\) is the focal length of the lens,\n* \\(\\small d_o\\) is the object distance, and\n* \\(\\small d_i\\) is the image distance.\n\nAll distances are measured from the lens, and the distances and focal length can be positive or negative. A positive focal ",
+    "permalink": "/formulas/thin-lens-equation"
+  },
+  {
+    "slug": "trig-angle-sum-difference-identities",
+    "title": "Trig Angle Sum/Difference Identities",
+    "latex": "\\scriptsize \\sin(a \\pm b) = \\sin(a) \\cos(b) \\pm \\cos(a) \\sin(b)",
+    "description": "Formulas for the trigonometric functions of the sum and difference of angles.",
+    "summary": "Formulas for the trigonometric functions of the sum and difference of angles.",
+    "tags": [
+      "trigonometry",
+      "sin",
+      "cos",
+      "tan",
+      "math",
+      "identity"
+    ],
+    "section": "formulas",
+    "content": "\nFor arbitrary angles $\\small a$ and $\\small b$, the following are true:\n\n$$ \\sin(a + b) = \\sin(a) \\cos(b) + \\cos(a) \\sin(b) $$\n\n$$ \\sin(a - b) = \\sin(a) \\cos(b) - \\cos(a) \\sin(b) $$\n\n$$ \\cos(a + b) = \\cos(a) \\cos(b) - \\sin(a) \\sin(b) $$\n\n$$ \\cos(a - b) = \\cos(a) \\cos(b) + \\sin(a) \\sin(b) $$\n\n$$ \\tan(a + b) = \\frac{\\tan(a) + \\tan(b)}{1 - \\tan(a) \\tan(b)} $$\n\n$$ \\tan(a - b) = \\frac{\\tan(a) - \\tan(b)}{1 + \\tan(a) \\tan(b)} $$\n\n## Sources:\n- [Wikipedia](https://en.wikipedia.org/wiki/List_of_trigonom",
+    "permalink": "/formulas/trig-angle-sum-difference-identities"
+  },
+  {
+    "slug": "trig-in-terms-of-e",
+    "title": "Trig functions in terms of e",
+    "latex": "\\small{\\sin(x) = \\frac{e^{ix} - e^{-ix}}{2i}, \\cos(x) = \\frac{e^{ix} + e^{-ix}}{2}}",
+    "description": "Common trig functions in terms of e",
+    "summary": "Common trig functions in terms of e",
+    "tags": [
+      "math",
+      "trigonometry",
+      "e",
+      "complex analysis",
+      "imaginary numbers"
+    ],
+    "section": "formulas",
+    "content": "\n$$\\small \\sin(x) = \\frac{e^{ix} - e^{-ix}}{2i}, \\cos(x) = \\frac{e^{ix} + e^{-ix}}{2}, \\tan(x) = \\frac{e^{ix} - e^{-ix}}{i(e^{ix} + e^{-ix})}$$\n\nWhere\n* $e$ is [Euler's number](https://en.wikipedia.org/wiki/E_(mathematical_constant)) ~= 2.71828, and\n* $i$ is the imaginary unit, $\\sqrt{-1}$\n\n## Sources\n- [Duke.edu](http://webhome.phy.duke.edu/~rgb/Class/phy51/phy51/node15.html)\n- [ProofWiki](https://proofwiki.org/wiki/Tangent_Exponential_Formulation)\n\n",
+    "permalink": "/formulas/trig-in-terms-of-e"
+  },
+  {
+    "slug": "vector-calculus-product-rules",
+    "title": "Vector Calculus Product Rules",
+    "latex": "\\nabla (fg) = f(\\nabla g) + g(\\nabla f)",
+    "description": "The product rules in vector calculus.",
+    "summary": "The product rules in vector calculus.",
+    "tags": [
+      "mathematics",
+      "vector calculus"
+    ],
+    "section": "formulas",
+    "content": "\nFor scalar functions $\\small f $ and $\\small g $ and vector functions $\\small \\mathbf{A} $ and $\\small \\mathbf{B} $, the product rules in vector calculus are as follows:\n\n## Gradient\n\n$$\\small  \\nabla (fg) = f(\\nabla g) + g(\\nabla f) $$\n\n$$\\small  \\nabla (\\mathbf{A} \\cdot \\mathbf{B}) = \\mathbf{A} \\times (\\nabla \\times \\mathbf{B}) + \\mathbf{B} \\times (\\nabla \\times \\mathbf{A}) + (\\mathbf{A} \\cdot \\nabla) \\mathbf{B} + (\\mathbf{B} \\cdot \\nabla) \\mathbf{A} $$\n\n## Divergence\n\n$$\\small \\nabla \\cdot (",
+    "permalink": "/formulas/vector-calculus-product-rules"
+  },
+  {
+    "slug": "viscosity",
+    "title": "Viscosity",
+    "latex": "\\tau = \\mu \\frac{\\partial u}{\\partial y}",
+    "description": "The relationship between viscosity and shear deformation rate in a fluid.",
+    "summary": "The relationship between viscosity and shear deformation rate in a fluid.",
+    "tags": [
+      "physics",
+      "fluid mechanics"
+    ],
+    "section": "formulas",
+    "content": "\nThe formula relating viscosity and shear deformation rate in a fluid, also known as Newton's law of viscosity is given by the following equation:\n\n$$ \\tau = \\mu \\frac{\\partial u}{\\partial y} $$\n\nWhere\n\n* $ \\small \\tau $ is the applied shear stress,\n* $ \\small \\mu $ is the dynamic viscosity, with units of pressure $ \\cdot $ time,\n* $ \\small \\frac{\\partial u}{\\partial y} $ is shear deformation rate, and\n* $ \\small y $ is the perpendicular distance from the surface.\n\nIn the case where velocity var",
+    "permalink": "/formulas/viscosity"
+  }
+]

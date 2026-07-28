@@ -16,11 +16,7 @@ export async function POST(request: Request) {
           color: 0x00ff00,
           fields: [
             { name: "Title", value: body.title || "n/a", inline: true },
-            {
-              name: "Description",
-              value: body.description || "n/a",
-              inline: true,
-            },
+            { name: "Description", value: body.description || "n/a", inline: true },
             { name: "Tags", value: body.tags || "n/a", inline: true },
             {
               name: "LaTeX",

@@ -1,10 +1,7 @@
 import { notFound } from "next/navigation";
-import fs from "fs";
-import path from "path";
-import { compileMDX } from "next-mdx-remote/rsc";
-import { rehypeRestoreMath } from "@/lib/rehype-restore-math";
 import Link from "next/link";
 import type { Metadata } from "next";
+import formulasData from "@/data/formulas.json";
 import styles from "./page.module.css";
 import KatexContent from "@/components/KatexContent";
 import CopyKatex from "@/components/CopyKatex";
@@ -13,64 +10,74 @@ const GITHUB_RAW =
   "https://github.com/stemformulas/stemformulas.github.io/raw/main/content/formulas";
 
 async function getFormula(slug: string) {
-  const filePath = path.join(
-    process.cwd(),
-    "src/content/formulas",
-    `${slug}.mdx`
-  );
+  try {
+    const { compileMDX } = await import("next-mdx-remote/rsc");
+    const { rehypeRestoreMath } = await import("@/lib/rehype-restore-math");
+    const fs = await import("fs");
+    const path = await import("path");
 
-  if (!fs.existsSync(filePath)) return null;
+    const filePath = path.join(
+      process.cwd(),
+      "src/content/formulas",
+      `${slug}.mdx`
+    );
 
-  const source = fs.readFileSync(filePath, "utf-8");
+    if (!fs.existsSync(filePath)) return null;
 
-  const safeSource = source.replace(
-    /(\$\$[\s\S]*?\$\$|\$[^$\n]+?\$)/g,
-    (match) => match.replace(/[{}]/g, (ch) => (ch === "{" ? "\\{" : "\\}"))
-  );
-  const contentDir = path.join(process.cwd(), "src/content/formulas");
+    const source = fs.readFileSync(filePath, "utf-8");
 
-  function resolveImage(src: string | undefined) {
-    if (!src || src.startsWith("http")) return src;
-    const imgPath = path.join(contentDir, src);
-    if (!fs.existsSync(imgPath)) return src;
-    const buf = fs.readFileSync(imgPath);
-    const ext = path.extname(src).slice(1) || "png";
-    return `data:image/${ext};base64,${buf.toString("base64")}`;
-  }
+    const safeSource = source.replace(
+      /(\$\$[\s\S]*?\$\$|\$[^$\n]+?\$)/g,
+      (match) => match.replace(/[{}]/g, (ch) => (ch === "{" ? "\\{" : "\\}"))
+    );
 
-  const { content, frontmatter } = await compileMDX<{
-    title: string;
-    description: string;
-    latex: string;
-    tags: string[];
-  }>({
-    source: safeSource,
-    options: {
-      parseFrontmatter: true,
-      mdxOptions: {
-        rehypePlugins: [rehypeRestoreMath],
+    const contentDir = path.join(process.cwd(), "src/content/formulas");
+
+    function resolveImage(src: string | undefined) {
+      if (!src || src.startsWith("http")) return src;
+      const imgPath = path.join(contentDir, src);
+      if (!fs.existsSync(imgPath)) return src;
+      const buf = fs.readFileSync(imgPath);
+      const ext = path.extname(src).slice(1) || "png";
+      return `data:image/${ext};base64,${buf.toString("base64")}`;
+    }
+
+    const { content, frontmatter } = await compileMDX<{
+      title: string;
+      description: string;
+      latex: string;
+      tags: string[];
+    }>({
+      source: safeSource,
+      options: {
+        parseFrontmatter: true,
+        mdxOptions: {
+          rehypePlugins: [rehypeRestoreMath],
+        },
       },
-    },
-    components: {
-      img: ({ src, alt, ...rest }: React.ImgHTMLAttributes<HTMLImageElement>) => (
-        // eslint-disable-next-line @next/next/no-img-element
-        <img src={resolveImage(src as string | undefined)} alt={alt || ""} {...rest} />
-      ),
-    },
-  });
+      components: {
+        img: ({
+          src,
+          alt,
+          ...rest
+        }: React.ImgHTMLAttributes<HTMLImageElement>) => (
+          <img
+            src={resolveImage(src as string | undefined)}
+            alt={alt || ""}
+            {...rest}
+          />
+        ),
+      },
+    });
 
-  return { content, frontmatter };
+    return { content, frontmatter };
+  } catch {
+    return null;
+  }
 }
 
 export async function generateStaticParams() {
-  const formulasDir = path.join(process.cwd(), "src/content/formulas");
-  const files = fs.readdirSync(formulasDir);
-
-  return files
-    .filter((file) => file.endsWith(".mdx"))
-    .map((file) => ({
-      slug: file.replace(".mdx", ""),
-    }));
+  return (formulasData as { slug: string }[]).map((f) => ({ slug: f.slug }));
 }
 
 export async function generateMetadata({
@@ -79,15 +86,14 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const formula = await getFormula(slug);
-  if (!formula) return {};
+  const meta = formulasData.find((f) => f.slug === slug);
 
   return {
-    title: `${formula.frontmatter.title} · stemformulas`,
-    description: formula.frontmatter.description,
+    title: `${meta?.title || slug} · stemformulas`,
+    description: meta?.description || meta?.summary || "",
     openGraph: {
-      title: `${formula.frontmatter.title} · stemformulas`,
-      description: formula.frontmatter.description,
+      title: `${meta?.title || slug} · stemformulas`,
+      description: meta?.description || meta?.summary || "",
       type: "website",
       images: [
         {
@@ -99,8 +105,8 @@ export async function generateMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: `${formula.frontmatter.title} · stemformulas`,
-      description: formula.frontmatter.description,
+      title: `${meta?.title || slug} · stemformulas`,
+      description: meta?.description || meta?.summary || "",
       images: [`${GITHUB_RAW}/${slug}/preview.png`],
     },
   };

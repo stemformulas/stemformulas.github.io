@@ -6,6 +6,7 @@
     "build": "next build",
     "dev": "next dev -p 8501",
     "start": "next start",
+    "prebuild": "node scripts/generate-formulas-json.js",
     "lint": "eslint",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
     "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
