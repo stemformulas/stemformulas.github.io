@@ -1,15 +1,20 @@
 {
-  "name": "stemformulas-next",
+  "name": "stemformulas",
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -p 8501",
     "build": "next build",
+    "dev": "next dev -p 8501",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "upload": "opennextjs-cloudflare build && opennextjs-cloudflare upload",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
     "@next/third-parties": "^16.2.12",
+    "@opennextjs/cloudflare": "^1.20.2",
     "dompurify": "^3.4.12",
     "fuse.js": "^7.5.0",
     "gray-matter": "^4.0.3",
@@ -30,6 +35,7 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.2.12",
-    "typescript": "^7.0.2"
+    "typescript": "^7.0.2",
+    "wrangler": "^4.114.0"
   }
 }
