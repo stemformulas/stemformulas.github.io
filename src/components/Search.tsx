@@ -2,7 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
-import Fuse from "fuse.js";
+import Fuse, { type FuseResult } from "fuse.js";
 import type { FormulaEntry } from "@/lib/formulas";
 import styles from "./search.module.css";
 
@@ -12,7 +12,7 @@ interface Props {
 
 export default function Search({ onClose }: Props) {
   const [query, setQuery] = useState("");
-  const [results, setResults] = useState<Fuse.FuseResult<FormulaEntry>[]>([]);
+  const [results, setResults] = useState<FuseResult<FormulaEntry>[]>([]);
   const [activeIndex, setActiveIndex] = useState(-1);
   const fuseRef = useRef<Fuse<FormulaEntry> | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);

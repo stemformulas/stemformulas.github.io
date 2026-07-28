@@ -1,21 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { marked } from "marked";
 import DOMPurify from "dompurify";
+import katex from "katex";
 import styles from "./page.module.css";
 
-declare global {
-  interface Window {
-    renderMathInElement: (
-      el: HTMLElement,
-      opts?: Record<string, unknown>
-    ) => void;
-  }
-}
-
 export default function SubmitPage() {
-  const [katexReady, setKatexReady] = useState(false);
   const [title, setTitle] = useState("Gaussian/Normal Distribution");
   const [description, setDescription] = useState("The formula for the normal distribution.");
   const [tags, setTags] = useState("math, statistics, probability theory");
@@ -28,23 +19,6 @@ export default function SubmitPage() {
   const [showPreview, setShowPreview] = useState(false);
   const [sending, setSending] = useState(false);
   const previewRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    const link = document.createElement("link");
-    link.rel = "stylesheet";
-    link.href = "https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css";
-    document.head.appendChild(link);
-
-    const katexScript = document.createElement("script");
-    katexScript.src = "https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js";
-    katexScript.onload = () => {
-      const autoRender = document.createElement("script");
-      autoRender.src = "https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js";
-      autoRender.onload = () => setKatexReady(true);
-      document.head.appendChild(autoRender);
-    };
-    document.head.appendChild(katexScript);
-  }, []);
 
   const tagList = tags.split(",").map((t) => t.trim()).filter(Boolean);
 
@@ -69,16 +43,18 @@ export default function SubmitPage() {
     requestAnimationFrame(() => {
       if (previewRef.current) {
         previewRef.current.innerHTML = html;
-        if (window.renderMathInElement) {
-          window.renderMathInElement(previewRef.current, {
-            delimiters: [
-              { left: "$$", right: "$$", display: true },
-              { left: "$", right: "$", display: false },
-            ],
-          });
-        }
+        const el = previewRef.current;
+        // Replace $$...$$ and $...$ with rendered KaTeX
+        const replaced = el.innerHTML.replace(
+          /\$\$([\s\S]+?)\$\$/g,
+          (_, math) => katex.renderToString(math.trim(), { displayMode: true, throwOnError: false })
+        ).replace(
+          /\$([^$\n]+?)\$/g,
+          (_, math) => katex.renderToString(math.trim(), { displayMode: false, throwOnError: false })
+        );
+        el.innerHTML = replaced;
       }
-    });
+      });
   }
 
   async function handleSubmit() {

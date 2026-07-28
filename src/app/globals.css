@@ -380,27 +380,43 @@ a {
 }
 
 /* ── KaTeX ── */
-/* Display math: <p> containing only a .katex element */
-p:has(> .katex:first-child:last-child) {
-  display: block;
+.katex-display {
   margin: 1em 0;
-  text-align: center;
-  font-size: 1.2em;
+  font-size: 1.21em;
 }
 
-p:has(> .katex:first-child:last-child) .katex {
-  display: inline-block;
-  text-align: left;
+.katex-display > .katex {
   font-size: 1.21em;
 }
 
 .katex-html {
-  font-size: 1.2em;
   color: #000;
 }
 
 .katex {
   padding-left: 0 !important;
+  line-height: normal;
+}
+
+.katex-tooltip {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  pointer-events: none;
+  z-index: 1000;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.katex-tooltip.hide {
+  opacity: 0;
+}
+
+.katex-display,
+.katex-display * {
+  line-height: normal;
 }
 
 /* formula grid */

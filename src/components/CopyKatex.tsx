@@ -9,8 +9,6 @@ export default function CopyKatex() {
       const ancestor = target.closest(".katex");
       if (!ancestor) return;
 
-      e.stopPropagation();
-
       const latex = ancestor
         .querySelector(".katex-mathml")
         ?.querySelector("annotation")?.textContent;
@@ -21,6 +19,7 @@ export default function CopyKatex() {
       const copyString = isDisplay ? `$$${latex}$$` : `$${latex}$`;
 
       navigator.clipboard.writeText(copyString).then(() => {
+        console.log("Clipboard write SUCCESS");
         const tooltip = document.createElement("div");
         tooltip.className = "katex-tooltip";
         tooltip.textContent = "LaTeX Copied!";
@@ -35,11 +34,13 @@ export default function CopyKatex() {
             document.body.removeChild(tooltip);
           }, 500);
         }, 800);
+      }).catch((err) => {
+        console.error("Clipboard write failed:", err);
       });
     }
 
-    document.addEventListener("click", handleClick, true);
-    return () => document.removeEventListener("click", handleClick, true);
+    document.addEventListener("click", handleClick);
+    return () => document.removeEventListener("click", handleClick);
   }, []);
 
   return null;

@@ -2,11 +2,12 @@ import { notFound } from "next/navigation";
 import fs from "fs";
 import path from "path";
 import { compileMDX } from "next-mdx-remote/rsc";
-import remarkMath from "remark-math";
-import rehypeKatex from "rehype-katex";
+import { rehypeRestoreMath } from "@/lib/rehype-restore-math";
 import Link from "next/link";
 import type { Metadata } from "next";
 import styles from "./page.module.css";
+import KatexContent from "@/components/KatexContent";
+import CopyKatex from "@/components/CopyKatex";
 
 const GITHUB_RAW =
   "https://github.com/stemformulas/stemformulas.github.io/raw/main/content/formulas";
@@ -21,6 +22,11 @@ async function getFormula(slug: string) {
   if (!fs.existsSync(filePath)) return null;
 
   const source = fs.readFileSync(filePath, "utf-8");
+
+  const safeSource = source.replace(
+    /(\$\$[\s\S]*?\$\$|\$[^$\n]+?\$)/g,
+    (match) => match.replace(/[{}]/g, (ch) => (ch === "{" ? "\\{" : "\\}"))
+  );
   const contentDir = path.join(process.cwd(), "src/content/formulas");
 
   function resolveImage(src: string | undefined) {
@@ -38,18 +44,17 @@ async function getFormula(slug: string) {
     latex: string;
     tags: string[];
   }>({
-    source,
+    source: safeSource,
     options: {
       parseFrontmatter: true,
       mdxOptions: {
-        remarkPlugins: [remarkMath],
-        rehypePlugins: [rehypeKatex],
+        rehypePlugins: [rehypeRestoreMath],
       },
     },
     components: {
       img: ({ src, alt, ...rest }: React.ImgHTMLAttributes<HTMLImageElement>) => (
         // eslint-disable-next-line @next/next/no-img-element
-        <img src={resolveImage(src)} alt={alt || ""} {...rest} />
+        <img src={resolveImage(src as string | undefined)} alt={alt || ""} {...rest} />
       ),
     },
   });
@@ -113,6 +118,7 @@ export default async function FormulaPage({
 
   return (
     <article>
+      <CopyKatex />
       <header className={styles.articleHeader}>
         <h1 className={styles.title}>{formula.frontmatter.title}</h1>
         {formula.frontmatter.tags && formula.frontmatter.tags.length > 0 && (
@@ -143,7 +149,7 @@ export default async function FormulaPage({
         </div>
 
         <div className={`${styles.contentArea} prose`}>
-          {formula.content}
+          <KatexContent>{formula.content}</KatexContent>
         </div>
       </section>
 
