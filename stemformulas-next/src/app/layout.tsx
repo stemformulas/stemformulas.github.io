@@ -7,6 +7,37 @@ export const metadata: Metadata = {
   title: "stemformulas",
   description:
     "Stemformulas is the eventual home of every STEM formula in the world.",
+  openGraph: {
+    title: "stemformulas",
+    description: "All of the STEM formulas, eventually",
+    url: "https://stemformulas.com",
+    siteName: "stemformulas.com",
+    type: "website",
+    images: [
+      {
+        url: "https://github.com/stemformulas/stemformulas.github.io/raw/main/equalsicon-wide.png",
+        width: 1500,
+        height: 600,
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "stemformulas",
+    description: "All of the STEM formulas, eventually",
+    images: [
+      "https://github.com/stemformulas/stemformulas.github.io/raw/main/equalsicon-wide.png",
+    ],
+    site: "stemformulas.com",
+  },
+  icons: {
+    icon: [
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
+    apple: "/apple-touch-icon.png",
+    other: [{ url: "/favicon.ico" }],
+  },
 };
 
 export default function RootLayout({
