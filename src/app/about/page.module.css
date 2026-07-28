@@ -1,0 +1,12 @@
+.title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 2.5rem;
+  color: var(--color-neutral-900);
+  margin: 0 0 0.67em 0;
+}
+
+.section {
+  max-width: 65ch;
+  margin-top: 3rem;
+}

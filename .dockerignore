@@ -1,0 +1,12 @@
+node_modules/
+.git/
+.github/
+.next/
+.env
+.DS_Store
+*.md
+scripts/
+equalsicon.png
+equalsicon.psd
+banner.png
+content/

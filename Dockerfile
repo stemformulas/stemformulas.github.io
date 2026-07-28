@@ -1,8 +1,14 @@
-FROM hugomods/hugo:reg-go-git-0.119.0
-# https://github.com/jpanther/congo/issues/689
+FROM node:26-alpine
 
-COPY . /src/
+WORKDIR /app
 
-EXPOSE 1313
+COPY package*.json ./
+RUN npm ci
 
-ENTRYPOINT [ "hugo", "server", "--bind=0.0.0.0"] 
+COPY . .
+
+RUN npm run build
+
+EXPOSE 8501
+
+CMD ["npm", "start", "--", "-p", "8501"]
