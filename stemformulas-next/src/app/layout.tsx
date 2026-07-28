@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import "katex/dist/katex.min.css";
 import Header from "@/components/Header";
+import CopyKatex from "@/components/CopyKatex";
 
 export const metadata: Metadata = {
   title: "stemformulas",
@@ -48,6 +49,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        <CopyKatex />
         <Header />
 
         <main className="main-content">{children}</main>
