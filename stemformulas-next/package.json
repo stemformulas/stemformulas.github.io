@@ -9,6 +9,7 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@next/third-parties": "^16.2.12",
     "dompurify": "^3.4.12",
     "fuse.js": "^7.5.0",
     "gray-matter": "^4.0.3",

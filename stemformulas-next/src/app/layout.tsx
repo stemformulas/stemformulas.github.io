@@ -3,6 +3,7 @@ import "./globals.css";
 import "katex/dist/katex.min.css";
 import Header from "@/components/Header";
 import CopyKatex from "@/components/CopyKatex";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 export const metadata: Metadata = {
   title: "stemformulas",
@@ -60,6 +61,7 @@ export default function RootLayout({
           </div>
         </footer>
       </body>
+      <GoogleAnalytics gaId="G-055HWG7Q3V" />
     </html>
   );
 }
