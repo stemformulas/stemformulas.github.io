@@ -72,7 +72,12 @@ export default function SubmitPage() {
         }
       }
 
-      const res = await fetch("/api/submit", {
+      const webhookUrl = process.env.NEXT_PUBLIC_DISCORD_WEBHOOK_URL;
+      if (!webhookUrl) {
+        alert("Submit not configured");
+        return;
+      }
+      const res = await fetch(webhookUrl, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ title, description, tags, latex, body }),

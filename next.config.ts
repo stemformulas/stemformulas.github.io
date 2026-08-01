@@ -1,4 +1,7 @@
-import type {NextConfig} from "next";
+import type { NextConfig } from "next";
+import createMDX from "@next/mdx";
+
+const withMDX = createMDX();
 
 const nextConfig: NextConfig = {
   turbopack: {
@@ -7,7 +10,9 @@ const nextConfig: NextConfig = {
   experimental: {
     useTypeScriptCli: true,
   },
+  pageExtensions: ["ts", "tsx", "mdx"],
 };
 
-export default nextConfig
-import('@opennextjs/cloudflare').then(m => m.initOpenNextCloudflareForDev());
+export default withMDX(nextConfig);
+
+import("@opennextjs/cloudflare").then((m) => m.initOpenNextCloudflareForDev());

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "build": "next build",
-    "dev": "next dev -p 8501",
+    "dev": "node scripts/generate-formulas-json.js && next dev -p 8501",
     "start": "next start",
     "prebuild": "node scripts/generate-formulas-json.js",
     "lint": "eslint",
@@ -14,6 +14,10 @@
     "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
+    "@mdx-js/loader": "^3.1.1",
+    "@mdx-js/mdx": "^3.1.1",
+    "@mdx-js/react": "^3.1.1",
+    "@next/mdx": "^16.2.12",
     "@next/third-parties": "^16.2.12",
     "@opennextjs/cloudflare": "^1.20.2",
     "dompurify": "^3.4.12",
@@ -37,6 +41,6 @@
     "eslint": "^9",
     "eslint-config-next": "16.2.12",
     "typescript": "^7.0.2",
-    "wrangler": "^4.114.0"
+    "wrangler": "^4.115.0"
   }
 }

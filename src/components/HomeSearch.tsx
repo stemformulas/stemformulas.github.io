@@ -14,7 +14,7 @@ export default function HomeSearch() {
   const router = useRouter();
 
   useEffect(() => {
-    fetch("/api/search-index")
+      fetch("/search-index.json")
       .then((r) => r.json())
       .then((data: FormulaEntry[]) => {
         fuseRef.current = new Fuse(data, {

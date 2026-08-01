@@ -1,16 +1,15 @@
 import Link from "next/link";
-import katex from "katex";
 import formulasData from "@/data/formulas.json";
 import styles from "./page.module.css";
 
 interface FormulaMeta {
   slug: string;
   title: string;
-  latex: string;
+  renderedLatex: string;
 }
 
 function getFormulas(): FormulaMeta[] {
-  return formulasData as FormulaMeta[];
+  return formulasData as unknown as FormulaMeta[];
 }
 
 export default function FormulasPage() {
@@ -27,35 +26,21 @@ export default function FormulasPage() {
       </p>
 
       <section className={`grid-container ${styles.grid}`}>
-        {formulas.map((formula) => {
-          let renderedLatex = "";
-          if (formula.latex) {
-            try {
-              renderedLatex = katex.renderToString(formula.latex, {
-                throwOnError: false,
-                displayMode: true,
-              });
-            } catch {
-              renderedLatex = formula.latex;
-            }
-          }
-
-          return (
-            <Link
-              key={formula.slug}
-              href={`/formulas/${formula.slug}`}
-              className={styles.card}
-            >
-              <span className={styles.cardTitle}>{formula.title}</span>
-              {renderedLatex && (
-                <div
-                  className={styles.cardLatex}
-                  dangerouslySetInnerHTML={{ __html: renderedLatex }}
-                />
-              )}
-            </Link>
-          );
-        })}
+        {formulas.map((formula) => (
+          <Link
+            key={formula.slug}
+            href={`/formulas/${formula.slug}`}
+            className={styles.card}
+          >
+            <span className={styles.cardTitle}>{formula.title}</span>
+            {formula.renderedLatex && (
+              <div
+                className={styles.cardLatex}
+                dangerouslySetInnerHTML={{ __html: formula.renderedLatex }}
+              />
+            )}
+          </Link>
+        ))}
       </section>
     </>
   );

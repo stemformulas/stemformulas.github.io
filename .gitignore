@@ -46,6 +46,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 
+# generated data
+/src/data/formulas.json
+/src/data/formula-components.ts
+/src/data/safe-formulas
+/public/search-index.json
+
+# static export
+/out
+
 # OpenNext
 .open-next
 
